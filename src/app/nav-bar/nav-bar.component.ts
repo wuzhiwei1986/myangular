@@ -86,6 +86,13 @@ export class NavBarComponent implements OnInit {
           'iconuri': '',
           'child': null
         }
+        ,
+        {
+          'name': '弹出详情2',
+          'uri': 'openDetailsInfo2',
+          'iconuri': '',
+          'child': null
+        }
       ]
     },
     {
@@ -115,31 +122,11 @@ export class NavBarComponent implements OnInit {
       ]
     },
     {
-      'name': '基本组件',
+      'name': '关于',
       'uri': 'management/areaList',
       'iconuri': 'icon-area',
       'havechild': false,
       'child': []
-    },
-    {
-      'name': '工单管理',
-      'uri': null,
-      'iconuri': 'icon-statistics',
-      'havechild': true,
-      'child': [
-        {
-          'name': '维修工单',
-          'uri': 'index/orderMaintenance',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '施工工单',
-          'uri': 'index/orderWork',
-          'iconuri': '',
-          'child': null
-        }
-      ]
     }
   ];
 

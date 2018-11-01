@@ -9,36 +9,37 @@
   text-align: right;
   padding-left: 15px;
   padding-right: 32px;
-  background: url("../../../assets/change-sys/change-r-bg.png") right center no-repeat;
+  background: url("../../../assets/change-sys/alarm-r-bg.png") right center no-repeat;
   cursor: pointer;
 }
 
 .alarm .icon {
   position: absolute;
-  left: 0px;
-  top: 0;
-  color: #ffffff;
-  z-index: 10000;
+  right: 73px;
+  top: 1px;
+/*  color: #ffffff;
+  z-index: 10000;*/
 }
 .alarm .icon i{
+  font-size: 18px;
   color: #ffffff!important;
 }
-.alarm .num {
-  position: absolute;
-  left: 1000px;
-  top: 100px;
+.alarm .alarm-num {
   background: rgba(232, 30, 30, 1);
+  position: absolute;
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  line-height: 50px;
+  line-height: 22px;
   font-size: 11px;
   text-align: center;
-   color: #ffffff;
-  padding: 0;
+  right: 60px;
+  top: 3px;
+  z-index: 10000;
 }
 
 .alarm .txt {
   position: absolute;
+  right: 35px;
 }

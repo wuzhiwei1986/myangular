@@ -12,6 +12,7 @@ import {MapSwitchComponent} from './map-switch/map-switch.component';
 import {ToolBarComponent} from './tool-bar/tool-bar.component';
 import { ToolBar2Component } from './tool-bar2/tool-bar2.component';
 import { OpenDetailsInfoComponent } from './open-details-info/open-details-info.component';
+import { OpenDetailsInfo2Component } from './open-details-info2/open-details-info2.component';
 /*数据展示*/
 import { DetailsStyle1Component } from './details-style1/details-style1.component';
 import { SeachModuleComponent } from './seach-module/seach-module.component';
@@ -29,7 +30,7 @@ const routes: Routes = [
   {path: 'toolBar2', component: ToolBar2Component},
   {path: 'seachModule', component: SeachModuleComponent},
   {path: 'openDetailsInfo', component: OpenDetailsInfoComponent},
-
+  {path: 'openDetailsInfo2', component: OpenDetailsInfo2Component},
   /**/
   {path: 'detailsStyle1', component: DetailsStyle1Component},
   {path: 'pageDemo', component: PageDemoComponent},

@@ -26,6 +26,7 @@ import { OpenDetailsInfoComponent } from './open-details-info/open-details-info.
 import { AlarmComponent } from './navMoudle/alarm/alarm.component';
 import { DropDownMenuComponent } from './navMoudle/drop-down-menu/drop-down-menu.component';
 import { UserInfoComponent } from './navMoudle/user-info/user-info.component';
+import { OpenDetailsInfo2Component } from './open-details-info2/open-details-info2.component';
 
 
 
@@ -47,7 +48,8 @@ registerLocaleData(zh);
     OpenDetailsInfoComponent,
     AlarmComponent,
     DropDownMenuComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    OpenDetailsInfo2Component
   ],
   imports: [
     BrowserModule,
