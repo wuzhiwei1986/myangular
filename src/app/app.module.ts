@@ -22,6 +22,10 @@ import { DetailsStyle1Component } from './details-style1/details-style1.componen
 import { SeachModuleComponent } from './seach-module/seach-module.component';
 import { ToolBar2Component } from './tool-bar2/tool-bar2.component';
 import { PageDemoComponent } from './page-demo/page-demo.component';
+import { OpenDetailsInfoComponent } from './open-details-info/open-details-info.component';
+import { AlarmComponent } from './navMoudle/alarm/alarm.component';
+import { DropDownMenuComponent } from './navMoudle/drop-down-menu/drop-down-menu.component';
+import { UserInfoComponent } from './navMoudle/user-info/user-info.component';
 
 
 
@@ -39,7 +43,11 @@ registerLocaleData(zh);
     DetailsStyle1Component,
     SeachModuleComponent,
     ToolBar2Component,
-    PageDemoComponent
+    PageDemoComponent,
+    OpenDetailsInfoComponent,
+    AlarmComponent,
+    DropDownMenuComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,

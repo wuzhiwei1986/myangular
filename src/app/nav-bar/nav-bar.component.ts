@@ -67,7 +67,7 @@ export class NavBarComponent implements OnInit {
           'child': null
         },
         {
-          'name': '工具条211',
+          'name': '工具条',
           'uri': 'toolBar2',
           'iconuri': '',
           'child': null
@@ -76,6 +76,13 @@ export class NavBarComponent implements OnInit {
         {
           'name': '搜索模块',
           'uri': 'seachModule',
+          'iconuri': '',
+          'child': null
+        }
+        ,
+        {
+          'name': '弹出详情',
+          'uri': 'openDetailsInfo',
           'iconuri': '',
           'child': null
         }

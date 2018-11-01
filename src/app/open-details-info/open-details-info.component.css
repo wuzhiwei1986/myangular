@@ -1,0 +1,24 @@
+/*详情模块*/
+.side-details { position: absolute; right: 0; top: 0; bottom: 0; width: 360px; overflow-y: auto; background: rgba(255,255,255,1); box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3); opacity: 0.86; }
+.side-details .module-title { position: relative; height: 60px; line-height: 60px; font-size: 18px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(25, 25, 25, 1); border-bottom: #DADADA 1px solid; padding-left: 20px; }
+.side-details .module-title .close { position: absolute; right: 20px; }
+.side-details .module-title .close i { font-size: 14px; color: #6E6E6E; }
+.side-details .module-item .module-item-title { background: #F0F0F0; height: 42px; line-height: 42px; padding-left: 20px; font-size: 14px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(25, 25, 25, 1); }
+.side-details .module-item .module-item-content { background: #ffffff; }
+/**/
+
+/*表格样式2*/
+.side-details .side-details-table-style2 { color: #191919; width: 100%; }
+.side-details .side-details-table-style2 th, .side-details .side-details-table-style2 td { height: 42px; line-height: 42px; padding: 0 20px; }
+.side-details .side-details-table-style2 th { background: #F0F0F0; }
+.side-details .side-details-table-style2 tr:hover td { background: #D2DDF2; }
+
+/*表格样式1*/
+.side-details .side-details-table-style1 { color: #191919; width: calc(100% - 40px); margin: 10px auto; font-size: 12px; }
+.side-details .side-details-table-style1 th, .side-details .side-details-table-style1 td { height: 32px; line-height: 32px; font-family: MicrosoftYaHei; text-align: left; }
+.side-details .side-details-table-style1 th { font-size: 14px; font-weight: 400; color: rgba(110,110,110,1); width: 75px; }
+.side-details .side-details-table-style1 td { font-size: 14px; font-weight: 400; color: rgba(25,25,25,1); }
+
+/*TAG标签模块*/
+.tag-link-module { margin: 10px 20px; }
+.tag-link-module a { display: inline-block; border: 1px solid rgba(30,91,214,1); border-radius: 4px; min-width: 80px; margin-right: 10px; height: 32px; line-height: 32px; text-align: center; }
