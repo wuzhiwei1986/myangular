@@ -187,8 +187,9 @@ export class NavBarComponent implements OnInit {
   }
 
 
-  selectedApp(uri) {
-    let self = this;
+  selectedApp(uri,hoverId) {
+    const self = this;
+    self.thisMenuId = hoverId;
     console.log("click");
     self.router.navigate([uri]);
     return false;

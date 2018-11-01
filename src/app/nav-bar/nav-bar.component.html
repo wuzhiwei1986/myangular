@@ -13,7 +13,7 @@
         </div>
         <ul *ngIf="menu.havechild" class="menu-sub" [@displayState]="showChildMenu(i)">
           <ng-container *ngFor="let childmenu of menu.child; let childId = index;">
-            <li class="hover" (click)="selectedApp(childmenu.uri)"
+            <li class="hover" (click)="selectedApp(childmenu.uri,childId)"
                 [ngClass]="{'hover':childId==thisMenuId}" (mouseover)="selectMenu(i)" (mouseout)="cleanSel()">
               {{childmenu.name}}
             </li>
