@@ -1,0 +1,99 @@
+<div class="order-maintenance-add-step">
+  <div class="step-div">
+    <nz-steps [nzCurrent]="current">
+      <nz-step nzTitle="添加工单"></nz-step>
+      <nz-step nzTitle="添加处理"></nz-step>
+      <nz-step nzTitle="完成处理"></nz-step>
+    </nz-steps>
+  </div>
+</div>
+<!---->
+<div class="order-maintenance-add-form">
+  <form nz-form [formGroup]="validateForm">
+    <!--step 1-->
+    <div class="form-content" *ngIf="current==0">
+      <div class="form-row">
+        <div class="form-title">
+          工单编号
+        </div>
+        <div class="form-control">
+          <input nz-input placeholder="请输入工单编号" formControlName="code1">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-title">
+          工单名称
+        </div>
+        <div class="form-control">
+          <input nz-input placeholder="请输入工单名称" formControlName="code2">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-title">
+          所属区域
+        </div>
+        <div class="form-control">
+          <input nz-input placeholder="请输入所属区域" formControlName="code3">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-title">
+          工单来源
+        </div>
+        <div class="form-control">
+          <input nz-input placeholder="请输入工单来源" formControlName="code4">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-title">
+          工单描述
+        </div>
+        <div class="form-control">
+          <textarea rows="4" nz-input placeholder="请输入工单描述" formControlName="code5"></textarea>
+
+        </div>
+      </div>
+      <div class="form-row-btn">
+        <button nz-button [nzType]="'primary'" (click)="next()"><span>下一步</span></button>
+      </div>
+    </div>
+    <!--step 2-->
+    <div class="form-content step2" *ngIf="current==1">
+      <div class="form-row">
+        <div class="form-title">
+          图片信息
+        </div>
+        <div class="form-control">
+          <button nz-button (click)="next()"><span>上传图片</span></button>
+          <div class="tip-info">图片支持 JPG 和 PNG，建议大小2M以内，限5张</div>
+          <div class="upload-img-div"><span></span><span></span><span></span><span></span><span>
+            <a class="close">关闭</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-title">
+          处理描述
+        </div>
+        <div class="form-control">
+          <textarea rows="4" nz-input placeholder="请输入处理描述" formControlName="code5"></textarea>
+
+        </div>
+      </div>
+      <div class="form-row-btn">
+        <button nz-button (click)="next()"><span>跳过</span></button>
+        <button nz-button [nzType]="'primary'" (click)="next()"><span>下一步</span></button>
+      </div>
+    </div>
+    <!--step 3-->
+    <div class="form-complete-content" *ngIf="current==2">
+      <div class="tip-div">
+        <div class="icon"></div>
+        <div class="txt">工单添加成功</div>
+      </div>
+      <div class="other-link">
+        <a>查看工单</a><a (click)="next()">返回列表（5s）</a>
+      </div>
+    </div>
+  </form>
+</div>

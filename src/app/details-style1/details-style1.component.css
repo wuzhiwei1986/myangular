@@ -1,0 +1,137 @@
+.details-top-modle {
+  height: 60px;
+  background: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid #dadada;
+  padding: 0 30px;
+}
+
+.details-top-modle .title {
+  font-size: 18px;
+  height: 60px;
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: bold;
+  color: rgba(25, 25, 25, 1);
+  line-height: 60px;
+}
+
+.details-top-modle .btn {
+  margin-top: 14px;
+  float: right;
+}
+
+/*请情独立模块样式*/
+.details-content-item-modle {
+  margin: 20px 30px;
+  border: 1px solid #dadada;
+  background: #FFFFFF;
+}
+
+.details-content-item-modle .title {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #dadada;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(25, 25, 25, 1);
+  padding: 0 20px;
+}
+
+.details-content-item-modle .title a{
+  float: right;
+  position: relative;
+  padding-left:26px;
+
+}
+.details-content-item-modle .title a i{
+  position: absolute; top: 16px;left: 0;
+
+
+}
+.details-content-item-modle .item-content {
+  padding: 15px 20px;
+  border-bottom: 1px solid #dadada;
+}
+
+.details-content-item-modle .item-content:last-child {
+  padding: 15px 20px;
+  border-bottom: 0 solid #dadada;
+}
+
+/*表格详情样式一*/
+.table-details-style {
+  width: 100%;
+}
+
+.table-details-style tr:nth-of-type(odd) th, .table-details-style tr:nth-of-type(odd) td {
+  background: rgba(240, 240, 240, 1);
+}
+
+.table-details-style th, .table-details-style td {
+  height: 36px;
+  line-height: 36px;
+}
+
+.table-details-style th {
+  width: 95px;
+  text-align: right;
+  font-weight: normal;
+  border-left: #FFFFFF 1px solid;
+}
+
+.table-details-style td {
+  color: #191919;
+}
+
+.table-details-style .color-blue{
+  color: #1E5BD6;
+}
+/*表格详情样式二*/
+.table-details-style2 {
+  width: 100%;
+}
+
+.table-details-style2 tr:first-child th, .table-details-style2 tr:first-child td {
+  background: rgba(240, 240, 240, 1);
+}
+
+.table-details-style2 th, .table-details-style2 td {
+  height: 36px;
+  line-height: 36px;
+}
+
+.table-details-style2 th {
+  width: 95px;
+  text-align: right;
+  font-weight: normal;
+  border-left: #FFFFFF 1px solid;
+}
+
+.table-details-style2 td {
+  color: #191919;
+}
+
+/*图片上传*/
+.img-list {
+  margin: 20px 0;
+}
+
+.img-list span {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.img-list span img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-list span:last-child {
+  margin-right: 0px;
+}

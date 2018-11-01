@@ -1,0 +1,30 @@
+<nav class="main-menu" (mouseleave)="off()" (mouseover)="on()">
+  <!--左边图标-->
+
+  <ul class="menu-body">
+    <ng-container *ngFor="let menu of menus;let i=index;">
+      <li [ngClass]="{'select':i==selectId,'hover':i==hoverId}">
+        <div class="menu-title" [ngClass]="{'select':i==selectId,'hover':i==hoverId}"
+             (click)="hoverMenu(i);selectedApp(menu.uri)" (mouseover)="selectMenu(i)"
+             (mouseout)="cleanSel()">
+          <i class="{{menu.iconuri}}"></i>{{menu.name}}
+          <i class="right" [ngClass]="{'icon-fold':hoverId==i,'icon-unfold':hoverId!=i||hoverId==null}"
+             *ngIf="menu.havechild"></i>
+        </div>
+        <ul *ngIf="menu.havechild" class="menu-sub" [@displayState]="showChildMenu(i)">
+          <ng-container *ngFor="let childmenu of menu.child; let childId = index;">
+            <li class="hover" (click)="selectedApp(childmenu.uri)"
+                [ngClass]="{'hover':childId==thisMenuId}" (mouseover)="selectMenu(i)" (mouseout)="cleanSel()">
+              {{childmenu.name}}
+            </li>
+          </ng-container>
+        </ul>
+      </li>
+    </ng-container>
+  </ul>
+</nav>
+
+
+
+
+

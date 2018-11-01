@@ -1,0 +1,3 @@
+<div class="map-switch">
+  <a [ngClass]="{'hover':selectId==i}" *ngFor="let item of switchArray; let i = index;" (click)="select(i)"><i class="{{item.icon}}"></i>{{item.name}}</a>
+</div>
