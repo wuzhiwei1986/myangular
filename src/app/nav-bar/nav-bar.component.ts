@@ -21,14 +21,19 @@ import {Router} from '@angular/router';
 })
 export class NavBarComponent implements OnInit {
 
+  customScaling:boolean=true;// 自定义伸缩,true 可以缩放，false 禁止缩放
+  menuStatus: string = 'off';
+  hoverId: number = 0; // 当前已选中
+  selectId: number = 0; // 当前鼠标选中
+  thisMenuId: number = 0; // 当前选中子菜单
+  hisHover: number = 0; // 历史选中菜单,收缩时记录，展开时使用
 
   menus: Array<any> = [
 
     {
       'name': '基本组件',
-      'uri': 'mapSwitch',
+      'uri': '',
       'iconuri': 'icon-area',
-      'havechild': true,
       'child': [
         {
           'name': '开关切换',
@@ -99,7 +104,6 @@ export class NavBarComponent implements OnInit {
       'name': '数据展示',
       'uri': '',
       'iconuri': 'icon-area',
-      'havechild':true,
       'child': [
         {
           'name': '页面演示',
@@ -123,18 +127,12 @@ export class NavBarComponent implements OnInit {
     },
     {
       'name': '关于',
-      'uri': 'management/areaList',
+      'uri': 'detailsStyle1',
       'iconuri': 'icon-area',
-      'havechild': false,
       'child': []
     }
   ];
 
-  menuStatus: string = 'off';
-  hoverId: number = 0; // 当前已选中
-  selectId: number = 0; // 当前鼠标选中
-  thisMenuId: number = 0; // 当前选中子菜单
-  hisHover: number = 0; // 历史选中菜单,收缩时记录，展开时使用
 
 
   constructor(private router: Router) {
@@ -168,14 +166,18 @@ export class NavBarComponent implements OnInit {
     const self = this;
     if (self.menuStatus === 'off') {
       self.hoverId = self.hisHover;
-      self.menuStatus = 'on';
+      if (self.customScaling == true) {
+        self.menuStatus = 'on';
+      }
     }
   }
 
   // 收缩
   off() {
     this.hisHover = this.hoverId;
-    this.menuStatus = 'off';
+    if (self.customScaling == true) {
+      this.menuStatus = 'off';
+    }
   }
 
   showChildMenu(i) {
@@ -187,10 +189,13 @@ export class NavBarComponent implements OnInit {
   }
 
 
-  selectedApp(uri,hoverId) {
+  selectedApp(uri, hoverId) {
     const self = this;
+    if (hoverId == null || hoverId == '') {
+      self.thisMenuId = 0;
+    }
     self.thisMenuId = hoverId;
-    console.log("click");
+    console.log('click');
     self.router.navigate([uri]);
     return false;
   }

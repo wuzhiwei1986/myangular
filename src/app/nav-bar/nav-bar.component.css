@@ -25,7 +25,7 @@ nav ul, nav li { outline: 0; margin: 0; padding: 0; }
 .main-menu .menu-body li .menu-title.hover{   background: #1e5bd6; color: #ffffff;}
 /**/
 .menu-sub{}
-.menu-sub {  background: #181b1f;}
-.menu-sub li{ height:42px; line-height: 42px; color: #999999;  cursor: pointer; text-align: left!important;padding-left: 60px;  }
+.menu-sub {max-height: 462px; overflow-y: hidden; overflow-x: hidden; background: #181b1f;}
+.menu-sub li{ height:42px; line-height: 42px;  color: #999999;  cursor: pointer; text-align: left!important;padding-left: 60px;  }
 .menu-sub li:hover{   background: #111214; color: #ffffff}
 .menu-sub li.hover{  background:#111214 url("../../assets/dian.png") 25px center no-repeat; color: #ffffff;}

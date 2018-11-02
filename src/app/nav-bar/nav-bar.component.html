@@ -1,4 +1,4 @@
-<nav class="main-menu" (mouseleave)="off()" (mouseover)="on()">
+<nav class="main-menu" [ngClass]="{'on':customScaling}"  (mouseleave)="off()" (mouseover)="on()">
   <!--左边图标-->
 
   <ul class="menu-body">
@@ -9,9 +9,9 @@
              (mouseout)="cleanSel()">
           <i class="{{menu.iconuri}}"></i>{{menu.name}}
           <i class="right" [ngClass]="{'icon-fold':hoverId==i,'icon-unfold':hoverId!=i||hoverId==null}"
-             *ngIf="menu.havechild"></i>
+             *ngIf="menu.child!=''"></i>
         </div>
-        <ul *ngIf="menu.havechild" class="menu-sub" [@displayState]="showChildMenu(i)">
+        <ul *ngIf="menu.child!=''" class="menu-sub" [@displayState]="showChildMenu(i)">
           <ng-container *ngFor="let childmenu of menu.child; let childId = index;">
             <li class="hover" (click)="selectedApp(childmenu.uri,childId)"
                 [ngClass]="{'hover':childId==thisMenuId}" (mouseover)="selectMenu(i)" (mouseout)="cleanSel()">
