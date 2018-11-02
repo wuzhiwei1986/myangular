@@ -1,0 +1,18 @@
+.main-body {
+  position: relative;
+  background: red;
+  height: 100%;
+  min-width: 1000px;
+}
+
+.main-right-content {
+  position: absolute;
+  top: 50px;
+  left: 220px;
+  right: 0px;
+  bottom: 0px;
+  background: #FFFFFF;
+  border: #666666 1px solid;
+  overflow-x: hidden;
+  overflow-y: scroll
+}

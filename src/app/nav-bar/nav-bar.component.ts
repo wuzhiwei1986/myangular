@@ -21,7 +21,7 @@ import {Router} from '@angular/router';
 })
 export class NavBarComponent implements OnInit {
 
-  customScaling:boolean=true;// 自定义伸缩,true 可以缩放，false 禁止缩放
+  customScaling:boolean=false;// 自定义伸缩,true 可以缩放，false 禁止缩放
   menuStatus: string = 'off';
   hoverId: number = 0; // 当前已选中
   selectId: number = 0; // 当前鼠标选中
@@ -166,15 +166,16 @@ export class NavBarComponent implements OnInit {
     const self = this;
     if (self.menuStatus === 'off') {
       self.hoverId = self.hisHover;
-      if (self.customScaling == true) {
+
         self.menuStatus = 'on';
-      }
+
     }
   }
 
   // 收缩
   off() {
-    this.hisHover = this.hoverId;
+    const self = this;
+    self.hisHover = self.hoverId;
     if (self.customScaling == true) {
       this.menuStatus = 'off';
     }
