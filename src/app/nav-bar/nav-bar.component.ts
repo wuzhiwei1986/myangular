@@ -122,6 +122,12 @@ export class NavBarComponent implements OnInit {
           'uri': 'index/orderWork',
           'iconuri': '',
           'child': null
+        },
+        {
+          'name': '水波效果',
+          'uri': 'ripple',
+          'iconuri': '',
+          'child': null
         }
       ]
     },

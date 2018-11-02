@@ -27,6 +27,7 @@ import { AlarmComponent } from './navMoudle/alarm/alarm.component';
 import { DropDownMenuComponent } from './navMoudle/drop-down-menu/drop-down-menu.component';
 import { UserInfoComponent } from './navMoudle/user-info/user-info.component';
 import { OpenDetailsInfo2Component } from './open-details-info2/open-details-info2.component';
+import { RippleComponent } from './animation/ripple/ripple.component';
 
 
 
@@ -49,7 +50,8 @@ registerLocaleData(zh);
     AlarmComponent,
     DropDownMenuComponent,
     UserInfoComponent,
-    OpenDetailsInfo2Component
+    OpenDetailsInfo2Component,
+    RippleComponent
   ],
   imports: [
     BrowserModule,
