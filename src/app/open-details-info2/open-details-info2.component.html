@@ -16,12 +16,12 @@
                 <input nz-input placeholder="请输入开始坐标" formControlName="pointCode0">
               </div>
               <div nz-col [nzSpan]="6">
-                <button nz-button (click)="resetCoordinate()">重置</button>
+                <button nz-button>重置</button>
               </div>
             </div>
 
-            <div class="coordinates-info">经度:{{pointLongitude0}}</div>
-            <div class="coordinates-info">纬度:{{pointLatitude0}}</div>
+            <div class="coordinates-info">经度:111.11</div>
+            <div class="coordinates-info">纬度:123.122</div>
           </div>
         </div>
 
@@ -30,8 +30,8 @@
           <div nz-col [nzSpan]="17">
             <input nz-input placeholder="请输入开始坐标" formControlName="pointCode0" disabled="disabled">
 
-            <div class="coordinates-info"><span>经度:{{pointLongitude1}}</span></div>
-            <div class="coordinates-info"><span>纬度:{{pointLatitude1}}</span></div>
+            <div class="coordinates-info">经度:111.11</div>
+            <div class="coordinates-info">纬度:123.122</div>
           </div>
         </div>
         <div class="map-popup-divider"></div>
@@ -56,7 +56,7 @@
         <div nz-row>
           <div nz-col [nzSpan]="7" class="nzrow-title">管道描述</div>
           <div nz-col [nzSpan]="17">
-            <textarea row="20" nz-input type="text" placeholder="请输入管道描述" [(ngModel)]="des"
+            <textarea row="20" nz-input type="text" placeholder="请输入管道描述"
                       formControlName="pointCode0" [ngClass]="{'error-status':true}"></textarea>
             <div class="error-info">请输入管道描述</div>
           </div>
@@ -119,8 +119,8 @@
       </form>
     </div>
     <div id="map-popup-footer">
-      <button nz-button (click)="close()" nzType="default" style="margin-right: 8px;"><span>取消</span></button>
-      <button nz-button (click)="save()" nzType="primary" style="margin-right: 8px;" *ngIf="!isModeShow"><span>确认</span>
+      <button nz-button  nzType="default" style="margin-right: 8px;"><span>取消</span></button>
+      <button nz-button  nzType="primary" style="margin-right: 8px;" ><span>确认</span>
       </button>
     </div>
   </div>
