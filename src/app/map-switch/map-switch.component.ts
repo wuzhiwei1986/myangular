@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-map-switch',
@@ -14,11 +14,17 @@ export class MapSwitchComponent implements OnInit {
   }, {
     "name": "展示",
     "icon": "icon-demonstration"
+  }, {
+    "name": "展示二",
+    "icon": "icon-demonstration"
+  }, {
+    "name": "展示三",
+    "icon": "icon-demonstration"
   }];
 
   select(i) {
     this.selectId = i;
-    console.log("当前选中"+i+"#######" + this.switchArray[i].name)
+    console.log("当前选中" + i + "#######" + this.switchArray[i].name)
   }
 
   constructor() {

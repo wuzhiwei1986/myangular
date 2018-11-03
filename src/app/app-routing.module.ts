@@ -17,6 +17,7 @@ import { OpenDetailsInfo2Component } from './open-details-info2/open-details-inf
 import { DetailsStyle1Component } from './details-style1/details-style1.component';
 import { SeachModuleComponent } from './seach-module/seach-module.component';
 import { PageDemoComponent } from './page-demo/page-demo.component';
+import { AboutComponent } from './about/about.component';
 /*动画*/
 import { RippleComponent } from './animation/ripple/ripple.component';
 
@@ -32,10 +33,11 @@ const routes: Routes = [
   {path: 'seachModule', component: SeachModuleComponent},
   {path: 'openDetailsInfo', component: OpenDetailsInfoComponent},
   {path: 'openDetailsInfo2', component: OpenDetailsInfo2Component},
-  /**/
+  /*页面*/
   {path: 'detailsStyle1', component: DetailsStyle1Component},
   {path: 'pageDemo', component: PageDemoComponent},
-  /**/
+  {path: 'about', component: AboutComponent},
+  /*动画*/
   {path: 'ripple', component: RippleComponent},
 ];
 

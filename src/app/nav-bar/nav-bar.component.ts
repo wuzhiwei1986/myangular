@@ -133,7 +133,7 @@ export class NavBarComponent implements OnInit {
     },
     {
       'name': '关于',
-      'uri': 'detailsStyle1',
+      'uri': 'about',
       'iconuri': 'icon-area',
       'child': []
     }
