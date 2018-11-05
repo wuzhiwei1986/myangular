@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit,Input} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {Router} from '@angular/router';
 
@@ -20,8 +20,8 @@ import {Router} from '@angular/router';
   ]
 })
 export class NavBarComponent implements OnInit {
-
-  customScaling:boolean=false;// 自定义伸缩,true 可以缩放，false 禁止缩放
+  @Input() customScaling:boolean;// 自定义伸缩,true 可以缩放，false 禁止缩放
+  //customScaling:boolean=true;
   menuStatus: string = 'off';
   hoverId: number = 0; // 当前已选中
   selectId: number = 0; // 当前鼠标选中
@@ -145,6 +145,9 @@ export class NavBarComponent implements OnInit {
   }
 
   ngOnInit() {
+    if(this.customScaling==null){
+      this.customScaling=true;
+    }
   }
 
   // 菜单选中

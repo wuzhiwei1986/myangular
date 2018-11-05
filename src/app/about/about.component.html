@@ -3,3 +3,13 @@
 </p>
 
 <button (click)="test($event.screenY)">sdfsdf</button>
+X:<input [(ngModel)]="inputX">
+Y:<input [(ngModel)]="inputY">
+
+<app-ripple [coutomColor]="'red'" [coutomX]="'200px'" [coutomY]="'100px'"></app-ripple>
+<app-ripple [coutomColor]="'green'" [coutomX]="inputX" [coutomY]="inputY"></app-ripple>
+
+
+<!--
+<app-nav-bar [customScaling]="false"></app-nav-bar>
+-->
