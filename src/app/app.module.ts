@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import { RouterModule, Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
@@ -28,9 +28,15 @@ import { DropDownMenuComponent } from './navMoudle/drop-down-menu/drop-down-menu
 import { UserInfoComponent } from './navMoudle/user-info/user-info.component';
 import { OpenDetailsInfo2Component } from './open-details-info2/open-details-info2.component';
 import { RippleComponent } from './animation/ripple/ripple.component';
-import { AboutComponent } from './about/about.component';
-import { TestDirective } from './directive/test.directive';
+import { AboutComponent} from './about/about.component';
 
+/*指令*/
+import { TestDirective } from './directive/test.directive';
+/*页面介绍*/
+import { ToolBarPageComponent } from './docs/components/tool-bar-page/tool-bar-page.component';
+import { SwitchPageComponent } from './docs/components/switch-page/switch-page.component';
+import { DotRipplePageComponent } from './docs/components/dot-ripple-page/dot-ripple-page.component';
+import { NavBarPageComponent } from './docs/components/nav-bar-page/nav-bar-page.component';
 
 
 registerLocaleData(zh);
@@ -55,7 +61,11 @@ registerLocaleData(zh);
     OpenDetailsInfo2Component,
     RippleComponent,
     AboutComponent,
-    TestDirective
+    TestDirective,
+    ToolBarPageComponent,
+    SwitchPageComponent,
+    DotRipplePageComponent,
+    NavBarPageComponent
   ],
   imports: [
     BrowserModule,

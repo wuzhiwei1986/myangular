@@ -20,6 +20,12 @@ import { PageDemoComponent } from './page-demo/page-demo.component';
 import { AboutComponent } from './about/about.component';
 /*动画*/
 import { RippleComponent } from './animation/ripple/ripple.component';
+/**/
+/*页面介绍*/
+import { ToolBarPageComponent } from './docs/components/tool-bar-page/tool-bar-page.component';
+import { SwitchPageComponent } from './docs/components/switch-page/switch-page.component';
+import { DotRipplePageComponent } from './docs/components/dot-ripple-page/dot-ripple-page.component';
+import { NavBarPageComponent } from './docs/components/nav-bar-page/nav-bar-page.component';
 
 
 const routes: Routes = [
@@ -28,8 +34,8 @@ const routes: Routes = [
   {path: 'navBar', component: NavBarComponent},
   {path: 'topNav', component: TopNavComponent},
   {path: 'mapSwitch', component: MapSwitchComponent},
-  {path: 'toolBar', component: ToolBarComponent},
-  {path: 'toolBar2', component: ToolBar2Component},
+//  {path: 'toolBar', component: ToolBarComponent},
+//  {path: 'toolBar2', component: ToolBar2Component},
   {path: 'seachModule', component: SeachModuleComponent},
   {path: 'openDetailsInfo', component: OpenDetailsInfoComponent},
   {path: 'openDetailsInfo2', component: OpenDetailsInfo2Component},
@@ -37,6 +43,11 @@ const routes: Routes = [
   {path: 'detailsStyle1', component: DetailsStyle1Component},
   {path: 'pageDemo', component: PageDemoComponent},
   {path: 'about', component: AboutComponent},
+  /**/
+  {path: 'toolBarPage', component: ToolBarPageComponent},
+  {path: 'switchPage', component: SwitchPageComponent},
+  {path: 'dotRipplePage', component: DotRipplePageComponent},
+  {path: 'navBarPage', component: NavBarPageComponent},
   /*动画*/
   {path: 'ripple', component: RippleComponent},
 ];

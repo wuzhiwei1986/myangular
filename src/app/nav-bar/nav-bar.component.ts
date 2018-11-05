@@ -37,7 +37,7 @@ export class NavBarComponent implements OnInit {
       'child': [
         {
           'name': '开关切换',
-          'uri': 'mapSwitch',
+          'uri': 'switchPage',
           'iconuri': '',
           'child': null
         },
@@ -55,7 +55,7 @@ export class NavBarComponent implements OnInit {
         },
         {
           'name': '左边导航',
-          'uri': 'navBar',
+          'uri': 'navBarPage',
           'iconuri': '',
           'child': null
         },
@@ -67,13 +67,7 @@ export class NavBarComponent implements OnInit {
         },
         {
           'name': '工具条',
-          'uri': 'toolBar',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '工具条',
-          'uri': 'toolBar2',
+          'uri': 'toolBarPage',
           'iconuri': '',
           'child': null
         }
@@ -95,6 +89,12 @@ export class NavBarComponent implements OnInit {
         {
           'name': '弹出详情2',
           'uri': 'openDetailsInfo2',
+          'iconuri': '',
+          'child': null
+        },
+        {
+          'name': '坐标闪动',
+          'uri': 'dotRipplePage',
           'iconuri': '',
           'child': null
         }
@@ -124,7 +124,7 @@ export class NavBarComponent implements OnInit {
           'child': null
         },
         {
-          'name': '水波效果',
+          'name': '图标演示',
           'uri': 'ripple',
           'iconuri': '',
           'child': null
