@@ -29,6 +29,7 @@ import { UserInfoComponent } from './navMoudle/user-info/user-info.component';
 import { OpenDetailsInfo2Component } from './open-details-info2/open-details-info2.component';
 import { RippleComponent } from './animation/ripple/ripple.component';
 import { AboutComponent } from './about/about.component';
+import { TestDirective } from './directive/test.directive';
 
 
 
@@ -53,7 +54,8 @@ registerLocaleData(zh);
     UserInfoComponent,
     OpenDetailsInfo2Component,
     RippleComponent,
-    AboutComponent
+    AboutComponent,
+    TestDirective
   ],
   imports: [
     BrowserModule,
