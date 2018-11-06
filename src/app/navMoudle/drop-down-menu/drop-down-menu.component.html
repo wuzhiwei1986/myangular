@@ -1,6 +1,6 @@
 <span class="change-sys" style="float: right" (mouseleave)="changeOpen=false">
         <div class="title " [ngClass]="{'bg':changeOpen}" (mouseover)="changeOpen=true">切换系统</div>
         <ul style="display: none" [@displayState]="changeOpen == true? 'block' : 'none'">
-          <li class="index">系统主页</li>
-          <li class="{{menu.iconuri}}" *ngFor="let menu of menus;let i=index">{{menu.name}}</li></ul>
-      </span>
+          <li class="index" (click)="nav('主页')">系统主页</li>
+          <li class="{{menu.iconuri}}" *ngFor="let menu of menusList;let i=index" (click)="nav(menu.menuid)">{{menu.name}}</li></ul>
+</span>

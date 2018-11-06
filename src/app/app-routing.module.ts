@@ -3,14 +3,11 @@ import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 /**/
 
-import {BreadCrumbComponent} from './bread-crumb/bread-crumb.component';
-import {StepsInfoComponent} from './steps-info/steps-info.component';
-import {NavBarComponent} from './nav-bar/nav-bar.component';
-import {TopNavComponent} from './top-nav/top-nav.component';
+import { BreadCrumbComponent} from './bread-crumb/bread-crumb.component';
+import { StepsInfoComponent} from './steps-info/steps-info.component';
+import { NavBarComponent} from './nav-bar/nav-bar.component';
 
-import {MapSwitchComponent} from './map-switch/map-switch.component';
-import {ToolBarComponent} from './tool-bar/tool-bar.component';
-import { ToolBar2Component } from './tool-bar2/tool-bar2.component';
+import { MapSwitchComponent} from './map-switch/map-switch.component';
 import { OpenDetailsInfoComponent } from './open-details-info/open-details-info.component';
 import { OpenDetailsInfo2Component } from './open-details-info2/open-details-info2.component';
 /*数据展示*/

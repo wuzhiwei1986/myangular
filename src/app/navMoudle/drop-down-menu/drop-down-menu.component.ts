@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Output, EventEmitter, Input} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 @Component({
   selector: 'app-drop-down-menu',
@@ -19,8 +19,16 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 })
 export class DropDownMenuComponent implements OnInit {
   changeOpen: Boolean = false;
+  @Input() menusList:Array<any>;
+  @Output() navUrl = new EventEmitter();
 
-  menus: Array<any> = [{
+  nav(id){
+    this.navUrl.emit(id);
+  }
+
+
+/*
+  menusList: Array<any> = [{
     'menuid': 10000000,
     'parentid': 0,
     'name': '营收系统',
@@ -57,6 +65,8 @@ export class DropDownMenuComponent implements OnInit {
     'child': null,
     'introduction': '主要功能包括短信模板管理，报表模板管理，系统信息配置等'
   }];
+
+ */
 
   constructor() {
   }

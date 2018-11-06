@@ -14,7 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BreadCrumbComponent } from './bread-crumb/bread-crumb.component';
 import { StepsInfoComponent } from './steps-info/steps-info.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { TopNavComponent } from './top-nav/top-nav.component';
+import { TopNavComponent } from './navMoudle/top-nav/top-nav.component';
 import { MapSwitchComponent } from './map-switch/map-switch.component';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
 /*数据展示*/
