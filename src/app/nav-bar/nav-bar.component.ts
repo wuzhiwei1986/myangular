@@ -61,7 +61,7 @@ export class NavBarComponent implements OnInit {
         },
         {
           'name': '顶部导航',
-          'uri': 'topNav',
+          'uri': 'topNavPage',
           'iconuri': '',
           'child': null
         },

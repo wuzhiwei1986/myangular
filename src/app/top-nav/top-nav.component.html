@@ -4,5 +4,6 @@
   <a href="javascript:void(0);" class="logout">退出</a>
   <app-user-info></app-user-info>
   <app-drop-down-menu></app-drop-down-menu>
-  <app-alarm></app-alarm>
+  <app-alarm [alarmTitle]="'警报'" [alarmList]="alarmList" (disposed)="disposedId($event)"
+             (viewAll)="test('点击*查看全部*调用')"></app-alarm>
 </div>

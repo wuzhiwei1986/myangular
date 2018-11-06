@@ -7,7 +7,7 @@
 .alarm .txt { position: absolute; right: 35px; color: #FFFFFF; }
 .alarm-content { position: absolute; right: 32px; top: 50px; width: 420px; z-index: 100000; }
 
-/*自定义的面包屑地址栏*/
+/*警告标题栏*/
 .alarm-content .top-title { background: url("../../../assets/base/alarm-toptitle-bg.png") -5px 0 no-repeat; height: 62px; line-height: 50px; padding: 12px 0 0 0; text-align: left; font-size: 18px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(25,25,25,1); overflow: hidden; }
 .alarm-content .top-title .content { border-right: #d7d7d7 1px solid; border-left: #d7d7d7 1px solid; width: calc(100% - 2px); margin: 0 auto; padding: 0 14px; background: #FFFFFF; }
 .alarm-content .top-title .content .right-link { float: right; font-size: 14px; font-weight: 400; color: #191919; }

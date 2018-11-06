@@ -37,6 +37,7 @@ import { ToolBarPageComponent } from './docs/components/tool-bar-page/tool-bar-p
 import { SwitchPageComponent } from './docs/components/switch-page/switch-page.component';
 import { DotRipplePageComponent } from './docs/components/dot-ripple-page/dot-ripple-page.component';
 import { NavBarPageComponent } from './docs/components/nav-bar-page/nav-bar-page.component';
+import { TopNavPageComponent } from './docs/components/top-nav-page/top-nav-page.component';
 
 
 registerLocaleData(zh);
@@ -65,7 +66,9 @@ registerLocaleData(zh);
     ToolBarPageComponent,
     SwitchPageComponent,
     DotRipplePageComponent,
-    NavBarPageComponent
+    NavBarPageComponent,
+    TopNavPageComponent,
+
   ],
   imports: [
     BrowserModule,
