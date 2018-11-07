@@ -119,13 +119,13 @@ export class NavBarComponent implements OnInit {
         },
         {
           'name': '表格展示',
-          'uri': 'index/orderWork',
+          'uri': 'tablePage',
           'iconuri': '',
           'child': null
         },
         {
           'name': '图标演示',
-          'uri': 'ripple',
+          'uri': 'iconPage',
           'iconuri': '',
           'child': null
         }

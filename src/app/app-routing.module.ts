@@ -14,7 +14,7 @@ import { OpenDetailsInfo2Component } from './open-details-info2/open-details-inf
 import { DetailsStyle1Component } from './details-style1/details-style1.component';
 import { SeachModuleComponent } from './seach-module/seach-module.component';
 import { PageDemoComponent } from './page-demo/page-demo.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './docs/about/about.component';
 /*动画*/
 import { RippleComponent } from './animation/ripple/ripple.component';
 /**/
@@ -24,6 +24,8 @@ import { SwitchPageComponent } from './docs/components/switch-page/switch-page.c
 import { DotRipplePageComponent } from './docs/components/dot-ripple-page/dot-ripple-page.component';
 import { NavBarPageComponent } from './docs/components/nav-bar-page/nav-bar-page.component';
 import { TopNavPageComponent } from './docs/components/top-nav-page/top-nav-page.component';
+import { IconPageComponent } from './docs/components/icon-page/icon-page.component';
+import { TablePageComponent } from './docs/components/table-page/table-page.component';
 
 const routes: Routes = [
   {path: 'breadCrumb', component: BreadCrumbComponent},
@@ -45,6 +47,8 @@ const routes: Routes = [
   {path: 'switchPage', component: SwitchPageComponent},
   {path: 'dotRipplePage', component: DotRipplePageComponent},
   {path: 'navBarPage', component: NavBarPageComponent},
+  {path: 'iconPage', component: IconPageComponent},
+  {path: 'tablePage', component: TablePageComponent},
   /*动画*/
   {path: 'ripple', component: RippleComponent},
 ];
