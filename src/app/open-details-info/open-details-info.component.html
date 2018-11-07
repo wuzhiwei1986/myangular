@@ -96,8 +96,8 @@
 </div>
 
 <!---->
-<div class="side-details" style="right: 500px;">
-  <div class="module-title">筛查<a class="close"><i class="icon-close"></i> </a></div>
+<div class="side-details" style="right: 500px;" [@openClose]="isShow ? 'block' : 'none'">
+  <div class="module-title">筛查<a class="close"><i class="icon-close" (click)="isShow=!isShow"></i> </a></div>
   <div class="module-item">
     <div class="module-item-content">
 

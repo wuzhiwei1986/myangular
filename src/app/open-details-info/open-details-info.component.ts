@@ -18,13 +18,27 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
         right: '-360px',
 
       })),
+      state('block', style({
+        opacity: 1,
+
+      })),
+      state('none', style({
+        opacity: 0,
+
+      })),
       transition('open => closed', [
         animate('0.2s')
       ]),
       transition('closed => open', [
         animate('0.2s')
       ]),
-    ]),
+      transition('none => block', [
+        animate('0.2s')
+      ]),
+      transition('block => none', [
+        animate('0.2s')
+      ]),
+    ])
   ]
 })
 export class OpenDetailsInfoComponent implements OnInit {

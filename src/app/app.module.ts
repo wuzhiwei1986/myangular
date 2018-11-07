@@ -38,6 +38,7 @@ import { SwitchPageComponent } from './docs/components/switch-page/switch-page.c
 import { DotRipplePageComponent } from './docs/components/dot-ripple-page/dot-ripple-page.component';
 import { NavBarPageComponent } from './docs/components/nav-bar-page/nav-bar-page.component';
 import { TopNavPageComponent } from './docs/components/top-nav-page/top-nav-page.component';
+import { TestComponent } from './test/test.component';
 
 
 registerLocaleData(zh);
@@ -68,6 +69,7 @@ registerLocaleData(zh);
     DotRipplePageComponent,
     NavBarPageComponent,
     TopNavPageComponent,
+    TestComponent,
 
   ],
   imports: [
