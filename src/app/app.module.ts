@@ -42,6 +42,11 @@ import { TestComponent } from './test/test.component';
 import { TestTableComponent } from './test-table/test-table.component';
 import { IconPageComponent } from './docs/components/icon-page/icon-page.component';
 import { TablePageComponent } from './docs/components/table-page/table-page.component';
+/*登录*/
+import { EcpLoginformComponent } from './ecp-login-moudle/ecp-loginform/ecp-loginform.component';
+import { EcpLoginPageComponent } from './ecp-login-moudle/ecp-login-page/ecp-login-page.component';
+import { EcpOpenTagsComponent } from './ecp-tags-model/ecp-open-tags/ecp-open-tags.component';
+import { EcpOpenTagComponent } from './ecp-tags-model/ecp-open-tag/ecp-open-tag.component';
 
 
 registerLocaleData(zh);
@@ -76,6 +81,10 @@ registerLocaleData(zh);
     TestTableComponent,
     IconPageComponent,
     TablePageComponent,
+    EcpLoginformComponent,
+    EcpLoginPageComponent,
+    EcpOpenTagsComponent,
+    EcpOpenTagComponent,
 
   ],
   imports: [

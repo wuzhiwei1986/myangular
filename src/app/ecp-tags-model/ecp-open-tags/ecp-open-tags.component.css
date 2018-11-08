@@ -1,0 +1,162 @@
+/*弹出层*********************************************/
+#map-popup {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  bottom: 40px;
+  width: 340px;
+  background: #FFFFFF;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+#map-popup .map-popup-content {
+  height: 100%;
+  position: relative;
+}
+
+#map-popup .nav-tags {
+  position: absolute;
+  right: -40px;
+  top: 90px;
+  width: 40px;
+  z-index: 1;
+}
+
+#map-popup .nav-tags a {
+  width: 40px;
+  line-height: 14px;
+  height: 76px;
+  display: block;
+  background: url("../../../assets/base/tag_default.png") right top no-repeat;
+  color: #191919;
+  margin-bottom: 5px;
+  padding-left: 8px;
+  /*重直居文字*/
+  display: flex;align-items: left;justify-content: space-around;flex-direction: column;
+}
+#map-popup .nav-tags a:hover,#map-popup .nav-tags a.hover{
+
+  background: url("../../../assets/base/tag_hove.png") right top no-repeat;
+
+}
+
+#map-popup #map-popup-header {
+  height: 100px;
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  left: 0;
+}
+
+/*弹层头部背景*/
+/* 传感器 */
+#map-popup .map-popup-content .sensor-bg {
+  background: #1E5BD6 url("../../../assets/map/sensor-bg.png") right bottom no-repeat;
+}
+
+/* 传感器 */
+#map-popup .map-popup-content .coordinates-bg {
+  background: #1E5BD6 url("../../../assets/map/coordinates-bg.png") right bottom no-repeat;
+}
+
+/* 管道 */
+#map-popup .map-popup-content .pipe-bg {
+  background: #1E5BD6 url("../../../assets/map/pipe-bg.png") right bottom no-repeat;
+}
+
+/*关闭*/
+#map-popup #map-popup-header a.close {
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  width: 14px;
+  height: 14px;
+  background: url("../../../assets/map/close.png") no-repeat;
+  text-indent: -99999px;
+}
+
+/*弹出层标题*/
+#map-popup #map-popup-header #map-popup-header-title {
+  padding-top: 33px;
+}
+
+#map-popup #map-popup-header #map-popup-header-title span {
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+
+#map-popup #map-popup-body {
+  padding: 20px;
+  position: absolute;
+  top: 100px;
+  bottom: 70px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  background: #ffffff;
+}
+
+/*弹出层表单样式*/
+#map-popup #map-popup-body .ant-row {
+  min-height: 35px;
+  padding: 1px;
+  margin-bottom: 12px;
+}
+
+/*分隔线*/
+#map-popup #map-popup-body .map-popup-divider {
+  margin: 16px 0px;
+  height: 1px;
+  background: #DADADA;
+}
+
+#map-popup #map-popup-body .nzrow-title {
+  padding-top: 5px;
+}
+
+#map-popup #map-popup-body .nzrow-title:after {
+  content: ":";
+}
+
+/*经纬度信息*/
+#map-popup #map-popup-body .coordinates-info {
+  color: #6E6E6E !important;
+  height: auto;
+  margin: 5px 0px;
+  padding: 0px;
+}
+
+/*错误信息样式*/
+#map-popup #map-popup-body .error-info {
+  color: red;
+}
+
+/*表单文本框错误状态*/
+#map-popup #map-popup-body .error-status {
+  border-radius: 5px;
+  border: #f5222d 1px solid !important;
+  box-shadow: 0 0 0 2px #fdd3d5;
+}
+
+#map-popup #map-popup-body .error-status:focus {
+  border: #447ee3 1px solid !important;
+}
+
+#map-popup #map-popup-footer {
+  position: absolute;
+  right: 0px;
+  left: 0;
+  bottom: 0;
+  padding: 20px 20px;
+  text-align: right;
+  z-index: 1000;
+}
+
+/*弹出层详情***************************************************/

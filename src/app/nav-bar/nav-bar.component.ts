@@ -97,6 +97,12 @@ export class NavBarComponent implements OnInit {
           'uri': 'dotRipplePage',
           'iconuri': '',
           'child': null
+        },
+        {
+          'name': '标签页',
+          'uri': 'ecpOpenTags',
+          'iconuri': '',
+          'child': null
         }
       ]
     },
@@ -123,6 +129,13 @@ export class NavBarComponent implements OnInit {
           'iconuri': '',
           'child': null
         },
+        {
+          'name': '登录界面',
+          'uri': 'loginPage',
+          'iconuri': '',
+          'child': null
+        }
+        ,
         {
           'name': '图标演示',
           'uri': 'iconPage',

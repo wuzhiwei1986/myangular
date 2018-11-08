@@ -10,11 +10,14 @@ import { NavBarComponent} from './nav-bar/nav-bar.component';
 import { MapSwitchComponent} from './map-switch/map-switch.component';
 import { OpenDetailsInfoComponent } from './open-details-info/open-details-info.component';
 import { OpenDetailsInfo2Component } from './open-details-info2/open-details-info2.component';
+import { EcpOpenTagsComponent } from './ecp-tags-model/ecp-open-tags/ecp-open-tags.component';
 /*数据展示*/
 import { DetailsStyle1Component } from './details-style1/details-style1.component';
 import { SeachModuleComponent } from './seach-module/seach-module.component';
 import { PageDemoComponent } from './page-demo/page-demo.component';
 import { AboutComponent } from './docs/about/about.component';
+import { EcpLoginPageComponent } from './ecp-login-moudle/ecp-login-page/ecp-login-page.component';
+
 /*动画*/
 import { RippleComponent } from './animation/ripple/ripple.component';
 /**/
@@ -49,6 +52,8 @@ const routes: Routes = [
   {path: 'navBarPage', component: NavBarPageComponent},
   {path: 'iconPage', component: IconPageComponent},
   {path: 'tablePage', component: TablePageComponent},
+  {path: 'loginPage', component: EcpLoginPageComponent},
+  {path: 'ecpOpenTags', component: EcpOpenTagsComponent},
   /*动画*/
   {path: 'ripple', component: RippleComponent},
 ];
