@@ -104,6 +104,7 @@ export class NavBarComponent implements OnInit {
           'iconuri': '',
           'child': null
         }
+
       ]
     },
     {
@@ -139,6 +140,12 @@ export class NavBarComponent implements OnInit {
         {
           'name': '图标演示',
           'uri': 'iconPage',
+          'iconuri': '',
+          'child': null
+        },
+        {
+          'name': '标签页b',
+          'uri': 'ecpTabset',
           'iconuri': '',
           'child': null
         }

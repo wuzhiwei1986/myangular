@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class EcpOpenTagsComponent implements OnInit {
   isOpen = true;
-  selectId = 0;
+  selectId = 1;
 
   show(id) {
     this.selectId = id;

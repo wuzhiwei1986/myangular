@@ -19,13 +19,40 @@
 </nz-button-group>-->
 
 
-
 <!--正式的-->
 <div class="main-body"><app-top-nav></app-top-nav><app-nav-bar [customScaling]="false"></app-nav-bar>
   <div class="main-right-content"><router-outlet></router-outlet></div>
 </div>
 
 
+<!--<app-ecp-tabset>
+  <app-ecp-tab>
+    <a [ngClass]="{'hover':selectId==0}" (click)="test()">坐<br/>标{{selectId}}</a>
+    <a [ngClass]="{'hover':selectId==1}" (click)="test(1)">传<br/>感<br/>器</a>
+    <a [ngClass]="{'hover':selectId==2}" (click)="test(2)">节<br/>点</a>
+    <a [ngClass]="{'hover':selectId==3}" (click)="test(3)">封<br/>头<br/>堵<br/>板</a>
+    <a [ngClass]="{'hover':selectId==4}" (click)="show(4)">闸<br/>阀</a>
+    <a [ngClass]="{'hover':selectId==5}" (click)="show(5)">消<br/>防<br/>栓</a>
+  </app-ecp-tab>
+  <app-ecp-tab-content>
+    <div class="map-popup-main">
+      <div id="map-popup-header" class="pipe-bg">
+        <a href="javascript:void(0);" (click)="close()" class="close">X</a>
+        <div id="map-popup-header-title">
+          <span>管道新增1</span>
+        </div>
+      </div>
+      <div id="map-popup-body" [ngStyle]="{'display':selectId==0 ? 'block':'none'}">
+        1
+      </div>
+      <div id="map-popup-footer">
+        <button nz-button nzType="default" style="margin-right: 8px;"><span>取消</span></button>
+        <button nz-button nzType="primary" style="margin-right: 8px;"><span>确认</span>
+        </button>
+      </div>
+    </div>
+  </app-ecp-tab-content>
+</app-ecp-tabset>-->
 <!--
 <app-login-page></app-login-page>
 -->

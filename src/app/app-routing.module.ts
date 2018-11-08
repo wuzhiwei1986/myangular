@@ -29,7 +29,8 @@ import { NavBarPageComponent } from './docs/components/nav-bar-page/nav-bar-page
 import { TopNavPageComponent } from './docs/components/top-nav-page/top-nav-page.component';
 import { IconPageComponent } from './docs/components/icon-page/icon-page.component';
 import { TablePageComponent } from './docs/components/table-page/table-page.component';
-
+import {EcpTabsetComponent} from "./ecp-tegs-test/ecp-tabset/ecp-tabset.component";
+import { EcpTabsetComponent } from './ecp-tegs-test/ecp-tabset/ecp-tabset.component';
 const routes: Routes = [
   {path: 'breadCrumb', component: BreadCrumbComponent},
   {path: 'stepsInfo', component: StepsInfoComponent},
@@ -54,6 +55,7 @@ const routes: Routes = [
   {path: 'tablePage', component: TablePageComponent},
   {path: 'loginPage', component: EcpLoginPageComponent},
   {path: 'ecpOpenTags', component: EcpOpenTagsComponent},
+  {path: 'ecpTabset', component: EcpTabsetComponent},
   /*动画*/
   {path: 'ripple', component: RippleComponent},
 ];

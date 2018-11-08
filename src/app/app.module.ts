@@ -47,6 +47,9 @@ import { EcpLoginformComponent } from './ecp-login-moudle/ecp-loginform/ecp-logi
 import { EcpLoginPageComponent } from './ecp-login-moudle/ecp-login-page/ecp-login-page.component';
 import { EcpOpenTagsComponent } from './ecp-tags-model/ecp-open-tags/ecp-open-tags.component';
 import { EcpOpenTagComponent } from './ecp-tags-model/ecp-open-tag/ecp-open-tag.component';
+import { EcpTabsetComponent } from './ecp-tegs-test/ecp-tabset/ecp-tabset.component';
+import { EcpTabComponent } from './ecp-tegs-test/ecp-tab/ecp-tab.component';
+import { EcpTabContentComponent } from './ecp-tegs-test/ecp-tab-content/ecp-tab-content.component';
 
 
 registerLocaleData(zh);
@@ -85,6 +88,9 @@ registerLocaleData(zh);
     EcpLoginPageComponent,
     EcpOpenTagsComponent,
     EcpOpenTagComponent,
+    EcpTabsetComponent,
+    EcpTabComponent,
+    EcpTabContentComponent,
 
   ],
   imports: [
