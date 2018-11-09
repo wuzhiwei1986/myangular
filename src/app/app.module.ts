@@ -11,16 +11,18 @@ import zh from '@angular/common/locales/zh';
 import { AppRoutingModule } from './app-routing.module';
 /**/
 /*基础组件*/
-import { BreadCrumbComponent } from './bread-crumb/bread-crumb.component';
+import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
 import { StepsInfoComponent } from './steps-info/steps-info.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TopNavComponent } from './navMoudle/top-nav/top-nav.component';
 import { MapSwitchComponent } from './map-switch/map-switch.component';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
+import { ToolBar2Component } from './tool-bar2/tool-bar2.component';
+import { ToolBar3Component } from './tool-bar3/tool-bar3.component';
 /*数据展示*/
 import { DetailsStyle1Component } from './details-style1/details-style1.component';
 import { SeachModuleComponent } from './seach-module/seach-module.component';
-import { ToolBar2Component } from './tool-bar2/tool-bar2.component';
+
 import { PageDemoComponent } from './page-demo/page-demo.component';
 import { OpenDetailsInfoComponent } from './open-details-info/open-details-info.component';
 import { AlarmComponent } from './navMoudle/alarm/alarm.component';
@@ -50,6 +52,8 @@ import { EcpOpenTagComponent } from './ecp-tags-model/ecp-open-tag/ecp-open-tag.
 import { EcpTabsetComponent } from './ecp-tegs-test/ecp-tabset/ecp-tabset.component';
 import { EcpTabComponent } from './ecp-tegs-test/ecp-tab/ecp-tab.component';
 import { EcpTabContentComponent } from './ecp-tegs-test/ecp-tab-content/ecp-tab-content.component';
+import { GenerateBillPageComponent } from './demo/generate-bill-page/generate-bill-page.component';
+
 
 
 registerLocaleData(zh);
@@ -91,6 +95,8 @@ registerLocaleData(zh);
     EcpTabsetComponent,
     EcpTabComponent,
     EcpTabContentComponent,
+    ToolBar3Component,
+    GenerateBillPageComponent,
 
   ],
   imports: [

@@ -26,8 +26,6 @@ export class EcpTabsetComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log();
-    this.itemLabel.test()
-  }
+ }
 
 }

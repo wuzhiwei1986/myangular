@@ -4,7 +4,7 @@
      [ngClass]="{'hover':hoverId==i}">{{item.name}} <i class="icon-unfold" *ngIf="item.chird!=null"></i></a>
   <ul class="sub-menu" [ngClass]="{'show':thisMenuId==i}" (mouseleave)="showSubMenu(50)">
      <ng-container *ngFor="let childmenu of item.chird;let childId = index; ">
-            <li>{{childmenu.name}}</li>
+            <li [ngClass]="{'switch':childmenu.isSwitch==true}">{{childmenu.name}} <span *ngIf="childmenu.isSwitch==true"><nz-switch nzSize="small"></nz-switch></span></li>
      </ng-container>
   </ul>
   </span>

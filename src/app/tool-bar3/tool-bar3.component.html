@@ -1,0 +1,26 @@
+<div class="map-top-toolbar">
+  <span> <a (mouseover)="menuSel(1)" (click)="menuSel(1)" [ngClass]="{'hover':hoverId==1}">阀门分析</a> </span>
+  <span> <a (mouseover)="menuSel(2)" (click)="menuSel(2)" [ngClass]="{'hover':hoverId==2}">爆管分析</a> </span>
+  <span> <a (mouseover)="menuSel(3)" (click)="menuSel(3)" [ngClass]="{'hover':hoverId==3}">预警<i class="icon-unfold"></i></a>
+    <ul class="sub-menu" [ngClass]="{'show':thisMenuId==3}" (mouseleave)="showSubMenu(50)" style="width: 160px;">
+      <li>实时流量显示<nz-switch style="float: right; margin-right: 7px;"></nz-switch></li>
+      <li>分区用水量分析</li>
+    </ul>
+  </span>
+  <span>
+    <a (mouseover)="menuSel(4)" (click)="menuSel(4)" [ngClass]="{'hover':hoverId==4}">筛查</a>
+  </span>
+  <span>
+    <a (mouseover)="menuSel(5)" (click)="menuSel(5)" [ngClass]="{'hover':hoverId==5}">添加元素<i
+      class="icon-unfold"></i></a>
+    <ul class="sub-menu" [ngClass]="{'show':thisMenuId==5}" (mouseleave)="showSubMenu(50)">
+      <li>坐标</li>
+      <li>传感器</li>
+      <li>管道</li>
+      <li>节点</li>
+      <li>堵头封板</li>
+      <li>闸阀</li>
+      <li>消防栓</li>
+    </ul>
+  </span>
+</div>

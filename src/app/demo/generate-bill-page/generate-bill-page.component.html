@@ -1,0 +1,39 @@
+<app-bread-crumb></app-bread-crumb>
+
+<form nz-form>
+  <div nz-row nzType="flex" class="seach-form">
+    <div nz-col nzXs="24"  nzMd="12" nzLg="6" >
+      <div class="item">
+        <div class="title">传感器编号</div>
+        <div class="content"><input nz-input type="text"  name="sensorCode1"></div>
+      </div>
+    </div>
+    <div nz-col nzXs="24"  nzMd="12" nzLg="6" >
+      <div class="item">
+        <div class="title">传感器类型</div>
+        <div class="content"><input nz-input type="text"  name="sensorCode2"></div>
+      </div>
+    </div>
+    <div nz-col nzXs="24"  nzMd="12" nzLg="6" >
+      <div class="item">
+        <div class="title">开始时间</div>
+        <div class="content"><input nz-input type="text"  name="sensorCode3"></div>
+      </div>
+    </div>
+    <div nz-col nzXs="24"  nzMd="12" nzLg="6" >
+      <div class="item">
+        <div class="title">结束时间</div>
+        <div class="content"><input nz-input type="text"  name="sensorCode4"></div>
+      </div>
+    </div>
+    <div nz-col nzXs="24"  nzMd="12" nzLg="6" >
+      <div class="item">
+        <div class="title"></div>
+        <div class="content">
+          <button nz-button  style="margin-right: 8px;">重置</button>
+          <button nz-button [nzType]="'primary'" style="margin-right: 8px;">查询</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

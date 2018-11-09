@@ -1,16 +1,18 @@
 .map-top-toolbar { position: absolute; top: 20px; left: 20px; font-weight: 400; color: rgba(25, 25, 25, 1); font-size: 16px; height: 36px; line-height: 36px; text-align: center; background: rgba(255, 255, 255, 1); border-radius: 8px; box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);/*  overflow: hidden;*/
 }
-.map-top-toolbar span {position: relative; width: 100px; float: right; text-align: center; cursor: pointer; font-size: 14px; font-family: MicrosoftYaHei; font-weight: 400; color: rgba(255, 255, 255, 1);   }
+.map-top-toolbar span { position: relative; width: 100px; float: right; text-align: center; cursor: pointer; font-size: 14px; font-family: MicrosoftYaHei; font-weight: 400; color: rgba(255, 255, 255, 1);   }
 
 .map-top-toolbar span a { height: 36px; display: block; color: #191919;border-right: #DADADA 1px solid; }
 .map-top-toolbar span a:hover, .map-top-toolbar span a.hover { background: #1E5BD6; color: #FFFFFF; }
 .map-top-toolbar span:first-child a{ border-radius: 0 8px 8px 0;border-right:#DADADA 0px solid!important;}
 .map-top-toolbar span:last-child a{ border-radius: 8px 0 0 8px;}
-.map-top-toolbar span a i{ vertical-align: middle; font-size: 6px; margin-left: 2px; color: #999999;}
-/**/
-.map-top-toolbar .sub-menu {position: absolute; right: 0; top: -1000px; min-width: 100px; padding: 0;  background: rgba(255, 255, 255, 1); box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3); height: auto;}
-.map-top-toolbar .show{ top: 40px;}
+.map-top-toolbar span a i{ vertical-align: middle; font-size: 6px; margin-left: 4px; color: #999999;}
+/*
+.map-top-toolbar span:first-child { border-right: #DADADA 1px solid; }
+
+.map-top-toolbar span:last-child { border-left: #DADADA 1px solid; }
+*/
+.map-top-toolbar .sub-menu {position: absolute; right: 0; top: -1000px; min-width: 100px;/* visibility: hidden;*/ padding: 0;  background: rgba(255, 255, 255, 1); box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3); height: auto;}
+.map-top-toolbar .show{  top: 40px!important;}
 .map-top-toolbar .sub-menu li { width: 100%; text-align: left; height: 42px; line-height: 42px; background: #ffffff; padding: 0px; padding-left: 15px; color: rgba(25, 25, 25, 1); list-style: none; }
-.map-top-toolbar .sub-menu li.switch { width: 170px;  }
-.map-top-toolbar .sub-menu li.switch>span{ display: inline-block; width: 40px; float: right; margin-right: 7px;}
 .map-top-toolbar .sub-menu li:hover { background: #D2DDF2; color: #191919; }

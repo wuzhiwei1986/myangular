@@ -15,4 +15,4 @@
 .custom-breadcrumb span{}
 .custom-breadcrumb span:not(:last-child):after{ content: " > ";}
 .custom-breadcrumb .right-link{ float: right;font-size:14px;font-family:MicrosoftYaHei;font-weight:400;color:rgba(110,110,110,1); }
-.custom-breadcrumb .right-link a{ color:rgba(110,110,110,1);}
+.custom-breadcrumb .right-link a{ color:rgba(110,110,110,1); margin-left: 20px;}

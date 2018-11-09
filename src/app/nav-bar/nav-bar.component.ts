@@ -113,6 +113,12 @@ export class NavBarComponent implements OnInit {
       'iconuri': 'icon-area',
       'child': [
         {
+          'name': '登录界面',
+          'uri': 'loginPage',
+          'iconuri': '',
+          'child': null
+        },
+        {
           'name': '页面演示',
           'uri': 'pageDemo',
           'iconuri': '',
@@ -129,12 +135,6 @@ export class NavBarComponent implements OnInit {
           'uri': 'tablePage',
           'iconuri': '',
           'child': null
-        },
-        {
-          'name': '登录界面',
-          'uri': 'loginPage',
-          'iconuri': '',
-          'child': null
         }
         ,
         {
@@ -144,8 +144,21 @@ export class NavBarComponent implements OnInit {
           'child': null
         },
         {
-          'name': '标签页b',
+          'name': '标签页（传递模板）',
           'uri': 'ecpTabset',
+          'iconuri': '',
+          'child': null
+        },
+        {
+          'name': '404/500页面',
+          'uri': 'errorPage',
+          'iconuri': '',
+          'child': null
+        }
+        ,
+        {
+          'name': '生成帐单',
+          'uri': 'generateBillPage',
           'iconuri': '',
           'child': null
         }

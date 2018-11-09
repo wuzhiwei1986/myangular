@@ -1,7 +1,7 @@
-<div id="map-popup" [ngClass]="{'map-popup-open-hidden': !isOpen}">
+<div id="map-popup">
   <div class="map-popup-content">
     <div class="nav-tags">
-      <a [ngClass]="{'hover':selectId==0}" (click)="show(0)">坐<br/>标{{selectId}}</a>
+      <a [ngClass]="{'hover':selectId==0}" (click)="show(0)">坐<br/>标</a>
       <a [ngClass]="{'hover':selectId==1}" (click)="show(1)">传<br/>感<br/>器</a>
       <a [ngClass]="{'hover':selectId==2}" (click)="show(2)">节<br/>点</a>
       <a [ngClass]="{'hover':selectId==3}" (click)="show(3)">封<br/>头<br/>堵<br/>板</a>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div id="map-popup-body" [ngStyle]="{'display':selectId==0 ? 'block':'none'}">
-      1
+        1
       </div>
       <div id="map-popup-footer">
         <button nz-button nzType="default" style="margin-right: 8px;"><span>取消</span></button>
