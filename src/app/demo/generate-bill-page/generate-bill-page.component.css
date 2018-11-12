@@ -28,14 +28,14 @@
 /*****************************************/
 .ecp-page-body-moudle{
   margin: 20px 30px;
-  padding: 115px 0;
+  padding: 0;
   border: 1px solid rgba(218, 218, 218, 1);
   background: #ffffff;
 }
 
 .ecp-page-body-moudle .empty-data-img{
   width: 260px;
-  margin: 0px auto;
+  margin: 115px auto;
   text-align: center;
 }
 .ecp-page-body-moudle .empty-data-img .info-img{
@@ -52,7 +52,7 @@
 
 
 .ecp-page-footer-moudle{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;

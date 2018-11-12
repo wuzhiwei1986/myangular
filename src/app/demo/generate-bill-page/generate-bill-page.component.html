@@ -40,6 +40,26 @@
   </form>
 
   <div class="ecp-page-body-moudle">
+    <nz-table #basicTable [nzData]="dataSet" [nzSize]="'middle'">
+      <thead>
+      <tr>
+        <th>区域名称</th>
+        <th>统计时间</th>
+        <th>用水量</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td width="33.33%">{{data.name}}</td>
+        <td width="33.33%">{{data.age}}</td>
+        <td width="33.33%">{{data.address}}</td>
+      </tr>
+      </tbody>
+    </nz-table>
+  </div>
+
+
+  <div class="ecp-page-body-moudle">
     <div class="empty-data-img">
       <div class="info-img"><img src="../../../assets/bill-empty-data.png"></div>
       <div class="info-txt">请生成账单再进行操作</div>
