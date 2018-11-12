@@ -1,0 +1,6 @@
+<button nz-button nzType="primary" (click)="showModalMiddle()">Vertically centered modal dialog</button>
+<nz-modal nzWrapClassName="vertical-center-modal" [(nzVisible)]="isVisibleMiddle" nzTitle="分区用水量分析" (nzOnCancel)="handleCancelMiddle()" (nzOnOk)="handleOkMiddle()">
+  <p>some contents...</p>
+  <p>some contents...</p>
+  <p>some contents...</p>
+</nz-modal>

@@ -1,0 +1,49 @@
+/*地图弹出*/
+.ol-popup {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #000c17;
+  min-width: 100px;
+  opacity: 0.6;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  padding: 15px 20px;
+  color: #ffffff;
+}
+
+.ol-popup:after, .ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.ol-popup:after {
+  border-top-color: #000c17;
+  border-width: 10px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.ol-popup:before {
+  border-top-color: #000c17;
+  border-width: 11px;
+  left: 50%;
+  margin-left: -11px;
+}
+
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  color: #ffffff;
+}
+
+.ol-popup-closer:after {
+  content: "✖";
+}

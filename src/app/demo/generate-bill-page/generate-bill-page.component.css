@@ -28,15 +28,14 @@
 /*****************************************/
 .ecp-page-body-moudle{
   margin: 20px 30px;
-  padding: 80px 0;
+  padding: 115px 0;
   border: 1px solid rgba(218, 218, 218, 1);
+  background: #ffffff;
 }
 
 .ecp-page-body-moudle .empty-data-img{
-  display: block;
-  background: red;
   width: 260px;
-  margin: 50px auto;
+  margin: 0px auto;
   text-align: center;
 }
 .ecp-page-body-moudle .empty-data-img .info-img{
@@ -45,7 +44,7 @@
 }
 .ecp-page-body-moudle .empty-data-img .info-txt{
  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .ecp-page-body-moudle .empty-data-img .fun-btn{
   text-align: center;
@@ -58,10 +57,12 @@
   left: 0;
   right: 0;
   width: 100%;
-  height: 80px; line-height: 80px;
+  height: 80px;
+  line-height: 80px;
   text-align: right;
   padding: 0 20px;
   box-shadow:0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
 }
 .ecp-page-footer-moudle>button{
   margin-right: 10px;
