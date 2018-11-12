@@ -15,4 +15,6 @@
 .custom-breadcrumb span{}
 .custom-breadcrumb span:not(:last-child):after{ content: " > ";}
 .custom-breadcrumb .right-link{ float: right;font-size:14px;font-family:MicrosoftYaHei;font-weight:400;color:rgba(110,110,110,1); }
-.custom-breadcrumb .right-link a{ color:rgba(110,110,110,1); margin-left: 20px;}
+.custom-breadcrumb .right-link a{ color:#1E5BD6; margin-left: 30px;}
+.custom-breadcrumb .right-link a i{ color:#1E5BD6; margin-right: 9px;}
+
