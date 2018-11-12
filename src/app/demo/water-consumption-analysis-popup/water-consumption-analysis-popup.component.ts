@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-water-consumption-analysis',
-  templateUrl: './water-consumption-analysis.component.html',
-  styleUrls: ['./water-consumption-analysis.component.css']
+  selector: 'app-water-consumption-analysis-popup',
+  templateUrl: './water-consumption-analysis-popup.component.html',
+  styleUrls: ['./water-consumption-analysis-popup.component.css']
 })
-export class WaterConsumptionAnalysisComponent implements OnInit {
+export class WaterConsumptionAnalysisPopupComponent implements OnInit {
 
   isVisibleMiddle = false;
 

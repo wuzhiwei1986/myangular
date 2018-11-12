@@ -161,6 +161,12 @@ export class NavBarComponent implements OnInit {
           'uri': 'generateBillPage',
           'iconuri': '',
           'child': null
+        },
+        {
+          'name': '弹窗演示',
+          'uri': 'waterConsumptionAnalysisPopup',
+          'iconuri': '',
+          'child': null
         }
       ]
     },

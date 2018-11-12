@@ -54,7 +54,7 @@ import { EcpTabComponent } from './ecp-tegs-test/ecp-tab/ecp-tab.component';
 import { EcpTabContentComponent } from './ecp-tegs-test/ecp-tab-content/ecp-tab-content.component';
 import { GenerateBillPageComponent } from './demo/generate-bill-page/generate-bill-page.component';
 import { MapDotPopupComponent } from './map-dot-popup/map-dot-popup.component';
-import { WaterConsumptionAnalysisComponent } from './demo/water-consumption-analysis/water-consumption-analysis.component';
+import { WaterConsumptionAnalysisPopupComponent } from './demo/water-consumption-analysis-popup/water-consumption-analysis-popup.component';
 
 
 
@@ -100,7 +100,7 @@ registerLocaleData(zh);
     ToolBar3Component,
     GenerateBillPageComponent,
     MapDotPopupComponent,
-    WaterConsumptionAnalysisComponent,
+    WaterConsumptionAnalysisPopupComponent,
 
   ],
   imports: [

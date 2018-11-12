@@ -18,6 +18,8 @@ import { PageDemoComponent } from './page-demo/page-demo.component';
 import { AboutComponent } from './docs/about/about.component';
 import { EcpLoginPageComponent } from './ecp-login-moudle/ecp-login-page/ecp-login-page.component';
 import { GenerateBillPageComponent } from './demo/generate-bill-page/generate-bill-page.component';
+import { WaterConsumptionAnalysisPopupComponent } from './demo/water-consumption-analysis-popup/water-consumption-analysis-popup.component';
+
 
 /*动画*/
 import { RippleComponent } from './animation/ripple/ripple.component';
@@ -57,6 +59,7 @@ const routes: Routes = [
   {path: 'ecpOpenTags', component: EcpOpenTagsComponent},
   {path: 'ecpTabset', component: EcpTabsetComponent},
   {path: 'generateBillPage', component: GenerateBillPageComponent},
+  {path: 'waterConsumptionAnalysisPopup', component: WaterConsumptionAnalysisPopupComponent},
   /*动画*/
   {path: 'ripple', component: RippleComponent},
 ];
