@@ -32,7 +32,9 @@
   border: 1px solid rgba(218, 218, 218, 1);
   background: #ffffff;
 }
-
+.no-border{
+  border: 0px;
+}
 .ecp-page-body-moudle .empty-data-img{
   width: 260px;
   margin: 115px auto;

@@ -39,9 +39,9 @@
     </div>
   </form>
 
-  <div class="ecp-page-body-moudle">
+  <div class="ecp-page-body-moudle no-border">
     <nz-table #basicTable [nzData]="dataSet" [nzSize]="'middle'">
-      <thead>
+      <!--<thead>
       <tr>
         <th>区域名称</th>
         <th>统计时间</th>
@@ -54,7 +54,55 @@
         <td width="33.33%">{{data.age}}</td>
         <td width="33.33%">{{data.address}}</td>
       </tr>
+      </tbody>-->
+
+      <tbody>
+      <tr>
+        <td rowspan="2">账单月份</td>
+        <td rowspan="2">区域名称</td>
+        <td rowspan="2">用户编号</td>
+        <td rowspan="2">用户名称</td>
+        <td rowspan="2">水表号</td>
+        <td rowspan="2">水表状态</td>
+        <td rowspan="2">区域名称</td>
+        <td rowspan="2">区域名称</td>
+        <td colspan="2">上期抄表</td>
+        <td colspan="2">本期抄表</td>
+        <td rowspan="2">用水量</td>
+        <td rowspan="2">间隔金额</td>
+        <td rowspan="2">应缴金额</td>
+        <td rowspan="2">收费种类</td>
+        <td rowspan="2">帐单状态</td>
+        <td rowspan="2">操作</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{data.name}}</td>
+        <td>3{{data.name}}</td>
+        <td>2{{data.name}}</td>
+        <td>3{{data.name}}</td>
+        <td>2{{data.name}}</td>
+        <td>3{{data.name}}</td>
+        <td>2{{data.name}}</td>
+        <td>3{{data.name}}</td>
+        <td>2{{data.name}}</td>
+        <td>3{{data.name}}</td>
+        <td>2{{data.name}}</td>
+        <td>3{{data.name}}</td>
+        <td>2{{data.name}}</td>
+        <td>3{{data.name}}</td>
+        <td>2{{data.name}}</td>
+        <td>3{{data.name}}</td>
+        <td>2{{data.name}}</td>
+        <td>3{{data.name}}</td>
+      </tr>
       </tbody>
+
     </nz-table>
   </div>
 
