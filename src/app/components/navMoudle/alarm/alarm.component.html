@@ -1,0 +1,23 @@
+<span class="alarm" (mouseover)="isShow=true" (mouseleave)="isShow=false"> <span
+  class="alarm-num"><span>{{alarmList.length}}</span></span> <span class="txt">警报</span> <span class="icon"><i
+  class="icon-alarm2"></i></span>
+<div class="alarm-content" [@displayState]="isShow == true? 'block' : 'none'">
+  <div class="top-title">
+    <div class="content"> <span>{{alarmTitle}}</span>
+      <nav class="right-link"><a (click)="viewMore()">查看全部</a></nav>
+    </div>
+  </div>
+  <div class="alarm-list">
+    <div class="content">
+      <div class="no-data" *ngIf="alarmList.length==0">暂无警告信息</div>
+      <table *ngIf="alarmList.length>0">
+        <tr *ngFor="let item of alarmList">
+          <td><span class="alarm-icon"></span></td>
+          <td style="text-align: left;">{{item.title}}</td>
+          <td><a (click)="dispose(item.id)">处理</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+</span>

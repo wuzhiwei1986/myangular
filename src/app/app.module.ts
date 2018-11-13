@@ -12,23 +12,23 @@ import { AppRoutingModule } from './app-routing.module';
 /**/
 /*基础组件*/
 import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
-import { StepsInfoComponent } from './steps-info/steps-info.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { TopNavComponent } from './navMoudle/top-nav/top-nav.component';
-import { MapSwitchComponent } from './map-switch/map-switch.component';
-import { ToolBarComponent } from './tool-bar/tool-bar.component';
-import { ToolBar2Component } from './tool-bar2/tool-bar2.component';
-import { ToolBar3Component } from './tool-bar3/tool-bar3.component';
+import { StepsInfoComponent } from './components/steps-info/steps-info.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { TopNavComponent } from './components/navMoudle/top-nav/top-nav.component';
+import { MapSwitchComponent } from './components/map-switch/map-switch.component';
+import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
+import { ToolBar2Component } from './components/tool-bar2/tool-bar2.component';
+import { ToolBar3Component } from './components/tool-bar3/tool-bar3.component';
 /*数据展示*/
 import { DetailsStyle1Component } from './details-style1/details-style1.component';
-import { SeachModuleComponent } from './seach-module/seach-module.component';
+import { SeachModuleComponent } from './components/seach-module/seach-module.component';
 
 import { PageDemoComponent } from './page-demo/page-demo.component';
-import { OpenDetailsInfoComponent } from './open-details-info/open-details-info.component';
-import { AlarmComponent } from './navMoudle/alarm/alarm.component';
-import { DropDownMenuComponent } from './navMoudle/drop-down-menu/drop-down-menu.component';
-import { UserInfoComponent } from './navMoudle/user-info/user-info.component';
-import { OpenDetailsInfo2Component } from './open-details-info2/open-details-info2.component';
+import { OpenDetailsInfoComponent } from './components/open-details-info/open-details-info.component';
+import { AlarmComponent } from './components/navMoudle/alarm/alarm.component';
+import { DropDownMenuComponent } from './components/navMoudle/drop-down-menu/drop-down-menu.component';
+import { UserInfoComponent } from './components/navMoudle/user-info/user-info.component';
+import { OpenDetailsInfo2Component } from './components/open-details-info2/open-details-info2.component';
 import { RippleComponent } from './animation/ripple/ripple.component';
 import { AboutComponent} from './docs/about/about.component';
 
@@ -45,16 +45,17 @@ import { TestTableComponent } from './test-table/test-table.component';
 import { IconPageComponent } from './docs/components/icon-page/icon-page.component';
 import { TablePageComponent } from './docs/components/table-page/table-page.component';
 /*登录*/
-import { EcpLoginformComponent } from './ecp-login-moudle/ecp-loginform/ecp-loginform.component';
-import { EcpLoginPageComponent } from './ecp-login-moudle/ecp-login-page/ecp-login-page.component';
-import { EcpOpenTagsComponent } from './ecp-tags-model/ecp-open-tags/ecp-open-tags.component';
-import { EcpOpenTagComponent } from './ecp-tags-model/ecp-open-tag/ecp-open-tag.component';
+import { EcpLoginformComponent } from './components/ecp-login-moudle/ecp-loginform/ecp-loginform.component';
+import { EcpLoginPageComponent } from './components/ecp-login-moudle/ecp-login-page/ecp-login-page.component';
+import { EcpOpenTagsComponent } from './components/ecp-tags-model/ecp-open-tags/ecp-open-tags.component';
+import { EcpOpenTagComponent } from './components/ecp-tags-model/ecp-open-tag/ecp-open-tag.component';
 import { EcpTabsetComponent } from './ecp-tegs-test/ecp-tabset/ecp-tabset.component';
 import { EcpTabComponent } from './ecp-tegs-test/ecp-tab/ecp-tab.component';
 import { EcpTabContentComponent } from './ecp-tegs-test/ecp-tab-content/ecp-tab-content.component';
 import { GenerateBillPageComponent } from './demo/generate-bill-page/generate-bill-page.component';
-import { MapDotPopupComponent } from './map-dot-popup/map-dot-popup.component';
+import { MapDotPopupComponent } from './components/map-dot-popup/map-dot-popup.component';
 import { WaterConsumptionAnalysisPopupComponent } from './demo/water-consumption-analysis-popup/water-consumption-analysis-popup.component';
+import { BreadCrumbPageComponent } from './docs/components/bread-crumb-page/bread-crumb-page.component';
 
 
 
@@ -101,6 +102,7 @@ registerLocaleData(zh);
     GenerateBillPageComponent,
     MapDotPopupComponent,
     WaterConsumptionAnalysisPopupComponent,
+    BreadCrumbPageComponent,
 
   ],
   imports: [

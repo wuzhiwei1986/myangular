@@ -1,0 +1,28 @@
+/*警告弹窗*/
+.alarm { position: relative; display: inline-block; float: right; font-family: MicrosoftYaHei; height: 50px; width: 90px; line-height: 50px; text-align: right; padding-left: 15px; padding-right: 32px; background: url("../../../../assets/change-sys/alarm-r-bg.png") right center no-repeat; }
+.alarm .icon { position: absolute; right: 73px; top: 1px; cursor: pointer; }
+.alarm .icon i { font-size: 18px; color: #ffffff !important; }
+.alarm .alarm-num { position: absolute; right: 60px; top: 3px; z-index: 10000; border-radius: 50%; height: 20px; width: 20px; display: inline-block; background: rgba(232, 30, 30, 1); vertical-align: top; border: 1px solid rgba(255, 255, 255, 1); }
+.alarm .alarm-num span { display: block; color: #FFFFFF; height: 20px; line-height: 20px; text-align: center; font-size: 12px; }
+.alarm .txt { position: absolute; right: 35px; color: #FFFFFF; }
+.alarm-content { position: absolute; right: 32px; top: 50px; width: 428px; padding-bottom: 4px; z-index: 100000;  background: url("../../../../assets/base/alarm-bottom-bg.png") center bottom no-repeat; }
+
+/*警告标题栏*/
+.alarm-content .top-title { background: url("../../../../assets/base/alarm-top-bg.png") center 0 no-repeat; height: 62px; line-height: 50px; padding: 12px 0 0 0; text-align: left; font-size: 18px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(25,25,25,1); overflow: hidden; }
+.alarm-content .top-title .content { background: url("../../../../assets/base/alarm-mid-bg.png") center 0 repeat-y; width:100%; margin: 0 auto; padding: 0 14px; }
+.alarm-content .top-title .content .right-link { float: right; font-size: 14px; font-weight: 400; color: #191919; }
+.alarm-content .top-title .content .right-link a { color: #191919; }/**/
+
+/*表格样式*/
+.alarm-list {background: url("../../../../assets/base/alarm-mid-bg.png") center 0 repeat-y; padding:0 4px 0 4px;  }
+.alarm-list .content{  border-top: #dededf 1px solid;overflow-y: auto; overflow-x: hidden;height: 250px;}
+.alarm-list .content .no-data{ height: 250px; line-height: 250px; text-align: center; }
+.alarm-list table { width: 410px; margin: 0px auto; font-size: 12px; }
+.alarm-list table tr th, .alarm-list table tr td { font-size: 14px; font-weight: 400; height: 38px; line-height: 38px; text-align: left; vertical-align: middle; color: #191919; }
+.alarm-list table tr th { }
+.alarm-list table tr td:first-child { padding-left: 15px; text-align: left; }
+.alarm-list table tr td:last-child { padding-right: 15px; text-align: right; }
+.alarm-list table td a { color: #1E5BD6; font-weight: bold; }
+.alarm-list table td span.alarm-icon { background: url("../../../../assets/base/alarm.png") no-repeat!important; width: 16px; height: 16px; display: block; }
+/**/
+.alarm-list table tr:hover td { background: #D2DDF2; cursor: pointer; }
