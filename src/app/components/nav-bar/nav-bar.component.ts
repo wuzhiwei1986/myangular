@@ -103,6 +103,12 @@ export class NavBarComponent implements OnInit {
           'uri': 'ecpOpenTags',
           'iconuri': '',
           'child': null
+        },
+        {
+          'name': '状态条',
+          'uri': 'statusBarPage',
+          'iconuri': '',
+          'child': null
         }
 
       ]

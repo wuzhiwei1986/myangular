@@ -56,6 +56,8 @@ import { GenerateBillPageComponent } from './demo/generate-bill-page/generate-bi
 import { MapDotPopupComponent } from './components/map-dot-popup/map-dot-popup.component';
 import { WaterConsumptionAnalysisPopupComponent } from './demo/water-consumption-analysis-popup/water-consumption-analysis-popup.component';
 import { BreadCrumbPageComponent } from './docs/components/bread-crumb-page/bread-crumb-page.component';
+import { StatusBarComponent } from './components/status-bar/status-bar.component';
+import { StatusBarPageComponent } from './docs/components/status-bar-page/status-bar-page.component';
 
 
 
@@ -103,6 +105,8 @@ registerLocaleData(zh);
     MapDotPopupComponent,
     WaterConsumptionAnalysisPopupComponent,
     BreadCrumbPageComponent,
+    StatusBarComponent,
+    StatusBarPageComponent,
 
   ],
   imports: [

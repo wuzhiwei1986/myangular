@@ -7,6 +7,7 @@ import { BreadCrumbComponent} from './components/bread-crumb/bread-crumb.compone
 import { StepsInfoComponent} from './components/steps-info/steps-info.component';
 import { NavBarComponent} from './components/nav-bar/nav-bar.component';
 
+import { StatusBarPageComponent } from './docs/components/status-bar-page/status-bar-page.component';
 import { MapSwitchComponent} from './components/map-switch/map-switch.component';
 import { OpenDetailsInfoComponent } from './components/open-details-info/open-details-info.component';
 import { OpenDetailsInfo2Component } from './components/open-details-info2/open-details-info2.component';
@@ -62,7 +63,9 @@ const routes: Routes = [
   {path: 'generateBillPage', component: GenerateBillPageComponent},
   {path: 'waterConsumptionAnalysisPopup', component: WaterConsumptionAnalysisPopupComponent},
   {path: 'breadCrumbPage', component: BreadCrumbPageComponent},
-  /*动画*/
+  {path: 'statusBarPage', component: StatusBarPageComponent},
+
+/*动画*/
   {path: 'ripple', component: RippleComponent},
 ];
 

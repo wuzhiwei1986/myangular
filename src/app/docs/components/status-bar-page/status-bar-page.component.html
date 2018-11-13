@@ -1,0 +1,56 @@
+<div class="page-title">
+  <h1>状态条 ecp-status-bar</h1>
+  <h3>
+    [txt] 自定义文字<br>
+    [statusNum]状态码，0-10,会自动匹配自定义颜色数组<br>
+    [customColor]自定义颜色，数组['#bcbcbc', '#E81E1E', '#339966', '#edc601']<br>
+  </h3></div>
+<div class="page-body">
+  <h2 class="demo-title">演示</h2>
+  <div class="demo-body" style="  height: 400px;">
+    <ecp-status-bar [txt]="'下线'" [statusNum]="0" [customColor]="['green','blue']"></ecp-status-bar>
+
+
+    <ecp-status-bar [txt]="'异常'" [statusNum]="1"></ecp-status-bar>
+
+
+    <ecp-status-bar [txt]="'正常'" [statusNum]="2"></ecp-status-bar>
+
+
+    <ecp-status-bar [txt]="'警告'" [statusNum]="3"></ecp-status-bar>
+
+
+  </div>
+
+
+
+  <h2 class="demo-title">API</h2>
+  <div class="demo-body">
+    <table class="ecp-table">
+      <tbody>
+      <tr>
+        <th style="width: 100px;">参数</th>
+        <th style="width: 100px;">类型</th>
+        <th>说明</th>
+      </tr>
+      <tr>
+        <td>[coutomColor]</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>[coutomX]</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>[coutomY]</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+

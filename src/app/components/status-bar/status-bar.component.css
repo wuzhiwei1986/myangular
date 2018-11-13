@@ -1,0 +1,8 @@
+/*数据列表状态色块*/
+.status{ width: 45px; display: inline-block; font-size: 12px; color: #fff; text-align: center; height: 22px; line-height: 22px; border-radius: 2px; margin: 0 5px;  }
+/**/
+
+.status-gray{  background: #bcbcbc; }
+.status-red{ background: #E81E1E; }
+.status-green{  background: #339966; }
+.status-yellow{  background: #edc601; }
