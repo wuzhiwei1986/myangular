@@ -5,25 +5,37 @@
     <div nz-row nzType="flex" class="seach-form">
       <div nz-col nzXs="24" nzMd="12" nzLg="6">
         <div class="item">
-          <div class="title">传感器编号</div>
+          <div class="title">抄表截止日期：</div>
           <div class="content"><input nz-input type="text" name="sensorCode1"></div>
         </div>
       </div>
       <div nz-col nzXs="24" nzMd="12" nzLg="6">
         <div class="item">
-          <div class="title">传感器类型</div>
+          <div class="title">账单月份：</div>
           <div class="content"><input nz-input type="text" name="sensorCode2"></div>
         </div>
       </div>
       <div nz-col nzXs="24" nzMd="12" nzLg="6">
         <div class="item">
-          <div class="title">开始时间</div>
+          <div class="title">抄表时间间隔：</div>
           <div class="content"><input nz-input type="text" name="sensorCode3"></div>
         </div>
       </div>
       <div nz-col nzXs="24" nzMd="12" nzLg="6">
         <div class="item">
-          <div class="title">结束时间</div>
+          <div class="title">账单状态</div>
+          <div class="content"><input nz-input type="text" name="sensorCode4"></div>
+        </div>
+      </div>
+      <div nz-col nzXs="24" nzMd="12" nzLg="6">
+        <div class="item">
+          <div class="title">生成方式：</div>
+          <div class="content"><input nz-input type="text" name="sensorCode4"></div>
+        </div>
+      </div>
+      <div nz-col nzXs="24" nzMd="12" nzLg="6">
+        <div class="item">
+          <div class="title">业主编号：</div>
           <div class="content"><input nz-input type="text" name="sensorCode4"></div>
         </div>
       </div>
@@ -41,65 +53,59 @@
 
   <div class="ecp-page-body-moudle no-border">
     <nz-table #basicTable [nzData]="dataSet" [nzSize]="'middle'">
-      <!--<thead>
+
+      <thead>
       <tr>
-        <th>区域名称</th>
-        <th>统计时间</th>
-        <th>用水量</th>
+        <th style="width:90px;" rowspan="2">账单月份</th>
+        <th rowspan="2">区域名称</th>
+        <th rowspan="2">用户编号</th>
+        <th rowspan="2">用户名称</th>
+        <th style="width: 120px;" rowspan="2">水表号</th>
+        <th style="width: 90px;" rowspan="2">水表状态</th>
+        <th colspan="2">上期抄表</th>
+        <th colspan="2">本期抄表</th>
+        <th style="width: 100px;" rowspan="2">用水量</th>
+        <th style="width: 100px;" rowspan="2">间隔金额</th>
+        <th style="width: 100px;" rowspan="2">应缴金额</th>
+        <th style="width: 90px;" rowspan="2">收费种类</th>
+        <th style="width: 90px;" rowspan="2">帐单状态</th>
+        <th style="width: 80px;" rowspan="2">操作</th>
+      </tr>
+      <tr>
+        <th style="width: 100px;">抄表时间</th>
+        <th style="width: 100px;">读数</th>
+        <th style="width: 100px;">抄表时间</th>
+        <th style="width: 100px;">读数</th>
       </tr>
       </thead>
       <tbody>
       <tr *ngFor="let data of basicTable.data">
-        <td width="33.33%">{{data.name}}</td>
-        <td width="33.33%">{{data.age}}</td>
-        <td width="33.33%">{{data.address}}</td>
-      </tr>
-      </tbody>-->
-
-      <tbody>
-      <tr>
-        <td rowspan="2">账单月份</td>
-        <td rowspan="2">区域名称</td>
-        <td rowspan="2">用户编号</td>
-        <td rowspan="2">用户名称</td>
-        <td rowspan="2">水表号</td>
-        <td rowspan="2">水表状态</td>
-        <td rowspan="2">区域名称</td>
-        <td rowspan="2">区域名称</td>
-        <td colspan="2">上期抄表</td>
-        <td colspan="2">本期抄表</td>
-        <td rowspan="2">用水量</td>
-        <td rowspan="2">间隔金额</td>
-        <td rowspan="2">应缴金额</td>
-        <td rowspan="2">收费种类</td>
-        <td rowspan="2">帐单状态</td>
-        <td rowspan="2">操作</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>3</td>
-        <td>2</td>
-        <td>3</td>
-      </tr>
-      <tr *ngFor="let data of basicTable.data">
-        <td>{{data.name}}</td>
-        <td>3{{data.name}}</td>
-        <td>2{{data.name}}</td>
-        <td>3{{data.name}}</td>
-        <td>2{{data.name}}</td>
-        <td>3{{data.name}}</td>
-        <td>2{{data.name}}</td>
-        <td>3{{data.name}}</td>
-        <td>2{{data.name}}</td>
-        <td>3{{data.name}}</td>
-        <td>2{{data.name}}</td>
-        <td>3{{data.name}}</td>
-        <td>2{{data.name}}</td>
-        <td>3{{data.name}}</td>
-        <td>2{{data.name}}</td>
-        <td>3{{data.name}}</td>
-        <td>2{{data.name}}</td>
-        <td>3{{data.name}}</td>
+        <td>{{data.one}}</td>
+        <td>{{data.two}}</td>
+        <td>{{data.three}}</td>
+        <td>{{data.four}}</td>
+        <td>{{data.five}}</td>
+        <td>{{data.six}}</td>
+        <td class="color-gary">{{data.seven}}</td>
+        <td>{{data.eight}}</td>
+        <td class="color-gary">{{data.nine}}</td>
+        <td>{{data.ten}}</td>
+        <td>{{data.eleven}}</td>
+        <td>{{data.twelve}}</td>
+        <td>{{data.thirteen}}</td>
+        <td>{{data.fourteen}}</td>
+        <td>
+          <nz-dropdown [nzClickHide]="false">
+            <a nz-dropdown>
+              正常 <i nz-icon type="down"></i>
+            </a>
+            <ul nz-menu>
+              <li nz-menu-item>标记为正常</li>
+              <li nz-menu-item>标记为异常</li>
+            </ul>
+          </nz-dropdown>
+        </td>
+        <td><a>详情</a></td>
       </tr>
       </tbody>
 

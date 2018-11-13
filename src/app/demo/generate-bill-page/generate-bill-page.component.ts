@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-generate-bill-page',
@@ -30,83 +30,222 @@ export class GenerateBillPageComponent implements OnInit {
 
   dataSet = [
     {
-      key    : '1',
-      name   : 'John Brown',
-      age    : 32,
-      address: 'New York No. 1 Lake Park'
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
     },
     {
-      key    : '2',
-      name   : 'Jim Green',
-      age    : 42,
-      address: 'London No. 1 Lake Park'
-    },
-    {
-      key    : '3',
-      name   : 'Joe Black',
-      age    : 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key    : '3',
-      name   : 'Joe Black',
-      age    : 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key    : '3',
-      name   : 'Joe Black',
-      age    : 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key    : '3',
-      name   : 'Joe Black',
-      age    : 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key    : '3',
-      name   : 'Joe Black',
-      age    : 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key    : '3',
-      name   : 'Joe Black',
-      age    : 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key    : '3',
-      name   : 'Joe Black',
-      age    : 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key    : '3',
-      name   : 'Joe Black',
-      age    : 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key    : '3',
-      name   : 'Joe Black',
-      age    : 32,
-      address: 'Sidney No. 1 Lake Park'
-    },
-    {
-      key    : '3',
-      name   : 'Joe Black',
-      age    : 32,
-      address: 'Sidney No. 1 Lake Park'
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
+    }, {
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
+    }, {
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
+    }, {
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
+    }, {
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
+    }, {
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
+    }, {
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
+    }, {
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
+    }, {
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
+    }, {
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
+    }, {
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
+    }, {
+      one: '2018-11',
+      two: '东信宿舍',
+      three: 'DXSS2319',
+      four: '苏有鹏',
+      five: '180600804',
+      six: '在线',
+      seven: '2018-9-30 12:12:30',
+      eight: '112.50',
+      nine: '2018-9-30 12:12:30',
+      ten: '112.50',
+      eleven: '5.50',
+      twelve: '12',
+      thirteen: '17115.50',
+      fourteen: '居民用水',
+      fifteen: 0
     }
   ];
 
   //表格 end////////////////////////////////////////////////////////
 
-
-  constructor() { }
+  visible = false;
+  constructor() {
+  }
 
   ngOnInit() {
   }
