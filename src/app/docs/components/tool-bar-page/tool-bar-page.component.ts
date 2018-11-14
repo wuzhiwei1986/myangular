@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolBarPageComponent implements OnInit {
 
+
+  test(msg){
+    console.log(msg);
+  }
+
   constructor() { }
 
   ngOnInit() {

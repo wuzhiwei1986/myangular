@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'ecp-tool-bar',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tool-bar.component.css']
 })
 export class ToolBarComponent implements OnInit {
+
+  @Output() selectId :EventEmitter=new EventEmitter();
+
+  click(url){
+    this.selectId.emit(url);
+  }
 
 /*
   menuJSON = [{
