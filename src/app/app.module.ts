@@ -58,6 +58,7 @@ import { WaterConsumptionAnalysisPopupComponent } from './demo/water-consumption
 import { BreadCrumbPageComponent } from './docs/components/bread-crumb-page/bread-crumb-page.component';
 import { StatusBarComponent } from './components/status-bar/status-bar.component';
 import { StatusBarPageComponent } from './docs/components/status-bar-page/status-bar-page.component';
+import { LegendComponent } from './components/legend/legend.component';
 
 
 
@@ -107,6 +108,7 @@ registerLocaleData(zh);
     BreadCrumbPageComponent,
     StatusBarComponent,
     StatusBarPageComponent,
+    LegendComponent,
 
   ],
   imports: [

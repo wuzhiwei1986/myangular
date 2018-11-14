@@ -22,7 +22,8 @@
 
 /*TAG标签模块*/
 .tag-link-module { margin: 10px 20px; }
-.tag-link-module a { display: inline-block; border: 1px solid rgba(30,91,214,1); border-radius: 4px; min-width: 80px; margin-right: 10px; height: 32px; line-height: 32px; text-align: center; }
+.tag-link-module a { display: inline-block; border: 1px solid rgba(30,91,214,1); border-radius: 4px; min-width: 80px; margin-right: 10px; margin-bottom: 10px; height: 32px; line-height: 32px; text-align: center; }
+.tag-link-module a:hover { background: rgba(30,91,214,1); color: #ffffff;  }
 
 .seach-moudle-div{
   padding: 10px 20px 5px 20px;

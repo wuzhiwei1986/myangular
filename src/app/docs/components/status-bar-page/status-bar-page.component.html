@@ -8,20 +8,15 @@
 <div class="page-body">
   <h2 class="demo-title">演示</h2>
   <div class="demo-body" style="  height: 400px;">
-    <ecp-status-bar [txt]="'下线'" [statusNum]="0" [customColor]="['green','blue']"></ecp-status-bar>
-
-
+    <ecp-status-bar [txt]="'下线'" [statusNum]="0"></ecp-status-bar>
     <ecp-status-bar [txt]="'异常'" [statusNum]="1"></ecp-status-bar>
-
-
     <ecp-status-bar [txt]="'正常'" [statusNum]="2"></ecp-status-bar>
-
-
     <ecp-status-bar [txt]="'警告'" [statusNum]="3"></ecp-status-bar>
-
-
+    <br>
+    <br>
+    <ecp-status-bar [txt]="'演示'" [statusNum]="1" [customColor]="['green','blue']"></ecp-status-bar>
+    &lt;ecp-status-bar [txt]=&quot;&#x27;演示&#x27;&quot; [statusNum]=&quot;1&quot; [customColor]=&quot;[&#x27;green&#x27;,&#x27;blue&#x27;]&quot;&gt;&lt;/ecp-status-bar&gt;
   </div>
-
 
 
   <h2 class="demo-title">API</h2>
@@ -34,17 +29,17 @@
         <th>说明</th>
       </tr>
       <tr>
-        <td>[coutomColor]</td>
+        <td>[txt]</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
       <tr>
-        <td>[coutomX]</td>
+        <td>[statusNum]</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
       <tr>
-        <td>[coutomY]</td>
+        <td>[customColor]</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>

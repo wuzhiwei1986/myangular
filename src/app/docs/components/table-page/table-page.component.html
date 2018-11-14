@@ -4,6 +4,80 @@
 <div class="page-body">
   <h2 class="demo-title">演示</h2>
   <div class="demo-body">
+    <nz-table #basicTable [nzData]="tableList" [nzSize]="'middle'">
+      <thead>
+      <tr>
+        <th width="80">序号</th>
+        <th>统计时间</th>
+        <th>用水量</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let data of tableList">
+        <td>{{data.id}}</td>
+        <td>{{data.title}}</td>
+        <td>{{data.title}}</td>
+      </tr>
+      </tbody>
+    </nz-table>
+    <!---->
+    <nz-table #basicTable [nzData]="dataSet" [nzSize]="'middle'">
+      <thead>
+      <tr>
+        <th style="width:90px;" rowspan="2">账单月份</th>
+        <th rowspan="2">区域名称</th>
+        <th rowspan="2">用户编号</th>
+        <th rowspan="2">用户名称</th>
+        <th style="width: 120px;" rowspan="2">水表号</th>
+        <th style="width: 90px;" rowspan="2">水表状态</th>
+        <th colspan="2">上期抄表</th>
+        <th colspan="2">本期抄表</th>
+        <th style="width: 100px;" rowspan="2">用水量</th>
+        <th style="width: 100px;" rowspan="2">间隔金额</th>
+        <th style="width: 100px;" rowspan="2">应缴金额</th>
+        <th style="width: 90px;" rowspan="2">收费种类</th>
+        <th style="width: 90px;" rowspan="2">帐单状态</th>
+        <th style="width: 80px;" rowspan="2">操作</th>
+      </tr>
+      <tr>
+        <th style="width: 100px;">抄表时间</th>
+        <th style="width: 100px;">读数</th>
+        <th style="width: 100px;">抄表时间</th>
+        <th style="width: 100px;">读数</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{data.one}}</td>
+        <td>{{data.two}}</td>
+        <td>{{data.three}}</td>
+        <td>{{data.four}}</td>
+        <td>{{data.five}}</td>
+        <td>{{data.six}}</td>
+        <td class="color-gary">{{data.seven}}</td>
+        <td>{{data.eight}}</td>
+        <td class="color-gary">{{data.nine}}</td>
+        <td>{{data.ten}}</td>
+        <td>{{data.eleven}}</td>
+        <td>{{data.twelve}}</td>
+        <td>{{data.thirteen}}</td>
+        <td>{{data.fourteen}}</td>
+        <td>
+          <nz-dropdown [nzClickHide]="false">
+            <a nz-dropdown>
+              正常 <i nz-icon type="down"></i>
+            </a>
+            <ul nz-menu>
+              <li nz-menu-item>标记为正常</li>
+              <li nz-menu-item>标记为异常</li>
+            </ul>
+          </nz-dropdown>
+        </td>
+        <td><a>详情</a></td>
+      </tr>
+      </tbody>
+    </nz-table>
+    <!---->
     <app-test-table>
       <tr>
         <th>ID</th>
@@ -17,7 +91,6 @@
         <td>1</td>
         <td>1</td>
       </tr>
-
     </app-test-table>
   </div>
 
