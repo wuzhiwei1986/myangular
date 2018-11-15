@@ -13,15 +13,15 @@ import { OpenDetailsInfoComponent } from './components/open-details-info/open-de
 import { OpenDetailsInfo2Component } from './components/open-details-info2/open-details-info2.component';
 import { EcpOpenTagsComponent } from './components/ecp-tags-model/ecp-open-tags/ecp-open-tags.component';
 /*数据展示*/
-import { DetailsStyle1Component } from './details-style1/details-style1.component';
+import { DetailsStyle1Component } from './demo/details-style1/details-style1.component';
 import { SeachModuleComponent } from './components/seach-module/seach-module.component';
-import { PageDemoComponent } from './page-demo/page-demo.component';
+import { PageDemoComponent } from './demo/page-demo/page-demo.component';
 import { AboutComponent } from './docs/about/about.component';
 import { EcpLoginPageComponent } from './components/ecp-login-moudle/ecp-login-page/ecp-login-page.component';
 import { GenerateBillPageComponent } from './demo/generate-bill-page/generate-bill-page.component';
 import { WaterConsumptionAnalysisPopupComponent } from './demo/water-consumption-analysis-popup/water-consumption-analysis-popup.component';
 import { BreadCrumbPageComponent } from './docs/components/bread-crumb-page/bread-crumb-page.component';
-
+import { PageDemo2Component } from './demo/page-demo2/page-demo2.component';
 
 /*动画*/
 import { RippleComponent } from './animation/ripple/ripple.component';
@@ -64,6 +64,7 @@ const routes: Routes = [
   {path: 'waterConsumptionAnalysisPopup', component: WaterConsumptionAnalysisPopupComponent},
   {path: 'breadCrumbPage', component: BreadCrumbPageComponent},
   {path: 'statusBarPage', component: StatusBarPageComponent},
+  {path: 'pageDemo2', component: PageDemo2Component},
 
 /*动画*/
   {path: 'ripple', component: RippleComponent},

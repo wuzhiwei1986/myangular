@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'ecp-tool-bar',
@@ -7,76 +7,79 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class ToolBarComponent implements OnInit {
 
-  @Output() selectId :EventEmitter=new EventEmitter();
+  @Input() customX;
+  @Input() customY;
+  //@Input() customLocation: any={'x': '100px', 'y': '50px'};
+  @Output() selectId: EventEmitter<string> = new EventEmitter();
 
-  click(url){
+  click(url) {
     this.selectId.emit(url);
   }
 
-/*
-  menuJSON = [{
-    "name": "添加元素",
-    "url": "http://www.google.com",
-    "chird": [
-      {
-        "name": "坐标",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "传感器",
-        "url": "http://www.baidu.com"
-      },
-      {
-        "name": "管道",
-        "url": "http://www.SoSo.com"
-      },
-      {
-        "name": "节点",
-        "url": "http://www.SoSo.com"
-      },
-      {
-        "name": "堵头封板",
-        "url": "http://www.SoSo.com"
-      },
-      {
-        "name": "闸阀",
-        "url": "http://www.SoSo.com"
-      },
-      {
-        "name": "消防栓",
-        "url": "http://www.SoSo.com"
-      }
-    ]
-  }, {
-    "name": "筛查",
-    "url": "http://www.google.com",
-    "chird": null
-  }, {
-    "name": "预警",
-    "url": "http://www.google.com",
-    "chird": [
-      {
-        "name": "坐标",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "传感器",
-        "url": "http://www.baidu.com"
-      },
-      {
-        "name": "管道",
-        "url": "http://www.SoSo.com"
-      }
-    ]
-  }, {
-    "name": "爆管分析",
-    "url": "http://www.google.com",
-    "chird": null
-  }, {
-    "name": "阀门分析",
-    "url": "http://www.google.com",
-    "chird": null
-  }];*/
+  /*
+    menuJSON = [{
+      "name": "添加元素",
+      "url": "http://www.google.com",
+      "chird": [
+        {
+          "name": "坐标",
+          "url": "http://www.google.com"
+        },
+        {
+          "name": "传感器",
+          "url": "http://www.baidu.com"
+        },
+        {
+          "name": "管道",
+          "url": "http://www.SoSo.com"
+        },
+        {
+          "name": "节点",
+          "url": "http://www.SoSo.com"
+        },
+        {
+          "name": "堵头封板",
+          "url": "http://www.SoSo.com"
+        },
+        {
+          "name": "闸阀",
+          "url": "http://www.SoSo.com"
+        },
+        {
+          "name": "消防栓",
+          "url": "http://www.SoSo.com"
+        }
+      ]
+    }, {
+      "name": "筛查",
+      "url": "http://www.google.com",
+      "chird": null
+    }, {
+      "name": "预警",
+      "url": "http://www.google.com",
+      "chird": [
+        {
+          "name": "坐标",
+          "url": "http://www.google.com"
+        },
+        {
+          "name": "传感器",
+          "url": "http://www.baidu.com"
+        },
+        {
+          "name": "管道",
+          "url": "http://www.SoSo.com"
+        }
+      ]
+    }, {
+      "name": "爆管分析",
+      "url": "http://www.google.com",
+      "chird": null
+    }, {
+      "name": "阀门分析",
+      "url": "http://www.google.com",
+      "chird": null
+    }];*/
 
   menuJSON = [{
     'name': '添加元素',
@@ -122,7 +125,7 @@ export class ToolBarComponent implements OnInit {
       {
         'name': '实时流量显示',
         'url': 'http://www.google.com',
-        'isSwitch':true
+        'isSwitch': true
       },
       {
         'name': '分区用水量分析',
@@ -155,6 +158,9 @@ export class ToolBarComponent implements OnInit {
   }
 
   ngOnInit() {
+ /*   if (this.customLocation == '') {
+      this.customLocation = {'x': '0', 'y': '0'};
+    }*/
     this.menuJSON.reverse();
   }
 

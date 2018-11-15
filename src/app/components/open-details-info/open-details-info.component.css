@@ -7,6 +7,7 @@
 .side-details .module-item .module-item-content { background: #ffffff; }
 /**/
 
+/**/
 /*表格样式2*/
 .side-details .side-details-table-style2 { color: #191919; width: 100%; }
 .side-details .side-details-table-style2 th, .side-details .side-details-table-style2 td { height: 42px; line-height: 42px; padding: 0 20px; }
@@ -25,21 +26,21 @@
 .tag-link-module a { display: inline-block; border: 1px solid rgba(30,91,214,1); border-radius: 4px; min-width: 80px; margin-right: 10px; margin-bottom: 10px; height: 32px; line-height: 32px; text-align: center; }
 .tag-link-module a:hover { background: rgba(30,91,214,1); color: #ffffff;  }
 
-.seach-moudle-div{
-  padding: 10px 20px 5px 20px;
-}
+
+
 
 .side-details-table-style1 .select{width: 18px; height: 18px; display:block; cursor: pointer;}
-.side-details-table-style1 .select-on{
-  background: url('../../../assets/map/view.png') no-repeat;
-}
+.side-details-table-style1 .select-on{background: url('../../../assets/map/view.png') no-repeat;}
 .side-details-table-style1 .select-off{
   background:rgba(240,240,240,1);
   border:1px solid rgba(218,218,218,1);
   border-radius:2px;
 }
 /**/
-
+/*搜索模块*/
+.seach-moudle-div{
+  padding: 10px 20px 5px 20px;
+}
 .seach-moudle-div .seach-body {
 }
 /*弹出层表单样式*/
@@ -86,4 +87,18 @@
 
 .seach-moudle-div .seach-body .error-status:focus {
   border: #447ee3 1px solid !important;
+}
+
+
+/*底部按钮*/
+.side-details .module-footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; line-height: 60px; border-top:#DADADA 1px solid ; text-align: right;
+  padding: 0 20px;
+  width: 100%;
+}
+.side-details .module-footer>button{
+  margin-right: 10px;
 }

@@ -125,13 +125,13 @@ export class NavBarComponent implements OnInit {
           'child': null
         },
         {
-          'name': '页面演示',
+          'name': '页面演示1',
           'uri': 'pageDemo',
           'iconuri': '',
           'child': null
         },
         {
-          'name': '详情展示',
+          'name': '页面演示2',
           'uri': 'detailsStyle1',
           'iconuri': '',
           'child': null
@@ -171,6 +171,13 @@ export class NavBarComponent implements OnInit {
         {
           'name': '弹窗演示',
           'uri': 'waterConsumptionAnalysisPopup',
+          'iconuri': '',
+          'child': null
+        }
+        ,
+        {
+          'name': '组件联动',
+          'uri': 'pageDemo2',
           'iconuri': '',
           'child': null
         }

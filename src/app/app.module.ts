@@ -20,10 +20,10 @@ import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 import { ToolBar2Component } from './components/tool-bar2/tool-bar2.component';
 import { ToolBar3Component } from './components/tool-bar3/tool-bar3.component';
 /*数据展示*/
-import { DetailsStyle1Component } from './details-style1/details-style1.component';
+import { DetailsStyle1Component } from './demo/details-style1/details-style1.component';
 import { SeachModuleComponent } from './components/seach-module/seach-module.component';
 
-import { PageDemoComponent } from './page-demo/page-demo.component';
+import { PageDemoComponent } from './demo/page-demo/page-demo.component';
 import { OpenDetailsInfoComponent } from './components/open-details-info/open-details-info.component';
 import { AlarmComponent } from './components/navMoudle/alarm/alarm.component';
 import { DropDownMenuComponent } from './components/navMoudle/drop-down-menu/drop-down-menu.component';
@@ -59,6 +59,7 @@ import { BreadCrumbPageComponent } from './docs/components/bread-crumb-page/brea
 import { StatusBarComponent } from './components/status-bar/status-bar.component';
 import { StatusBarPageComponent } from './docs/components/status-bar-page/status-bar-page.component';
 import { LegendComponent } from './components/legend/legend.component';
+import { PageDemo2Component } from './demo/page-demo2/page-demo2.component';
 
 
 
@@ -109,6 +110,7 @@ registerLocaleData(zh);
     StatusBarComponent,
     StatusBarPageComponent,
     LegendComponent,
+    PageDemo2Component,
 
   ],
   imports: [

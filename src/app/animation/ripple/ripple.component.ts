@@ -6,9 +6,9 @@ import { Component, OnInit ,Input} from '@angular/core';
   styleUrls: ['./ripple.component.css']
 })
 export class RippleComponent implements OnInit {
-  @Input() coutomColor;
-  @Input() coutomX;
-  @Input() coutomY;
+  @Input() customColor;
+  @Input() customX;
+  @Input() customY;
 
   constructor() { }
 

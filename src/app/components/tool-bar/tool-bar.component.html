@@ -1,6 +1,6 @@
-<div class="map-top-toolbar">
+<div class="map-top-toolbar" [style.left]="customX" [style.top]="customY" >
   <span *ngFor="let item of menuJSON;let i = index;">
-  <a (click)="click(item.url)" (mouseover)="menuSel(i)"
+  <a (click)="menuSel(i);click(item.url)" (mouseover)="menuSel(i)"
      [ngClass]="{'hover':hoverId==i}">{{item.name}} <i class="icon-unfold" *ngIf="item.chird!=null"></i></a>
   <ul class="sub-menu" [ngClass]="{'show':thisMenuId==i}" (mouseleave)="showSubMenu(50)">
      <ng-container *ngFor="let childmenu of item.chird;let childId = index; ">
