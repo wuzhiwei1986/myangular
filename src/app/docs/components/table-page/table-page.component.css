@@ -10,5 +10,4 @@
 :host ::ng-deep .ant-table-body .ant-table-tbody tr td.color-gary{   color:#6E6E6E;}
 :host ::ng-deep .ant-table-body .ant-table-tbody tr:nth-child(odd) { background: #F0F0F0;}
 :host ::ng-deep .ant-table-body .ant-table-tbody tr:nth-child(even) { background: #ffffff;}
-
 /*通用表格列表样式 end*/
