@@ -9,6 +9,7 @@ export class ToolBarComponent implements OnInit {
 
   @Input() customX;
   @Input() customY;
+  @Input() customStyle:object={}
   //@Input() customLocation: any={'x': '100px', 'y': '50px'};
   @Output() selectId: EventEmitter<string> = new EventEmitter();
 

@@ -60,6 +60,7 @@ import { StatusBarComponent } from './components/status-bar/status-bar.component
 import { StatusBarPageComponent } from './docs/components/status-bar-page/status-bar-page.component';
 import { LegendComponent } from './components/legend/legend.component';
 import { PageDemo2Component } from './demo/page-demo2/page-demo2.component';
+import { DocsComponentRecommendComponent } from './components/docs-component-recommend/docs-component-recommend.component';
 
 
 
@@ -111,6 +112,7 @@ registerLocaleData(zh);
     StatusBarPageComponent,
     LegendComponent,
     PageDemo2Component,
+    DocsComponentRecommendComponent,
 
   ],
   imports: [
@@ -121,7 +123,7 @@ registerLocaleData(zh);
     NgZorroAntdModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule,RouterModule
+    AppRoutingModule, RouterModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]

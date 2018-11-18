@@ -1,4 +1,4 @@
-<div id="map-popup" [ngClass]="{'map-popup-open-hidden': !isOpen}">
+<div id="map-popup" *ngIf="isOpen" [@openClose]="isOpen?'open':'closed'">
   <div class="map-popup-content">
     <div id="map-popup-header" class="pipe-bg">
       <a href="javascript:void(0);" (click)="close()" class="close">X</a>

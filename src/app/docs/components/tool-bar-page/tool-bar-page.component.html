@@ -4,10 +4,25 @@
 <div class="page-body">
   <h2 class="demo-title">演示</h2>
   <div class="demo-body" style="position:relative; height: 400px;">
-    <ecp-tool-bar (selectId)="test($event)" [customX]="'10px'" [customY]="'10px'"></ecp-tool-bar>
+    <ecp-tool-bar (selectId)="test($event)"  [customStyle]="{'left':'10px','top':'10px'}"></ecp-tool-bar>
+    <ecp-component-recommend>
+      <h3>Json方式</h3>
+      <div>
+        <pre>
+          {{JS2}}
+        </pre>
+      </div>
+    </ecp-component-recommend>
   </div>
   <div class="demo-body" style="position:relative;height: 400px;">
     <ecp-tool-bar3></ecp-tool-bar3>
+    <ecp-component-recommend>
+      <h3>HTML方式</h3>
+      <pre>
+
+
+      </pre>
+    </ecp-component-recommend>
   </div>
   <div class="demo-body" style="position:relative;height: 400px;">
     <ecp-tool-bar2></ecp-tool-bar2>

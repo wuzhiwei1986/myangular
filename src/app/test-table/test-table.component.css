@@ -1,0 +1,7 @@
+/*表格样式2*/
+
+.side-details .side-details-table-style2 { color: #191919; width: 100%; }
+.side-details .side-details-table-style2 th, .side-details .side-details-table-style2 td { height: 42px; line-height: 42px; padding: 0 20px;   }
+.side-details .side-details-table-style2 th { background: #F0F0F0; }
+.side-details .side-details-table-style2 tr:hover td { background: #D2DDF2; }
+

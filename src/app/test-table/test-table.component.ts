@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-test-table',
+  selector: 'ecp-test-table',
   templateUrl: './test-table.component.html',
   styleUrls: ['./test-table.component.css']
 })
