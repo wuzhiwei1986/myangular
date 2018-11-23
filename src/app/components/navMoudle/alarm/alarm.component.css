@@ -2,8 +2,8 @@
 .alarm { position: relative; display: inline-block; float: right; font-family: MicrosoftYaHei; height: 50px; width: 90px; line-height: 50px; text-align: right; padding-left: 15px; padding-right: 32px; background: url("../../../../assets/change-sys/alarm-r-bg.png") right center no-repeat; }
 .alarm .icon { position: absolute; right: 73px; top: 1px; cursor: pointer; }
 .alarm .icon i { font-size: 18px; color: #ffffff !important; }
-.alarm .alarm-num { position: absolute; right: 60px; top: 3px; z-index: 10000; border-radius: 50%; height: 20px; width: 20px; display: inline-block; background: rgba(232, 30, 30, 1); vertical-align: top; border: 1px solid rgba(255, 255, 255, 1); }
-.alarm .alarm-num span { display: block; color: #FFFFFF; height: 20px; line-height: 20px; text-align: center; font-size: 12px; }
+.alarm .alarm-num { position: absolute; right: 60px; top: 3px; z-index: 10; border-radius: 10px; height: 20px; line-height: 20px;min-width: 20px; display: inline-block; background: rgba(232, 30, 30, 1);   }
+.alarm .alarm-num span { display: block; color: #FFFFFF; height: 20px;  text-align: center; font-size: 12px; padding: 0 5px;  }
 .alarm .txt { position: absolute; right: 35px; color: #FFFFFF; }
 .alarm-content { position: absolute; right: 32px; top: 50px; width: 428px; padding-bottom: 4px; z-index: 100000;  background: url("../../../../assets/base/alarm-bottom-bg.png") center bottom no-repeat; }
 

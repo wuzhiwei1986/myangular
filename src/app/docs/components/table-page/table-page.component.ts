@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as Mock from 'mockjs';
 @Component({
   selector: 'app-table-page',
   templateUrl: './table-page.component.html',
   styleUrls: ['./table-page.component.css']
 })
 export class TablePageComponent implements OnInit {
-
+  const aa=Mock.Random.color();
+  const bb=Mock.Random.id();
   dataSet = [
     {
       one: '2018-11',
@@ -275,6 +276,15 @@ export class TablePageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    const data = Mock.mock({
+      'imageList|5': [{
+        'id|+1': 1,
+        'img': '@image',//生成一个随机的图片地址,
+        'img-1': '@image("200x100", "#000", "#fff", "png", "Mock.js")', //生成一个200*100, 背景色#000，前景色#fff, 格式png, 文字mock.js的图片
+      }]
+
+    });
+    console.log(data);
   }
 
 }
