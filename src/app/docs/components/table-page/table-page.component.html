@@ -1,9 +1,27 @@
 <div class="page-title">
-  <h1 [ngStyle]="{'background':aa}">表格{{bb}}</h1>
+  <h1>表格</h1>
   <!--<h3>工具条介绍</h3>--></div>
 <div class="page-body">
   <h2 class="demo-title">演示</h2>
   <div class="demo-body">
+    <nz-table #basicTable [nzData]="mockData.list" [nzSize]="'middle'">
+      <thead>
+      <tr>
+        <th width="80">序号</th>
+        <th>标题</th>
+        <th>内容</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let data of mockData.list">
+        <td>{{data.id}}</td>
+        <td>{{data.title}}</td>
+        <td>{{data.title}}</td>
+      </tr>
+      </tbody>
+    </nz-table>
+    <!---->
+
     <nz-table #basicTable [nzData]="tableList" [nzSize]="'middle'">
       <thead>
       <tr>

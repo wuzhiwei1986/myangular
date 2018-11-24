@@ -6,8 +6,24 @@ import * as Mock from 'mockjs';
   styleUrls: ['./table-page.component.css']
 })
 export class TablePageComponent implements OnInit {
-  aa=Mock.Random.color();
-  bb=Mock.Random.id();
+
+  //mock.js 数据
+  mockData=Mock.mock({
+    'list|1-100': [{
+      'id|+1': 1,
+      'title': '@title',
+
+    }]
+  });
+
+  mockData1=Mock.mock('http://www.testmock.com','get',{
+    'list|1-100': [{
+      'id|+1': 1,
+      'title': '@title',
+
+    }]
+  });
+
   dataSet = [
     {
       one: '2018-11',
@@ -276,15 +292,7 @@ export class TablePageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    const data = Mock.mock({
-      'imageList|5': [{
-        'id|+1': 1,
-        'img': '@image',//生成一个随机的图片地址,
-        'img-1': '@image("200x100", "#000", "#fff", "png", "Mock.js")', //生成一个200*100, 背景色#000，前景色#fff, 格式png, 文字mock.js的图片
-      }]
-
-    });
-    console.log(data);
+console.log(this.mockData);
   }
 
 }
