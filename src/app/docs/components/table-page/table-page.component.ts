@@ -6,8 +6,8 @@ import * as Mock from 'mockjs';
   styleUrls: ['./table-page.component.css']
 })
 export class TablePageComponent implements OnInit {
-  const aa=Mock.Random.color();
-  const bb=Mock.Random.id();
+  aa=Mock.Random.color();
+  bb=Mock.Random.id();
   dataSet = [
     {
       one: '2018-11',
