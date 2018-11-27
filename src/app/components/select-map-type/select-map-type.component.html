@@ -1,3 +1,12 @@
-<p>
-  select-map-type works!
-</p>
+<div class="select-map">
+  <div class="content">
+    <span class="icon" (mouseover)="isShow=true" (mouseleave)="mouseOut()" [ngClass]="{'hover':isShow}"><i
+      class="icon-select-map"></i></span>
+    <ul class="list" *ngIf="isShow" (mouseover)="cleanTime()" (mouseleave)="isShow=false"
+        [@openClose]="isOpen ? 'open' : 'closed'">
+      <li>百度地图</li>
+      <li>高德地图</li>
+      <li>谷歌地图</li>
+    </ul>
+  </div>
+</div>
