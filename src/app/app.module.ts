@@ -61,6 +61,7 @@ import { StatusBarPageComponent } from './docs/components/status-bar-page/status
 import { LegendComponent } from './components/legend/legend.component';
 import { PageDemo2Component } from './demo/page-demo2/page-demo2.component';
 import { DocsComponentRecommendComponent } from './components/docs-component-recommend/docs-component-recommend.component';
+import { SelectMapTypeComponent } from './components/select-map-type/select-map-type.component';
 
 
 
@@ -113,6 +114,7 @@ registerLocaleData(zh);
     LegendComponent,
     PageDemo2Component,
     DocsComponentRecommendComponent,
+    SelectMapTypeComponent,
 
   ],
   imports: [
