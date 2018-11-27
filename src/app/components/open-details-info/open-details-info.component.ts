@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {animate, state, style, transition, trigger} from "@angular/animations";
+import {animate, state, style, transition, trigger} from '@angular/animations';
+
 @Component({
   selector: 'ecp-open-details-info',
   templateUrl: './open-details-info.component.html',
@@ -43,7 +44,9 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 })
 export class OpenDetailsInfoComponent implements OnInit {
   isShow = true;
+  isDefault = true;
   validateForm: FormGroup;
+  radioValue = 'A';
   value: string[] = [];
   nodes = [{
     title: 'parent 1',
@@ -64,6 +67,14 @@ export class OpenDetailsInfoComponent implements OnInit {
     }]
   }];
 
+  change() {
+    let seft = this;
+    if (seft.radioValue == 'A') {
+      seft.isDefault = true;
+    } else {
+      seft.isDefault = false;
+    }
+  }
 
   constructor(private fb: FormBuilder) {
   }
@@ -73,10 +84,9 @@ export class OpenDetailsInfoComponent implements OnInit {
     let self = this;
     self.validateForm = self.fb.group({
       pointCode0: [null, [Validators.required]],
-
+      pointCode1: [null, [Validators.required]],
     });
   }
-
 
 
 }

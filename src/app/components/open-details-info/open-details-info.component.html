@@ -217,6 +217,17 @@
             <div nz-row>
               <div nz-col [nzSpan]="4" class="nzrow-title">区域</div>
               <div nz-col [nzSpan]="20">
+                <nz-radio-group style="margin-top: 6px;" nzName="radiogroup" [(ngModel)]="radioValue"
+                                formControlName="pointCode1" (ngModelChange)="change()">
+                  <label nz-radio nzValue="A">默认</label>
+                  <label nz-radio nzValue="B">自定义</label>
+
+                </nz-radio-group>
+              </div>
+            </div>
+            <div nz-row>
+              <div nz-col [nzSpan]="4" class="nzrow-title">区域</div>
+              <div nz-col [nzSpan]="20">
                 <nz-tree-select
                   [nzNodes]="nodes"
                   [nzDefaultExpandAll]="true"
@@ -247,6 +258,61 @@
           </form>
         </div>
 
+      </div>
+    </div>
+  </div>
+  <div *ngIf="isDefault">
+    <div class="module-item">
+      <div class="module-sub-title"><i></i>传感器(2)</div>
+      <div class="module-item-content">
+        <table class="side-details-table-style2">
+          <thead>
+          <tr>
+            <th>闸阀编码</th>
+            <th>口径</th>
+            <th>类型</th>
+            <th>状态</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>tt1547</td>
+            <td>DN15</td>
+            <td>闸阀</td>
+            <td>无效</td>
+          </tr>
+          <tr>
+            <td>tt1547</td>
+            <td>DN15</td>
+            <td>闸阀</td>
+            <td>无效</td>
+          </tr>
+          <tr>
+            <td>tt1547</td>
+            <td>DN15</td>
+            <td>闸阀</td>
+            <td>无效</td>
+          </tr>
+          <tr>
+            <td>tt1547</td>
+            <td>DN15</td>
+            <td>闸阀</td>
+            <td>无效</td>
+          </tr>
+          <tr>
+            <td>tt1547</td>
+            <td>DN15</td>
+            <td>闸阀</td>
+            <td>无效</td>
+          </tr>
+          <tr>
+            <td>tt15347</td>
+            <td>DN15</td>
+            <td>闸阀</td>
+            <td>无效</td>
+          </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

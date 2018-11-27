@@ -4,6 +4,16 @@
 .side-details .module-title .close { position: absolute; right: 20px; }
 .side-details .module-title .close i { font-size: 14px; color: #6E6E6E; }
 .side-details .module-item .module-item-title { background: #F0F0F0; height: 42px; line-height: 42px; padding-left: 20px; font-size: 14px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(25, 25, 25, 1); }
+.side-details .module-item .module-sub-title{
+  height:42px;
+  line-height: 42px;
+  font-size:14px;
+  font-family:MicrosoftYaHei-Bold;
+  font-weight:bold;
+padding-left: 20px; background: red}
+.side-details .module-item .module-sub-title i{ width:6px;
+  height:16px;
+  background:rgba(30,91,214,1); display: inline-block;}
 .side-details .module-item .module-item-content { background: #ffffff; }
 /**/
 
