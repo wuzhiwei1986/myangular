@@ -62,6 +62,12 @@ import { LegendComponent } from './components/legend/legend.component';
 import { PageDemo2Component } from './demo/page-demo2/page-demo2.component';
 import { DocsComponentRecommendComponent } from './components/docs-component-recommend/docs-component-recommend.component';
 import { SelectMapTypeComponent } from './components/select-map-type/select-map-type.component';
+import { DispatchPageComponent } from './demo/dispatch/dispatch-page/dispatch-page.component';
+import { DispatchPageLeftComponent } from './demo/dispatch/dispatch-page-left/dispatch-page-left.component';
+import { DispatchPageRightComponent } from './demo/dispatch/dispatch-page-right/dispatch-page-right.component';
+import { DispatchPageCenterComponent } from './demo/dispatch/dispatch-page-center/dispatch-page-center.component';
+import { FlexTopCenterBottomComponent } from './components/layout/flex-top-center-bottom/flex-top-center-bottom.component';
+import { FlexLeftCenterRightComponent } from './components/layout/flex-left-center-right/flex-left-center-right.component';
 
 
 
@@ -115,6 +121,12 @@ registerLocaleData(zh);
     PageDemo2Component,
     DocsComponentRecommendComponent,
     SelectMapTypeComponent,
+    DispatchPageComponent,
+    DispatchPageLeftComponent,
+    DispatchPageRightComponent,
+    DispatchPageCenterComponent,
+    FlexTopCenterBottomComponent,
+    FlexLeftCenterRightComponent,
 
   ],
   imports: [

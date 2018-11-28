@@ -1,4 +1,4 @@
-import {Component, OnInit,Input} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {Router} from '@angular/router';
 
@@ -20,7 +20,7 @@ import {Router} from '@angular/router';
   ]
 })
 export class NavBarComponent implements OnInit {
-  @Input() customScaling:boolean;// 自定义伸缩,true 可以缩放，false 禁止缩放
+  @Input() customScaling: boolean;// 自定义伸缩,true 可以缩放，false 禁止缩放
   //customScaling:boolean=true;
   menuStatus: string = 'off';
   hoverId: number = 0; // 当前已选中
@@ -180,6 +180,31 @@ export class NavBarComponent implements OnInit {
           'uri': 'pageDemo2',
           'iconuri': '',
           'child': null
+        },
+        {
+          'name': '调度中心',
+          'uri': 'dispatchPage',
+          'iconuri': '',
+          'child': null
+        }
+      ]
+    },
+    {
+      'name': '布局展示',
+      'uri': '',
+      'iconuri': 'icon-area',
+      'child': [
+        {
+          'name': '上中下',
+          'uri': 'flexTopCenterBottom',
+          'iconuri': '',
+          'child': null
+        },
+        {
+          'name': '左中右',
+          'uri': 'flexLeftCenterRight',
+          'iconuri': '',
+          'child': null
         }
       ]
     },
@@ -192,13 +217,12 @@ export class NavBarComponent implements OnInit {
   ];
 
 
-
   constructor(private router: Router) {
   }
 
   ngOnInit() {
-    if(this.customScaling==null){
-      this.customScaling=true;
+    if (this.customScaling == null) {
+      this.customScaling = true;
     }
   }
 
@@ -228,7 +252,7 @@ export class NavBarComponent implements OnInit {
     if (self.menuStatus === 'off') {
       self.hoverId = self.hisHover;
 
-        self.menuStatus = 'on';
+      self.menuStatus = 'on';
 
     }
   }

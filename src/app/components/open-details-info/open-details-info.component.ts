@@ -45,8 +45,9 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 export class OpenDetailsInfoComponent implements OnInit {
   isShow = true;
   isDefault = true;
+  typeRadioValue = 'A';
   validateForm: FormGroup;
-  radioValue = 'A';
+
   value: string[] = [];
   nodes = [{
     title: 'parent 1',
@@ -68,11 +69,11 @@ export class OpenDetailsInfoComponent implements OnInit {
   }];
 
   change() {
-    let seft = this;
-    if (seft.radioValue == 'A') {
-      seft.isDefault = true;
+    const self = this;
+    if (self.typeRadioValue == 'A') {
+      self.isDefault = true;
     } else {
-      seft.isDefault = false;
+      self.isDefault = false;
     }
   }
 
@@ -81,7 +82,7 @@ export class OpenDetailsInfoComponent implements OnInit {
 
 
   ngOnInit() {
-    let self = this;
+    const self = this;
     self.validateForm = self.fb.group({
       pointCode0: [null, [Validators.required]],
       pointCode1: [null, [Validators.required]],

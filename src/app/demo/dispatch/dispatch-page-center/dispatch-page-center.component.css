@@ -1,0 +1,132 @@
+/* flexbox */
+.dispatch-right-content-module { height: 100%; display: flex; flex-direction: column;border: #DADADA 1px solid; }
+/*top*/
+.dispatch-right-content-module .module-title { flex-grow: 0; flex-shrink: 0; position: relative; height: 50px; width: 100%; line-height: 50px; font-size: 16px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(25, 25, 25, 1); border-bottom: #DADADA 1px solid; padding-left: 20px; }
+.dispatch-right-content-module .module-title .close { position: absolute; right: 20px; }
+.dispatch-right-content-module .module-title .close i { font-size: 14px; color: #6E6E6E; }
+/*center*/
+.dispatch-right-content-module .module-body {   overflow-y: auto; flex-grow: 1; }
+/*bottom*/
+.dispatch-right-content-module .module-footer { flex-grow: 0; flex-shrink: 0;   width: 100%; height: 60px; line-height: 60px; border-top: #DADADA 1px solid; text-align: right; padding: 0 20px; }
+.dispatch-right-content-module .module-footer > button { margin-right: 10px; }
+
+.item-content{
+  padding: 15px 20px;
+}
+#word-order-details{
+
+}
+#word-order-details .title{
+  font-size:18px;
+  font-family:MicrosoftYaHei-Bold;
+  font-weight:bold;
+  color:rgba(25,25,25,1);
+  margin: 15px 0;
+}
+/**/
+/*表格详情样式一*/
+#word-order-details .table-details-style {
+  width: 100%;
+}
+
+#word-order-details .table-details-style tr:nth-of-type(odd) th, .table-details-style tr:nth-of-type(odd) td {
+  background: rgba(240, 240, 240, 1);
+}
+
+#word-order-details .table-details-style th, .table-details-style td {
+  height: 36px;
+  line-height: 36px;
+}
+
+#word-order-details .table-details-style th {
+  width: 95px;
+  text-align: right;
+  font-weight: normal;
+  border-left: #FFFFFF 1px solid;
+}
+
+#word-order-details .table-details-style td {
+  color: #191919;
+}
+
+#word-order-details .table-details-style .color-blue{
+  color: #1E5BD6;
+}
+
+
+/* 处理信息 *********************************************************/
+#word-order-details-dispose-info{}
+#word-order-details-dispose-info .title{background: #F0F0F0; height: 32px; line-height: 32px; border-left:#1E5BD6 4px solid; padding-left: 10px;font-size:14px;
+  font-family:MicrosoftYaHei-Bold;
+  font-weight:bold;
+  color:rgba(25,25,25,1); }
+#word-order-details-dispose-info .list-body{}
+#word-order-details-dispose-info .list-body .list-item{
+
+
+}
+#word-order-details-dispose-info .list-body .list-item .table-content{
+  border:1px solid rgba(218,218,218,1);
+  border-radius:10px;
+  padding: 10px 20px;
+  margin-top: 6px;
+}
+#word-order-details-dispose-info .list-body .list-item .list-time{width:140px;
+  height:26px;
+  background:rgba(210,221,242,1);
+  border-radius:13px;
+text-align: center;
+line-height: 26px;
+color: #1E5BD6;}
+#word-order-details-dispose-info .list-body .list-item .dispose-info-table-style{}
+
+
+/*表格详情样式二*/
+#word-order-details-dispose-info .list-body .list-item .dispose-info-table-style {
+  width: 100%;
+}
+
+/*#word-order-details-dispose-info .list-body .list-item .dispose-info-table-style tr:first-child td {
+  background: rgba(240, 240, 240, 1);
+}*/
+
+#word-order-details-dispose-info .list-body .list-item .dispose-info-table-style th, #word-order-details-dispose-info .list-body .list-item .dispose-info-table-style td {
+  height: 32px;
+  line-height: 32px;
+}
+
+#word-order-details-dispose-info .list-body .list-item .dispose-info-table-style th {
+  width: 95px;
+  text-align: left;
+  font-weight: normal;
+  border-left: #FFFFFF 1px solid;
+}
+
+#word-order-details-dispose-info .list-body .list-item .dispose-info-table-style td {
+  color: #191919;
+}
+
+/*图片上传*/
+.img-list {
+  margin-top: 5px;
+}
+
+.img-list span {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.img-list span img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-list span:last-child {
+  margin-right: 0px;
+}

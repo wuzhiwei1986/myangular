@@ -1,0 +1,150 @@
+/*详情独立模块样式*/
+.dispatch-content-item-modle {
+  border: 1px solid #dadada;
+  background: #FFFFFF;
+}
+
+.dispatch-content-item-modle .title {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #dadada;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(25, 25, 25, 1);
+  padding: 0 20px;
+}
+
+.dispatch-content-item-modle .title a {
+  float: right;
+  position: relative;
+  padding-left: 26px;
+
+}
+
+.dispatch-content-item-modle .title a i {
+  position: absolute;
+  top: 16px;
+  left: 0;
+}
+
+.dispatch-content-item-modle .item-content {
+  border-left: #ffffff 3px solid;
+  border-bottom: 1px solid #dadada;
+  padding: 10px 0;
+}
+/*列选中效果***************************************/
+.dispatch-content-item-modle .item-content:hover,
+.dispatch-content-item-modle .item-content.hover{
+  cursor: pointer;
+  border-left: #1E5BD6 3px solid;
+  border-bottom: 1px solid #dadada;
+  padding: 10px 0;
+  background:rgba(240,240,240,1);
+}
+.dispatch-content-item-modle .item-content:hover .item-content-title .title-txt
+.dispatch-content-item-modle .item-content.hover .item-content-title .title-txt{
+  font-size: 16px;
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: bold;
+  color: rgba(30, 91, 214, 1);
+}
+/*列选中效果 end***************************************/
+
+.dispatch-content-item-modle .item-content:last-child {
+  /* padding: 15px 20px;*/
+  border-bottom: 0 solid #dadada;
+}
+
+.dispatch-content-item-modle .item-content-title {
+  position: relative;
+  padding: 10px 20px 10px 70px;
+
+}
+
+.dispatch-content-item-modle .item-content-title .icon {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.dispatch-content-item-modle .item-content-title .icon-maintain {
+  width: 40px;
+  height: 40px;
+  background: url("../../../../assets/dispatch/maintain.png") no-repeat;
+}
+.dispatch-content-item-modle .item-content-title .icon-install {
+  width: 40px;
+  height: 40px;
+  background: url("../../../../assets/dispatch/install.png") no-repeat;
+}
+.dispatch-content-item-modle .item-content-title .icon-patrol {
+  width: 40px;
+  height: 40px;
+  background: url("../../../../assets/dispatch/patrol.png") no-repeat;
+}
+
+.dispatch-content-item-modle .item-content-title .type-name {
+  color:#191919;
+}
+
+.dispatch-content-item-modle .item-content-title .title-txt {
+  font-size: 16px;
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: bold;
+  color: #191919;
+
+}
+
+.dispatch-content-item-modle .item-content-title .status {
+  position: absolute;
+  right: 0;
+  top: 27px;
+  width: 70px;
+  height: 32px;
+  line-height: 32px;
+  text-align: left;
+  padding-left: 18px;
+
+  background: rgba(210, 221, 242, 1);
+  border-radius: 16px 0px 0px 16px;
+}
+
+.dispatch-content-item-modle .item-content-title .blue {
+  color: #1E5BD6;
+  background: rgba(210, 221, 242, 1);
+
+}
+
+.dispatch-content-item-modle .item-content-title .yellow {
+  color: #E48600;
+  background: rgba(255, 241, 191, 1);
+
+}
+
+.dispatch-content-item-modle .table-details-style {
+  margin: 0 22px;
+}
+
+.dispatch-content-item-modle .table-details-style th,
+.dispatch-content-item-modle .table-details-style td {
+  height: 32px;
+  line-height: 32px;
+  color: #6E6E6E;
+
+}
+
+.dispatch-content-item-modle .table-details-style th {
+  width: 75px;
+  text-align: left;
+  font-weight: normal;
+
+}
+
+.dispatch-content-item-modle .table-details-style td {
+  text-align: left;
+
+}

@@ -199,13 +199,23 @@
           <div class="seach-body">
             <form nz-form [formGroup]="validateForm">
               <div nz-row>
-                <div nz-col [nzSpan]="4" class="nzrow-title">区域</div>
+                <div nz-col [nzSpan]="4" class="nzrow-title">方式</div>
                 <div nz-col [nzSpan]="20">
-                  <nz-radio-group style="margin-top: 6px;" nzName="radiogroup" [(ngModel)]="radioValue"
+                  <nz-radio-group style="margin-top: 6px;" nzName="radiogroup" [(ngModel)]="typeRadioValue"
                                   formControlName="pointCode1" (ngModelChange)="change()">
                     <label nz-radio nzValue="A">默认</label>
                     <label nz-radio nzValue="B">自定义</label>
                   </nz-radio-group>
+                </div>
+              </div>
+              <div nz-row>
+                <div nz-col [nzSpan]="4" class="nzrow-title">元素</div>
+                <div nz-col [nzSpan]="20">
+                  <nz-select nzAllowClear nzPlaceHolder="请选择" formControlName="pointCode0">
+                    <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                    <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                    <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                  </nz-select>
                 </div>
               </div>
               <div nz-row>
@@ -220,20 +230,15 @@
                     formControlName="pointCode0"></nz-tree-select>
                 </div>
               </div>
-              <div nz-row>
-                <div nz-col [nzSpan]="4" class="nzrow-title">元素</div>
-                <div nz-col [nzSpan]="20">
-                  <nz-select nzAllowClear nzPlaceHolder="请选择" formControlName="pointCode0">
-                    <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
-                    <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
-                    <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
-                  </nz-select>
-                </div>
-              </div>
+
               <div nz-row>
                 <div nz-col [nzSpan]="4" class="nzrow-title">属性</div>
                 <div nz-col [nzSpan]="20">
-                  <input nz-input placeholder="请输入开始坐标" formControlName="pointCode0">
+                  <nz-radio-group style="margin-top: 6px;" nzName="radiogroup" [(ngModel)]="typeRadioValue"
+                                  formControlName="pointCode1" (ngModelChange)="change()">
+                    <label nz-radio nzValue="A">口径</label>
+                    <label nz-radio nzValue="B">材质</label>
+                  </nz-radio-group>
                 </div>
               </div>
             </form>
@@ -241,14 +246,105 @@
         </div>
       </div>
     </div>
-    <div class="module-item">
-      <div class="empty-data-img">
-        <div class="info-img"><img src="../../../assets/bill-empty-data.png"></div>
-        <div class="info-txt">请用鼠标在地图上框选区域</div>
+
+
+    <div *ngIf="isDefault">
+      <div class="module-item">
+        <div class="module-item-title">口径</div>
+        <div class="module-item">
+          <div class="module-item-content">
+            <table class="side-details-table-style1">
+              <tbody>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-caliber1"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-off"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-caliber2"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-caliber3"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-caliber4"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-off"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-caliber5"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-off"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-caliber6"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-texture1"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-texture2"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-texture3"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-texture4"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-texture5"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-texture6"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-texture7"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-texture8"></i></td>
+              </tr>
+              <tr>
+                <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
+                <td style=" text-align: left;">< 415</td>
+                <td style="width: 30px; text-align: right;"><i class="icon-texture9"></i></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
       </div>
     </div>
-    <div *ngIf="isDefault">
+    <div *ngIf="!isDefault">
+      <div class="module-item">
+        <div class="empty-data-img">
+          <div class="info-img"><img src="../../../assets/map/custom-area-tips.png"></div>
+          <div class="info-txt">请用鼠标在地图上框选区域</div>
+
+        </div>
+      </div>
       <div class="module-item">
         <div class="module-sub-title"><i class="left-pic"></i>传感器(2)<i class="right-pic"></i></div>
         <div class="module-item-content">
@@ -264,24 +360,24 @@
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             </tbody>
           </table>
         </div>
       </div>
       <div class="module-item">
-        <div class="module-sub-title"><i class="left-pic"></i>管道(3)<i class="right-pic"></i></div>
+        <div class="module-sub-title"><i class="left-pic"></i>管道(3)<i class="right-pic unfold"></i></div>
         <div class="module-item-content">
           <table class="side-details-table-style2">
             <thead>
@@ -295,17 +391,17 @@
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             </tbody>
           </table>
@@ -326,17 +422,17 @@
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             </tbody>
           </table>
@@ -357,111 +453,23 @@
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             <tr>
               <td>tt1547</td>
               <td>DN15</td>
-              <td align="right">效</td>
+              <td align="right"><a class="location-icon"></a></td>
             </tr>
             </tbody>
           </table>
         </div>
       </div>
     </div>
-    <div class="module-item">
-      <div class="module-item-title">口径</div>
-      <div class="module-item">
-        <div class="module-item-content">
-          <table class="side-details-table-style1">
-            <tbody>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-caliber1"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-off"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-caliber2"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-caliber3"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-caliber4"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-off"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-caliber5"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-off"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-caliber6"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-texture1"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-texture2"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-texture3"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-texture4"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-texture5"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-texture6"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-texture7"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-texture8"></i></td>
-            </tr>
-            <tr>
-              <th style="width: 25px; text-align: left;"><span class="select select-on"></span></th>
-              <td style=" text-align: left;">< 415</td>
-              <td style="width: 30px; text-align: right;"><i class="icon-texture9"></i></td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-    </div>
-
 
   </div>
   <div class="module-footer">

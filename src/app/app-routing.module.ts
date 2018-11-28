@@ -12,6 +12,10 @@ import { MapSwitchComponent} from './components/map-switch/map-switch.component'
 import { OpenDetailsInfoComponent } from './components/open-details-info/open-details-info.component';
 import { OpenDetailsInfo2Component } from './components/open-details-info2/open-details-info2.component';
 import { EcpOpenTagsComponent } from './components/ecp-tags-model/ecp-open-tags/ecp-open-tags.component';
+/*布局*/
+import { FlexTopCenterBottomComponent } from './components/layout/flex-top-center-bottom/flex-top-center-bottom.component';
+import { FlexLeftCenterRightComponent } from './components/layout/flex-left-center-right/flex-left-center-right.component';
+
 /*数据展示*/
 import { DetailsStyle1Component } from './demo/details-style1/details-style1.component';
 import { SeachModuleComponent } from './components/seach-module/seach-module.component';
@@ -22,7 +26,7 @@ import { GenerateBillPageComponent } from './demo/generate-bill-page/generate-bi
 import { WaterConsumptionAnalysisPopupComponent } from './demo/water-consumption-analysis-popup/water-consumption-analysis-popup.component';
 import { BreadCrumbPageComponent } from './docs/components/bread-crumb-page/bread-crumb-page.component';
 import { PageDemo2Component } from './demo/page-demo2/page-demo2.component';
-
+import { DispatchPageComponent } from './demo/dispatch/dispatch-page/dispatch-page.component';
 /*动画*/
 import { RippleComponent } from './animation/ripple/ripple.component';
 /**/
@@ -65,7 +69,10 @@ const routes: Routes = [
   {path: 'breadCrumbPage', component: BreadCrumbPageComponent},
   {path: 'statusBarPage', component: StatusBarPageComponent},
   {path: 'pageDemo2', component: PageDemo2Component},
-
+  {path: 'dispatchPage', component: DispatchPageComponent},
+  /*布局*/
+  {path: 'flexTopCenterBottom', component: FlexTopCenterBottomComponent},
+  {path: 'flexLeftCenterRight', component: FlexLeftCenterRightComponent},
 /*动画*/
   {path: 'ripple', component: RippleComponent},
 ];
