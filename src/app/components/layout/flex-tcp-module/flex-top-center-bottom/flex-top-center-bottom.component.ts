@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ecp-flex-top-center-bottom',
+  selector: 'ecp-flex-tcb',
   templateUrl: './flex-top-center-bottom.component.html',
   styleUrls: ['./flex-top-center-bottom.component.css']
 })

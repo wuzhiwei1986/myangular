@@ -1,0 +1,54 @@
+<div class="page-title">
+  <h1>上中下布局 ecp-flex-tcb</h1>
+  <h3>可以自定义top,bottom<br></h3></div>
+<div class="page-body">
+  <h2 class="demo-title">演示</h2>
+  <div class="demo-body" style="  height: 1000px;">
+    <div style="width: 500px; height: 800px">
+      <ecp-flex-tcb>
+        <ecp-flex-top>
+          <div class="module-title">标题<a class="close" (click)="test()"><i class="icon-close"></i> </a></div>
+        </ecp-flex-top>
+        <ecp-flex-body>
+          <div class="aaa">随便自定义内容，样式要写在父组件</div>
+          <div style="height: 1500px;background: palevioletred"></div>
+        </ecp-flex-body>
+        <ecp-flex-bottom>
+          <div class="module-footer">
+            <button nz-button nzType="default">重置</button>
+            <button nz-button nzType="primary">筛查</button>
+          </div>
+        </ecp-flex-bottom>
+      </ecp-flex-tcb>
+    </div>
+  </div>
+
+
+  <h2 class="demo-title">API</h2>
+  <div class="demo-body">
+    <table class="ecp-table">
+      <tbody>
+      <tr>
+        <th style="width: 100px;">参数</th>
+        <th style="width: 100px;">类型</th>
+        <th>说明</th>
+      </tr>
+      <tr>
+        <td>[customColor]</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>[customX]</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>[customY]</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
