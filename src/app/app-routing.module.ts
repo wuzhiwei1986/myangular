@@ -13,7 +13,7 @@ import { OpenDetailsInfoComponent } from './components/open-details-info/open-de
 import { OpenDetailsInfo2Component } from './components/open-details-info2/open-details-info2.component';
 import { EcpOpenTagsComponent } from './components/ecp-tags-model/ecp-open-tags/ecp-open-tags.component';
 /*布局*/
-import { FlexTopCenterBottomComponent } from './components/layout/flex-top-center-bottom/flex-top-center-bottom.component';
+import { FlexTopCenterBottomComponent } from './components/layout/flex-tcp-module/flex-top-center-bottom/flex-top-center-bottom.component';
 import { FlexLeftCenterRightComponent } from './components/layout/flex-left-center-right/flex-left-center-right.component';
 
 /*数据展示*/
@@ -39,6 +39,8 @@ import { TopNavPageComponent } from './docs/components/top-nav-page/top-nav-page
 import { IconPageComponent } from './docs/components/icon-page/icon-page.component';
 import { TablePageComponent } from './docs/components/table-page/table-page.component';
 import { EcpTabsetComponent } from './ecp-tegs-test/ecp-tabset/ecp-tabset.component';
+import { TopCenterBottomPageComponent } from './docs/components/layout/top-center-bottom-page/top-center-bottom-page.component';
+
 const routes: Routes = [
   {path: 'breadCrumb', component: BreadCrumbComponent},
   {path: 'stepsInfo', component: StepsInfoComponent},
@@ -71,7 +73,7 @@ const routes: Routes = [
   {path: 'pageDemo2', component: PageDemo2Component},
   {path: 'dispatchPage', component: DispatchPageComponent},
   /*布局*/
-  {path: 'flexTopCenterBottom', component: FlexTopCenterBottomComponent},
+  {path: 'flexTopCenterBottom', component: TopCenterBottomPageComponent},
   {path: 'flexLeftCenterRight', component: FlexLeftCenterRightComponent},
 /*动画*/
   {path: 'ripple', component: RippleComponent},

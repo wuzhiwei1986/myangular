@@ -66,8 +66,13 @@ import { DispatchPageComponent } from './demo/dispatch/dispatch-page/dispatch-pa
 import { DispatchPageLeftComponent } from './demo/dispatch/dispatch-page-left/dispatch-page-left.component';
 import { DispatchPageRightComponent } from './demo/dispatch/dispatch-page-right/dispatch-page-right.component';
 import { DispatchPageCenterComponent } from './demo/dispatch/dispatch-page-center/dispatch-page-center.component';
-import { FlexTopCenterBottomComponent } from './components/layout/flex-top-center-bottom/flex-top-center-bottom.component';
+import { FlexTopCenterBottomComponent } from './components/layout/flex-tcp-module/flex-top-center-bottom/flex-top-center-bottom.component';
 import { FlexLeftCenterRightComponent } from './components/layout/flex-left-center-right/flex-left-center-right.component';
+import { TopCenterBottomPageComponent } from './docs/components/layout/top-center-bottom-page/top-center-bottom-page.component';
+import { EcpTemplateComponent } from './components/ecp-template/ecp-template.component';
+import { FlexTopComponent } from './components/layout/flex-tcp-module/flex-top/flex-top.component';
+import { FlexBottomComponent } from './components/layout/flex-tcp-module/flex-bottom/flex-bottom.component';
+import { FlexBodyComponent } from './components/layout/flex-tcp-module/flex-body/flex-body.component';
 
 
 
@@ -127,6 +132,11 @@ registerLocaleData(zh);
     DispatchPageCenterComponent,
     FlexTopCenterBottomComponent,
     FlexLeftCenterRightComponent,
+    TopCenterBottomPageComponent,
+    EcpTemplateComponent,
+    FlexTopComponent,
+    FlexBottomComponent,
+    FlexBodyComponent,
 
   ],
   imports: [
