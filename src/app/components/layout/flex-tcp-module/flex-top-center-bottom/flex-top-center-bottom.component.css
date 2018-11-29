@@ -1,9 +1,9 @@
 /* flexbox */
 .dispatch-right-content-module { height: 100%; display: flex; flex-direction: column; border: #DADADA 1px solid; }
 /*top*/
-:host >>> .dispatch-right-content-module .module-title { flex-grow: 0; flex-shrink: 0; position: relative; height: 50px; width: 100%; line-height: 50px; font-size: 16px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(25, 25, 25, 1); border-bottom: #DADADA 1px solid; padding-left: 20px; }
+:host >>> .dispatch-right-content-module .module-title { flex-grow: 0; flex-shrink: 0; position: relative; height: 50px; width: 100%; line-height: 50px; font-size: 16px; font-family: MicrosoftYaHei-Bold; font-weight: normal; color: rgba(25, 25, 25, 1); border-bottom: #DADADA 1px solid; padding-left: 20px; }
 :host >>> .dispatch-right-content-module .module-title .close { position: absolute; right: 20px; }
-:host >>> .dispatch-right-content-module .module-title .close i { font-size: 14px; color: #6E6E6E; }
+:host >>> .dispatch-right-content-module .module-title .close i { font-size: 14px; color: #6E6E6E; margin-right: 5px; }
 /*center*/
 .dispatch-right-content-module .module-body {   overflow-y: auto; flex-grow: 1; }
 /*bottom*/
@@ -11,10 +11,10 @@
 :host >>> .dispatch-right-content-module .module-footer > button { margin-right: 10px; }
 
 /*演示*/
-:host >>> .dispatch-right-content-module .module-title,
+/*:host >>> .dispatch-right-content-module .module-title,
 :host >>> .dispatch-right-content-module .module-footer{
   background: #e5e5e5;
 }
-:host >>> .dispatch-right-content-module .module-body { background: #f2f2f2;}
+:host >>> .dispatch-right-content-module .module-body { background: #f2f2f2;}*/
 
 

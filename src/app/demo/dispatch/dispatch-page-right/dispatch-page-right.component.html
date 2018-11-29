@@ -1,14 +1,66 @@
 <div class="dispatch-right-content-module">
   <div class="module-title">筛查<a class="close"><i class="icon-close"></i> </a></div>
   <div class="module-body">
+    <div class="module-item">
+      <div class="module-item-content">
+        <div class="seach-moudle-div">
+          <div class="seach-body">
+            <form nz-form [formGroup]="validateForm">
+              <div nz-row>
+                <div nz-col [nzSpan]="7" class="nzrow-title">通知形式</div>
+                <div nz-col [nzSpan]="17">
+                  <nz-radio-group style="margin-top: 6px;" nzName="radiogroup"
+                                  formControlName="noticetype" >
+                    <label nz-radio nzValue="A">默认</label>
+                    <label nz-radio nzValue="B">自定义</label>
+                  </nz-radio-group>
+                </div>
+              </div>
+              <div nz-row>
+                <div nz-col [nzSpan]="7" class="nzrow-title">拍照</div>
+                <div nz-col [nzSpan]="17">
+                  <nz-radio-group formControlName="isphoto" [(ngModel)]="isphotoValue">
+                    <label nz-radio nzValue="1">需要</label>
+                    <label nz-radio nzValue="0">不需要</label>
+                  </nz-radio-group>
+                </div>
+              </div>
+              <div nz-row>
+                <div nz-col [nzSpan]="7" class="nzrow-title">处理结果</div>
+                <div nz-col [nzSpan]="17">
+                  <nz-radio-group style="margin-top: 6px;" nzName="radiogroup"
+                                  formControlName="noticetype" >
+                    <label nz-radio nzValue="A">默认</label>
+                    <label nz-radio nzValue="B">自定义</label>
+                    <label nz-radio nzValue="C">自定义</label>
+
+                  </nz-radio-group>
+                </div>
+              </div>
+              <div nz-row>
+                <div nz-col [nzSpan]="7" class="nzrow-title">处理意见</div>
+                <div nz-col [nzSpan]="17">
+                  <nz-radio-group style="margin-top: 6px;" nzName="radiogroup"
+                                  formControlName="noticetype" >
+                    <label nz-radio nzValue="A">默认</label>
+                    <label nz-radio nzValue="B">自定义</label>
+                  </nz-radio-group>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--<div class="module-item">
       <div class="module-item-content">
         <div class="seach-moudle-div">
           <div class="seach-body">
             <form nz-form [formGroup]="validateForm">
               <div nz-row>
-                <div nz-col [nzSpan]="4" class="nzrow-title">方式</div>
-                <div nz-col [nzSpan]="20">
+                <div nz-col [nzSpan]="7" class="nzrow-title">方式</div>
+                <div nz-col [nzSpan]="17">
                   <nz-radio-group style="margin-top: 6px;" nzName="radiogroup" [(ngModel)]="typeRadioValue"
                                   formControlName="pointCode1" (ngModelChange)="change()">
                     <label nz-radio nzValue="A">默认</label>
@@ -17,8 +69,8 @@
                 </div>
               </div>
               <div nz-row>
-                <div nz-col [nzSpan]="4" class="nzrow-title">元素</div>
-                <div nz-col [nzSpan]="20">
+                <div nz-col [nzSpan]="7" class="nzrow-title">元素</div>
+                <div nz-col [nzSpan]="17">
                   <nz-select nzAllowClear nzPlaceHolder="请选择" formControlName="pointCode0">
                     <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
                     <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
@@ -27,8 +79,8 @@
                 </div>
               </div>
               <div nz-row>
-                <div nz-col [nzSpan]="4" class="nzrow-title">区域</div>
-                <div nz-col [nzSpan]="20">
+                <div nz-col [nzSpan]="7" class="nzrow-title">区域</div>
+                <div nz-col [nzSpan]="17">
                   <nz-tree-select
                     [nzNodes]="nodes"
                     [nzDefaultExpandAll]="true"
@@ -40,8 +92,8 @@
               </div>
 
               <div nz-row>
-                <div nz-col [nzSpan]="4" class="nzrow-title">属性</div>
-                <div nz-col [nzSpan]="20">
+                <div nz-col [nzSpan]="7" class="nzrow-title">属性</div>
+                <div nz-col [nzSpan]="17">
                   <nz-radio-group style="margin-top: 6px;" nzName="radiogroup" [(ngModel)]="typeRadioValue"
                                   formControlName="pointCode1" (ngModelChange)="change()">
                     <label nz-radio nzValue="A">口径</label>
