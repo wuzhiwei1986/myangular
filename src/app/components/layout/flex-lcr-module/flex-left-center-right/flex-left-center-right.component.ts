@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-flex-left-center-right',
+  selector: 'ecp-flex-lcr',
   templateUrl: './flex-left-center-right.component.html',
   styleUrls: ['./flex-left-center-right.component.css']
 })

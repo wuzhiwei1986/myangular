@@ -1,7 +1,10 @@
 #left .item-content { border-left: #ffffff 3px solid; border-bottom: 1px solid #dadada; padding: 10px 0; }
 /*列选中效果***************************************/
-#left .item-content:hover, #left .item-content.hover { cursor: pointer; border-left: #1E5BD6 3px solid; border-bottom: 1px solid #dadada; padding: 10px 0; background: rgba(240,240,240,1); }
-#left .item-content:hover .item-content-title .title-txt #left .item-content.hover .item-content-title .title-txt { font-size: 16px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(30, 91, 214, 1); }
+#left .item-content:hover { cursor: pointer; border-left: #1E5BD6 3px solid; border-bottom: 1px solid #dadada; padding: 10px 0; background:#D2DDF2; }
+/*#left .item-content:hover .item-content-title .title-txt { font-size: 16px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(30, 91, 214, 1); }*/
+
+#left .item-content.hover { cursor: pointer; border-left: #1E5BD6 3px solid; border-bottom: 1px solid #dadada; padding: 10px 0; background: rgba(240,240,240,1); }
+#left .item-content.hover .item-content-title .title-txt { font-size: 16px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(30, 91, 214, 1); }
 /*列选中效果 end***************************************/
 
 #left .item-content:last-child {border-bottom: 0 solid #dadada; }
@@ -50,3 +53,25 @@
 #mid .img-list span { position: relative; display: inline-block; width: 100px; height: 100px; float: left; margin-right: 10px; margin-bottom: 10px; }
 #mid .img-list span img { width: 100%; height: 100%; overflow: hidden; }
 #mid .img-list span:last-child { margin-right: 0px; }
+
+
+
+
+/*搜索模块*/
+.seach-moudle-div { padding: 10px 20px 5px 20px; }
+.seach-moudle-div .seach-body { }
+/*弹出层表单样式*/
+.seach-moudle-div .seach-body .ant-row { min-height: 32px; padding: 1px; margin-bottom: 15px; }
+/*分隔线*/
+.seach-moudle-div .seach-body .map-popup-divider { margin: 16px 0px; height: 1px;  }
+.seach-moudle-div .seach-body .nzrow-title { /*padding-top: 5px;*/ }
+.seach-moudle-div .seach-body .nzrow-title:after { content: ":"; }
+/*经纬度信息*/
+.seach-moudle-div .seach-body .coordinates-info { color: #6E6E6E !important; height: auto; margin: 5px 0px; padding: 0px; }
+/*错误信息样式*/
+.seach-moudle-div .seach-body .error-info { color: red; }
+/*表单文本框错误状态*/
+.seach-moudle-div .seach-body .error-status { border-radius: 5px; border: #f5222d 1px solid !important; box-shadow: 0 0 0 2px #fdd3d5; }
+.seach-moudle-div .seach-body .error-status:focus { border: #447ee3 1px solid !important; }
+
+/*------------------------------------------------------*/

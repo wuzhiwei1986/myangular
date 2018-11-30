@@ -12,7 +12,7 @@ export class DispatchPageRightComponent implements OnInit {
   ngOnInit() {
     var self = this;
 
-    self.validateForm = self.fb.group({
+/*    self.validateForm = self.fb.group({
       noticetype: [''],
       isphoto: [null, [Validators.required]],
       resulttype: [null, [Validators.required]],
@@ -20,7 +20,7 @@ export class DispatchPageRightComponent implements OnInit {
       auditorid: [null, [Validators.required]],
       forwardid:[],
       fstatus:[null, [Validators.required]]
-    });
+    });*/
   }
 
 }
