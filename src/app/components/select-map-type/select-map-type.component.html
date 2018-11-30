@@ -4,9 +4,12 @@
       class="icon-select-map"></i></span>
     <ul class="list" *ngIf="isShow" (mouseover)="cleanTime()" (mouseleave)="isShow=false"
         [@openClose]="isOpen ? 'open' : 'closed'">
+      <!--
       <li>百度地图</li>
       <li>高德地图</li>
       <li>谷歌地图</li>
+      -->
+      <ng-content></ng-content>
     </ul>
   </div>
 </div>

@@ -20,7 +20,7 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 })
 export class OpenDetailsInfo2Component implements OnInit {
   validateForm: FormGroup;
-  isOpen = true;
+  isOpen = false;
   constructor(private fb: FormBuilder) {
   }
 

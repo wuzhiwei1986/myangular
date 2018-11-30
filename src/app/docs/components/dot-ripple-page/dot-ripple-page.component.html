@@ -1,8 +1,8 @@
 <div class="page-title">
-  <h1>坐标闪动 ecp-ripple</h1>
+  <h1>地图用组件</h1>
   <!--<h3>工具条介绍</h3>--></div>
 <div class="page-body">
-  <h2 class="demo-title">演示</h2>
+  <h2 class="demo-title">演示 坐标闪动 ecp-ripple</h2>
   <div class="demo-body" style="position:relative; height: 400px;">
     颜色:<select [(ngModel)]="color">
     <option value="green" selected>绿</option>
@@ -16,19 +16,25 @@
 
 
   </div>
-
-  <div class="demo-body" style="position:relative; height: 400px;">
+  <h2 class="demo-title">演示 地图弹层 ecp-map-dot-popup</h2>
+  <div class="demo-body" style="position:relative; height: 300px;">
     <ecp-map-dot-popup></ecp-map-dot-popup>
     <br/><br/><br/><br/><br/><br/><br/>
     地图坐标弹出标签
   </div>
+  <h2 class="demo-title">演示 地图图例 ecp-map-legend</h2>
   <div class="demo-body" style="position:relative;height: 200px; background: #6E6E6E">
     <ecp-map-legend></ecp-map-legend>
     <br/><br/><br/><br/><br/><br/><br/>
-    地图坐标弹出标签
+    地图图例
   </div>
+  <h2 class="demo-title">演示 地图图例 ecp-select-map-type</h2>
   <div class="demo-body" style="position:relative;height: 300px; ">
-    <ecp-select-map-type></ecp-select-map-type>
+    <ecp-select-map-type>
+      <li>百度地图</li>
+      <li>高德地图</li>
+      <li>谷歌地图</li>
+    </ecp-select-map-type>
   </div>
   <h2 class="demo-title">API</h2>
   <div class="demo-body">
@@ -40,20 +46,11 @@
         <th>说明</th>
       </tr>
       <tr>
-        <td>[customColor]</td>
+        <td></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
-      <tr>
-        <td>[customX]</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td>[customY]</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
+
       </tbody>
     </table>
   </div>
