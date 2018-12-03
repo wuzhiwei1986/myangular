@@ -187,6 +187,13 @@ export class NavBarComponent implements OnInit {
           'iconuri': '',
           'child': null
         }
+        ,
+        {
+          'name': '控制台主页',
+          'uri': 'consolePage',
+          'iconuri': '',
+          'child': null
+        }
       ]
     },
     {

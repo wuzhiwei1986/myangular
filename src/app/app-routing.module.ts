@@ -27,6 +27,8 @@ import { WaterConsumptionAnalysisPopupComponent } from './demo/water-consumption
 import { BreadCrumbPageComponent } from './docs/components/bread-crumb-page/bread-crumb-page.component';
 import { PageDemo2Component } from './demo/page-demo2/page-demo2.component';
 import { DispatchPageComponent } from './demo/dispatch/dispatch-page/dispatch-page.component';
+import { ConsolePageComponent } from './demo/console-page/console-page.component';
+
 /*动画*/
 import { RippleComponent } from './animation/ripple/ripple.component';
 /**/
@@ -72,6 +74,7 @@ const routes: Routes = [
   {path: 'statusBarPage', component: StatusBarPageComponent},
   {path: 'pageDemo2', component: PageDemo2Component},
   {path: 'dispatchPage', component: DispatchPageComponent},
+  {path: 'consolePage', component: ConsolePageComponent},
   /*布局*/
   {path: 'flexTopCenterBottom', component: TopCenterBottomPageComponent},
   {path: 'flexLeftCenterRight', component: FlexLeftCenterRightComponent},

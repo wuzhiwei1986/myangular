@@ -75,6 +75,8 @@ import { FlexBottomComponent } from './components/layout/flex-tcp-module/flex-bo
 import { FlexBodyComponent } from './components/layout/flex-tcp-module/flex-body/flex-body.component';
 import { FlexLeftComponent } from './components/layout/flex-lcr-module/flex-left/flex-left.component';
 import { FlexRightComponent } from './components/layout/flex-lcr-module/flex-right/flex-right.component';
+import { ConsolePageComponent } from './demo/console-page/console-page.component';
+import {CountUpModule} from 'countup.js-angular2';
 
 
 
@@ -141,6 +143,7 @@ registerLocaleData(zh);
     FlexBodyComponent,
     FlexLeftComponent,
     FlexRightComponent,
+    ConsolePageComponent,
 
   ],
   imports: [
@@ -151,7 +154,7 @@ registerLocaleData(zh);
     NgZorroAntdModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule, RouterModule
+    AppRoutingModule, RouterModule,CountUpModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]

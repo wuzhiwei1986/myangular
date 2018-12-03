@@ -1,0 +1,54 @@
+<ecp-bread-crumb>
+  <span>主页</span>
+</ecp-bread-crumb>
+<div class="ecp-page-body-moudle">
+  <div class="collect-info">
+    <!--
+        CountUp.js Angular ^2 Module 动画
+        https://github.com/inorganik/countUp.js-angular2
+            CountUp指令接受以下属性值：
+            startVal：开头的数字
+            endVal：要数到的数字
+            duration：以秒为单位计算动画的持续时间
+            decimals：格式化为这么多小数位
+            reanimateOnClick：传递true以启用
+            countUp：options对象直接传递给指令属性选择器。有关CountUp.js repo中选项的更多信息。
+    -->
+    <div class="collect-info-item">
+      <span class="item-num"><span countUp [endVal]="mockData.number1" duration="3">0</span>个</span>
+      <span class="item-txt">设备总数</span>
+      <span class="item-icon"></span>
+    </div>
+    <div class="collect-info-item">
+      <span class="item-num"><span countUp [endVal]="mockData.number2" duration="3">0</span>个</span>
+      <span class="item-txt">离线设备</span>
+      <span class="item-icon"></span>
+    </div>
+    <div class="collect-info-item">
+      <span class="item-num"><span countUp [endVal]="mockData.number3" duration="3">0</span>个</span>
+      <span class="item-txt">用户总数</span>
+      <span class="item-icon"></span>
+    </div>
+    <div class="collect-info-item">
+      <span class="item-num"><span countUp [endVal]="mockData.number4" duration="3">0</span>个</span>
+      <span class="item-txt">已缴总额</span>
+      <span class="item-icon"></span>
+    </div>
+    <div class="collect-info-item">
+      <span class="item-num"><span countUp [endVal]="mockData.number5" duration="3">0</span>个</span>
+      <span class="item-txt">未缴总额</span>
+      <span class="item-icon"></span>
+    </div>
+  </div>
+  <!---->
+  <div class="charts-throw-row">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <div class="charts-two-columns">
+    <div class="item">1</div>
+    <div class="item">2</div>
+  </div>
+
+</div>
