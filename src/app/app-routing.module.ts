@@ -42,6 +42,7 @@ import { IconPageComponent } from './docs/components/icon-page/icon-page.compone
 import { TablePageComponent } from './docs/components/table-page/table-page.component';
 import { EcpTabsetComponent } from './ecp-tegs-test/ecp-tabset/ecp-tabset.component';
 import { TopCenterBottomPageComponent } from './docs/components/layout/top-center-bottom-page/top-center-bottom-page.component';
+import { LeftCenterRightPageComponent } from './docs/components/layout/left-center-right-page/left-center-right-page.component';
 
 const routes: Routes = [
   {path: 'breadCrumb', component: BreadCrumbComponent},
@@ -77,7 +78,7 @@ const routes: Routes = [
   {path: 'consolePage', component: ConsolePageComponent},
   /*布局*/
   {path: 'flexTopCenterBottom', component: TopCenterBottomPageComponent},
-  {path: 'flexLeftCenterRight', component: FlexLeftCenterRightComponent},
+  {path: 'flexleftCenterRight', component: LeftCenterRightPageComponent},
 /*动画*/
   {path: 'ripple', component: RippleComponent},
 ];

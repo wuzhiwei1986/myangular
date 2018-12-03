@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-top-center-bottom-page',
@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-center-bottom-page.component.css']
 })
 export class TopCenterBottomPageComponent implements OnInit {
-  test(){
-    alert();
-  }
 
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

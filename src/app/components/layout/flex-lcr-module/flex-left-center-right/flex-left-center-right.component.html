@@ -1,9 +1,11 @@
 <div id="content">
-  <ng-content select="ecp-flex-left"></ng-content>
-
+  <div id="left" [ngStyle]="{'flex':'0 0 '+leftWidth}">
+    <ng-content select="ecp-flex-left"></ng-content>
+  </div>
   <div id="middle">
     <ng-content></ng-content>
   </div>
-  <ng-content select="ecp-flex-right"></ng-content>
-
+  <div id="right" [ngStyle]="{'flex':'0 0 '+rightWidth}">
+    <ng-content select="ecp-flex-right"></ng-content>
+  </div>
 </div>

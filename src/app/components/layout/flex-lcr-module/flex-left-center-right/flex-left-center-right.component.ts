@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'ecp-flex-lcr',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flex-left-center-right.component.css']
 })
 export class FlexLeftCenterRightComponent implements OnInit {
+  @Input() leftWidth;
+  @Input() rightWidth;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -209,7 +209,7 @@ export class NavBarComponent implements OnInit {
         },
         {
           'name': '左中右',
-          'uri': 'flexLeftCenterRight',
+          'uri': 'flexleftCenterRight',
           'iconuri': '',
           'child': null
         }

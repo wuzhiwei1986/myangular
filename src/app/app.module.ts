@@ -40,7 +40,6 @@ import { SwitchPageComponent } from './docs/components/switch-page/switch-page.c
 import { DotRipplePageComponent } from './docs/components/dot-ripple-page/dot-ripple-page.component';
 import { NavBarPageComponent } from './docs/components/nav-bar-page/nav-bar-page.component';
 import { TopNavPageComponent } from './docs/components/top-nav-page/top-nav-page.component';
-import { TestComponent } from './test/test.component';
 import { TestTableComponent } from './test-table/test-table.component';
 import { IconPageComponent } from './docs/components/icon-page/icon-page.component';
 import { TablePageComponent } from './docs/components/table-page/table-page.component';
@@ -77,6 +76,7 @@ import { FlexLeftComponent } from './components/layout/flex-lcr-module/flex-left
 import { FlexRightComponent } from './components/layout/flex-lcr-module/flex-right/flex-right.component';
 import { ConsolePageComponent } from './demo/console-page/console-page.component';
 import {CountUpModule} from 'countup.js-angular2';
+import { LeftCenterRightPageComponent } from './docs/components/layout/left-center-right-page/left-center-right-page.component';
 
 
 
@@ -108,7 +108,6 @@ registerLocaleData(zh);
     DotRipplePageComponent,
     NavBarPageComponent,
     TopNavPageComponent,
-    TestComponent,
     TestTableComponent,
     IconPageComponent,
     TablePageComponent,
@@ -144,6 +143,7 @@ registerLocaleData(zh);
     FlexLeftComponent,
     FlexRightComponent,
     ConsolePageComponent,
+    LeftCenterRightPageComponent,
 
   ],
   imports: [

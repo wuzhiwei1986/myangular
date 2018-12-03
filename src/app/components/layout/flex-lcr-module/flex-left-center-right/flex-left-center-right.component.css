@@ -1,24 +1,24 @@
 
-:host >>> #content {
+#content {
   display: flex;
   width: 100%;
   height: 100%;
 }
 
-:host >>> #left {
-  width: 200px;
+#left {
+  /*width: 200px;*/
   flex: 0 0 200px;
   height: 100%;
   background: darkseagreen;
 }
 
-:host >>> #middle {
+#middle {
   flex: 1;
   background-color: #cccccc;
 }
 
-:host >>> #right {
-  width: 200px;
+#right {
+  /*width: 200px;*/
   flex: 0 0 200px;
   height: 100%;
   background: darkseagreen;
