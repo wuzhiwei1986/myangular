@@ -1,4 +1,7 @@
-<div class="ol-popup">
-  <a href="javascript:void(0);" class="ol-popup-closer"></a>
-  <div class="overlay-content"><div>标题：testAA1aaaaaaaaa</div><div>标题：testAA</div><div>标题：testAA</div><div>标题：testAA</div></div>
+<div class="ol-popup" [ngStyle]="customPosition">
+  <a class="ol-popup-closer" *ngIf="isCloseBtn"></a>
+  <div class="overlay-content">
+    <!--用户内容-->
+    <ng-content></ng-content>
+  </div>
 </div>

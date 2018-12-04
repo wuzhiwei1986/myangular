@@ -1,4 +1,6 @@
-
+/*
+   顶部导航'ecp-top-nav' v1.0
+*/
 .top-header {
   background: #303844;
   height: 50px;
@@ -24,6 +26,7 @@
 
 .top-header .logo img {
   vertical-align: top;
+  height: 32px;
 }
 
 .top-header .name {

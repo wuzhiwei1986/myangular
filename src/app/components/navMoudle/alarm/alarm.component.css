@@ -1,3 +1,7 @@
+/*
+   顶部导航-警告'ecp-alarm' v1.0
+*/
+
 /*警告弹窗*/
 .alarm { position: relative; display: inline-block; float: right; font-family: MicrosoftYaHei; height: 50px; width: 90px; line-height: 50px; text-align: right; padding-left: 15px; padding-right: 32px; background: url("../../../../assets/change-sys/alarm-r-bg.png") right center no-repeat; }
 .alarm .icon { position: absolute; right: 73px; top: 1px; cursor: pointer; }

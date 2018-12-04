@@ -93,7 +93,7 @@ export class NavBarComponent implements OnInit {
           'child': null
         },
         {
-          'name': '坐标闪动',
+          'name': '地图用组件',
           'uri': 'dotRipplePage',
           'iconuri': '',
           'child': null

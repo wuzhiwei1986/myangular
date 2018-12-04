@@ -10,15 +10,23 @@
   </select>
     X:<input [(ngModel)]="inputX">
     Y:<input [(ngModel)]="inputY">
-
     <ecp-ripple [customColor]="'red'" [customX]="'200px'" [customY]="'100px'"></ecp-ripple>
     <ecp-ripple [customColor]="color" [customX]="inputX" [customY]="inputY"></ecp-ripple>
-
 
   </div>
   <h2 class="demo-title">演示 地图弹层 ecp-map-dot-popup</h2>
   <div class="demo-body" style="position:relative; height: 300px;">
-    <ecp-map-dot-popup></ecp-map-dot-popup>
+    <ecp-map-dot-popup>
+      组件默认
+    </ecp-map-dot-popup>
+    <ecp-map-dot-popup [isCloseBtn]="true" [customPosition]="{'left':'100px','top':'40px','z-index':'1000'}">
+      可以根据属性[isCloseBtn]自定义是否需要关闭按钮，<br/>
+      这里是用户自定义内容，<br/>
+      用户内容需要用到的样式写到父组件
+    </ecp-map-dot-popup>
+    <ecp-map-dot-popup [isCloseBtn]="false" [customPosition]="{'left':'700px','top':'40px','z-index':'1000'}">
+      没有关闭按钮，自定义位置
+    </ecp-map-dot-popup>
     <br/><br/><br/><br/><br/><br/><br/>
     地图坐标弹出标签
   </div>

@@ -1,15 +1,20 @@
+/*
+   地图弹窗'ecp-map-dot-popup' v1.0
+*/
+
 /*地图弹出*/
 .ol-popup {
   position: absolute;
   top: 10px;
   left: 10px;
   background: #000c17;
+  color: #ffffff;
   min-width: 100px;
   opacity: 0.6;
   -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
   padding: 15px 20px;
-  color: #ffffff;
+
 }
 
 .ol-popup:after, .ol-popup:before {
