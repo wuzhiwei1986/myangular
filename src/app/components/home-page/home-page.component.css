@@ -1,0 +1,202 @@
+/*top-header*/
+body{ }
+.top-header {
+  background: #303844;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  right: 0;
+}
+
+.top-header .logo {
+  height: 32px;
+  margin-left: 23px;
+  margin-top: 8px;
+  display: inline-block;
+  float: left;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: #fff 3px solid;
+
+}
+
+.top-header .logo img {
+  vertical-align: top;
+}
+
+.top-header .name {
+  display: inline-block;
+  float: left;
+  color: #ffffff;
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+.top-header .top-nav {
+  height: 32px;
+  line-height: 32px;
+  display: block;
+  float: right;
+  margin-top: 7px;
+}
+
+.top-header .top-nav a {
+  color: #FFFFFF
+}
+.top-header .top-nav a:hover {
+  color: #25c3cb
+}
+.top-header .top-nav .user {
+  padding: 0px; margin-right: 10px;
+}
+.top-header .top-nav .user .header {
+  width: 37px; height: 37px; display: inline-block; float: left;
+}
+.top-header .top-nav .user .name {
+  padding: 0 8px; height: 37px; line-height: 37px; margin: 0px; vertical-align:middle;display: table-cell;float: left; font-size: 14px; font-weight: bold;
+}
+.top-header .top-nav .logout{
+  background: url("../../../assets/logout.png") no-repeat; width: 18px; height: 20px; text-indent: -999999px; display: inline-block; margin-top: 8px; margin-right: 30px;
+}
+/**************************************************/
+
+.toplist {
+  width: 1200px;
+  margin: 0 auto;
+  border-right: #4ebcf5 1px solid;
+  height: 102px;
+}
+
+.toplist li {
+  width: 269px;
+  float: left;
+  border-left: #4ebcf5 1px solid;
+  height: 77px;
+  padding-top: 25px;
+  padding-left: 30px;
+  color: #FFFFFF
+}
+
+.toplist li:hover {
+  background: #03abff;
+}
+
+.toplist li .tit {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.toplist li .cont {
+  font-size: 12px;
+}
+
+/*top-header end*/
+
+
+/* 首页样式 ************************************************************/
+.home-content{position: fixed; top: 50px; bottom: 0px; left: 0px; right: 0px; min-height:700px; min-width: 1120px;background:url("../../../assets/index/hone-bg.png") center top no-repeat;/* overflow-y: auto; overflow-x: hidden;*/ }
+.sys-index{width: 1120px;margin: 0 auto;}
+.sys-index .menu-div{width:300px; float: right; margin-top: 30px;display:flex; align-items:center; min-height: 856px;background:url("../../../assets/index/menu/menu-right-bg.png") right top repeat-y;}
+.sys-index .content{width:810px; float: left; }
+.sys-index .menu{width: 260px;}
+.sys-index .menu a{ display: block; margin: 0 auto;margin-bottom: 9px;width: 260px; height: 100px;color: #94a8ea;}
+
+/* 菜单未选中 ************************************************************/
+.sys-index .menu a#menu-1{background:url("../../../assets/index/menu/menu_1.png") center center no-repeat; background-size: 250px 102px; padding-left: 30px; padding-top: 36px;}
+.sys-index .menu a#menu-2{background:url("../../../assets/index/menu/menu_2.png") center center no-repeat; background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
+.sys-index .menu a#menu-3{background:url("../../../assets/index/menu/menu_3.png") center center no-repeat;  background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
+.sys-index .menu a#menu-4{background:url("../../../assets/index/menu/menu_4.png") center center no-repeat; background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
+.sys-index .menu a#menu-5{background:url("../../../assets/index/menu/menu_4.png") center center no-repeat; background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
+.sys-index .menu a#menu-6{background:url("../../../assets/index/menu/menu_4.png") center center no-repeat; background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
+.sys-index .menu a#menu-1 .name,
+.sys-index .menu a#menu-2 .name,
+.sys-index .menu a#menu-3 .name,
+.sys-index .menu a#menu-4 .name,
+.sys-index .menu a#menu-5 .name,
+.sys-index .menu a#menu-6 .name{  font-size: 20px; font-weight: bold;  }
+.sys-index .menu a#menu-1 .href,
+.sys-index .menu a#menu-2 .href,
+.sys-index .menu a#menu-3 .href,
+.sys-index .menu a#menu-4 .href,
+.sys-index .menu a#menu-5 .href,
+.sys-index .menu a#menu-6 .href{ display: none; }
+
+/* 菜单选中 ************************************************************/
+.sys-index .menu a#menu-1:hover,.sys-index .menu a#menu-1.select{background:url("../../../assets/index/menu/menu_1_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px; color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
+.sys-index .menu a#menu-2:hover,.sys-index .menu a#menu-2.select{background:url("../../../assets/index/menu/menu_2_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
+.sys-index .menu a#menu-3:hover,.sys-index .menu a#menu-3.select{background:url("../../../assets/index/menu/menu_3_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
+.sys-index .menu a#menu-4:hover,.sys-index .menu a#menu-4.select{background:url("../../../assets/index/menu/menu_4_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
+.sys-index .menu a#menu-5:hover,.sys-index .menu a#menu-5.select{background:url("../../../assets/index/menu/menu_4_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
+.sys-index .menu a#menu-6:hover,.sys-index .menu a#menu-6.select{background:url("../../../assets/index/menu/menu_4_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
+.sys-index .menu a#menu-1:hover .name,.sys-index .menu a#menu-1.select .name,
+.sys-index .menu a#menu-2:hover .name,.sys-index .menu a#menu-2.select .name,
+.sys-index .menu a#menu-3:hover .name,.sys-index .menu a#menu-3.select .name,
+.sys-index .menu a#menu-4:hover .name,.sys-index .menu a#menu-4.select .name,
+.sys-index .menu a#menu-5:hover .name,.sys-index .menu a#menu-5.select .name,
+.sys-index .menu a#menu-6:hover .name,.sys-index .menu a#menu-6.select .name{ font-size: 24px; font-weight: bold;  -webkit-animation:fadeInLeft .6s .0s ease both;
+  -moz-animation:fadeInLeft .6s .0s ease both;  }
+.sys-index .menu a#menu-1:hover .href,.sys-index .menu a#menu-1.select .href,
+.sys-index .menu a#menu-2:hover .href,.sys-index .menu a#menu-2.select .href,
+.sys-index .menu a#menu-3:hover .href,.sys-index .menu a#menu-3.select .href,
+.sys-index .menu a#menu-4:hover .href,.sys-index .menu a#menu-4.select .href,
+.sys-index .menu a#menu-5:hover .href,.sys-index .menu a#menu-5.select .href,
+.sys-index .menu a#menu-6:hover .href,.sys-index .menu a#menu-6.select .href{ display: block; margin-top: 4px; font-size: 18px; font-weight: normal; -webkit-animation:fadeInLeft .6s .2s ease both;
+  -moz-animation:fadeInLeft .6s .2s ease both; }
+
+/* 左边图片内容 ************************************************************/
+.sys-index .content{width:810px; float: left; }
+.sys-index .content .con .title{  margin-top: 65px; width: 700px;  }
+.sys-index .content .con .title h2{ font-size:36px; font-weight: bold; margin:0; padding: 0px;-webkit-animation:fadeInUp .6s .0s ease both; -moz-animation:fadeInUp .6s .0s ease both;color: #ffffff; }
+.sys-index .content .con .title h4{ font-size: 24px; font-weight: normal; margin:12px 0 0 0;-webkit-animation:fadeInUp .6s .1s ease both; -moz-animation:fadeInUp .6s .1s ease both;color: #ffffff;}
+.sys-index .content .pic{ margin-top: 50px; margin-left: -100px; }
+.sys-index .content .menu-1{ background:url("../../../assets/index/pic/menu-1.png") left bottom no-repeat; height: 640px; width: 709px;}
+.sys-index .content .menu-2{ background:url("../../../assets/index/pic/menu-2.png") left bottom no-repeat; height: 640px; width: 709px;}
+.sys-index .content .menu-3{ background:url("../../../assets/index/pic/menu-3.png") left bottom no-repeat; height: 640px; width: 709px;}
+.sys-index .content .menu-4{ background:url("../../../assets/index/pic/menu-4.png") left bottom no-repeat; height:  640px; width:709px;}
+.sys-index .content .menu-5{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 640px; width: 709px;}
+.sys-index .content .menu-6{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 640px; width: 709px;}
+.sys-index .content .menu-7{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 592px; width: 721px;}
+.sys-index .content .menu-8{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 592px; width: 721px;}
+.sys-index .content .menu-9{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 592px; width: 721px;}
+.sys-index .content .menu-10{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 592px; width: 721px;}
+.sys-index .content .menu-11{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 592px; width: 721px;}
+
+/* 动画 ************************************************************/
+.tit-animation{
+  -webkit-animation:fadeInUp .6s .0s ease both;
+  -moz-animation:fadeInUp .6s .0s ease both;}
+.pic-animation{
+  -webkit-animation:fadeInUp .4s .4s ease both;
+  -moz-animation:fadeInUp .4s .4s ease both;}
+@-webkit-keyframes fadeInUp{
+  0%{opacity:0;
+    -webkit-transform:translateY(20px)}
+  100%{opacity:1;
+    -webkit-transform:translateY(0)}
+}
+@-moz-keyframes fadeInUp{
+  0%{opacity:0;
+    -moz-transform:translateY(20px)}
+  100%{opacity:1;
+    -moz-transform:translateY(0)}
+}
+/**/
+
+.left-animation{
+  -webkit-animation:fadeInLeft 1s .2s ease both;
+  -moz-animation:fadeInLeft 1s .2s ease both;}
+@-webkit-keyframes fadeInLeft{
+  0%{opacity:0;
+    -webkit-transform:translateX(-20px)}
+  100%{opacity:1;
+    -webkit-transform:translateX(0)}
+}
+@-moz-keyframes fadeInLeft{
+  0%{opacity:0;
+    -moz-transform:translateX(-20px)}
+  100%{opacity:1;
+    -moz-transform:translateX(0)}
+}

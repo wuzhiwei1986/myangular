@@ -22,6 +22,7 @@ import { SeachModuleComponent } from './components/seach-module/seach-module.com
 import { PageDemoComponent } from './demo/page-demo/page-demo.component';
 import { AboutComponent } from './docs/about/about.component';
 import { EcpLoginPageComponent } from './components/ecp-login-moudle/ecp-login-page/ecp-login-page.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 import { GenerateBillPageComponent } from './demo/generate-bill-page/generate-bill-page.component';
 import { WaterConsumptionAnalysisPopupComponent } from './demo/water-consumption-analysis-popup/water-consumption-analysis-popup.component';
 import { BreadCrumbPageComponent } from './docs/components/bread-crumb-page/bread-crumb-page.component';
@@ -43,7 +44,7 @@ import { TablePageComponent } from './docs/components/table-page/table-page.comp
 import { EcpTabsetComponent } from './ecp-tegs-test/ecp-tabset/ecp-tabset.component';
 import { TopCenterBottomPageComponent } from './docs/components/layout/top-center-bottom-page/top-center-bottom-page.component';
 import { LeftCenterRightPageComponent } from './docs/components/layout/left-center-right-page/left-center-right-page.component';
-
+import { TabsPageComponent } from './docs/components/tabs-page/tabs-page.component';
 const routes: Routes = [
   {path: 'breadCrumb', component: BreadCrumbComponent},
   {path: 'stepsInfo', component: StepsInfoComponent},
@@ -59,6 +60,7 @@ const routes: Routes = [
   {path: 'detailsStyle1', component: DetailsStyle1Component},
   {path: 'pageDemo', component: PageDemoComponent},
   {path: 'about', component: AboutComponent},
+
   /**/
   {path: 'toolBarPage', component: ToolBarPageComponent},
   {path: 'switchPage', component: SwitchPageComponent},
@@ -67,6 +69,7 @@ const routes: Routes = [
   {path: 'iconPage', component: IconPageComponent},
   {path: 'tablePage', component: TablePageComponent},
   {path: 'loginPage', component: EcpLoginPageComponent},
+  {path: 'homePage', component: HomePageComponent},
   {path: 'ecpOpenTags', component: EcpOpenTagsComponent},
   {path: 'ecpTabset', component: EcpTabsetComponent},
   {path: 'generateBillPage', component: GenerateBillPageComponent},
@@ -76,6 +79,7 @@ const routes: Routes = [
   {path: 'pageDemo2', component: PageDemo2Component},
   {path: 'dispatchPage', component: DispatchPageComponent},
   {path: 'consolePage', component: ConsolePageComponent},
+  {path: 'tabsPage', component: TabsPageComponent},
   /*布局*/
   {path: 'flexTopCenterBottom', component: TopCenterBottomPageComponent},
   {path: 'flexleftCenterRight', component: LeftCenterRightPageComponent},

@@ -77,6 +77,10 @@ import { FlexRightComponent } from './components/layout/flex-lcr-module/flex-rig
 import { ConsolePageComponent } from './demo/console-page/console-page.component';
 import {CountUpModule} from 'countup.js-angular2';
 import { LeftCenterRightPageComponent } from './docs/components/layout/left-center-right-page/left-center-right-page.component';
+import { TabsComponent } from './components/tabs-module/tabs/tabs.component';
+import { TabsPageComponent } from './docs/components/tabs-page/tabs-page.component';
+import { TabComponent } from './components/tabs-module/tab/tab.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 
 
@@ -144,6 +148,10 @@ registerLocaleData(zh);
     FlexRightComponent,
     ConsolePageComponent,
     LeftCenterRightPageComponent,
+    TabsComponent,
+    TabsPageComponent,
+    TabComponent,
+    HomePageComponent,
 
   ],
   imports: [

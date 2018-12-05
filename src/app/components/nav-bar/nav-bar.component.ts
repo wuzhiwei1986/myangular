@@ -100,7 +100,7 @@ export class NavBarComponent implements OnInit {
         },
         {
           'name': '标签页',
-          'uri': 'ecpOpenTags',
+          'uri': 'tabsPage',
           'iconuri': '',
           'child': null
         },
@@ -121,6 +121,12 @@ export class NavBarComponent implements OnInit {
         {
           'name': '登录界面',
           'uri': 'loginPage',
+          'iconuri': '',
+          'child': null
+        },
+        {
+          'name': '系统切换',
+          'uri': 'homePage',
           'iconuri': '',
           'child': null
         },
