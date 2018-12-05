@@ -1,0 +1,36 @@
+.tabs {
+  width: 100%;
+
+}
+
+.tabs .tab-title {
+
+}
+
+.tabs .tab-title a {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.tabs .tab-title a:hover,
+.tabs .tab-title .hover {
+  background: #1E5BD6;
+  color: #fff;
+}
+
+.tabs .tab-content {
+
+  display: block;
+
+}
+
+.tabs .tab-content .item {
+
+  display: block;
+  border: #CCCCCC 1px solid;
+  min-height: 300px;
+
+}

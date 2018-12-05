@@ -7,11 +7,28 @@ import {Component, ElementRef, OnInit} from '@angular/core';
 })
 export class TabsComponent implements OnInit {
 
-  constructor(private elementRef: ElementRef) {
+  constructor(private el: ElementRef) {
 
   }
 
+
+  getOffsetLeft(): number {
+    return this.elementRef.nativeElement.offsetLeft;
+  }
+
+  getOffsetWidth(): number {
+    return this.elementRef.nativeElement.offsetWidth;
+  }
+
+  getOffsetTop(): number {
+    return this.elementRef.nativeElement.offsetTop;
+  }
+
+  getOffsetHeight(): number {
+    return this.elementRef.nativeElement.offsetHeight;
+  }
   ngOnInit() {
+    console.log(this.el.nativeElement.querySelector(".tabs").offsetWidth)
   }
 
 }
