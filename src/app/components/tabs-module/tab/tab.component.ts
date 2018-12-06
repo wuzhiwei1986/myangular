@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'ecp-tab',
@@ -8,10 +8,13 @@ import {Component, Input, OnInit} from '@angular/core';
 export class TabComponent implements OnInit {
   @Input() title: string;
 
+  @Output() protected title: EventEmitter<string> = new EventEmitter();
+
   constructor() {
   }
 
   ngOnInit() {
+
   }
 
 }

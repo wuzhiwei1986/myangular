@@ -1,3 +1,7 @@
+/*
+   面包屑 'ecp-select-map-type' v1.0
+*/
+
 /*选择地图*/
 .select-map { position: absolute; bottom: 172px; right: 30px; width: 232px; height: 32px; }
 .select-map .content { position: relative; }
