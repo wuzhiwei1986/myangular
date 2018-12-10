@@ -65,13 +65,13 @@ import { DispatchPageComponent } from './demo/dispatch/dispatch-page/dispatch-pa
 import { DispatchPageLeftComponent } from './demo/dispatch/dispatch-page-left/dispatch-page-left.component';
 import { DispatchPageRightComponent } from './demo/dispatch/dispatch-page-right/dispatch-page-right.component';
 import { DispatchPageCenterComponent } from './demo/dispatch/dispatch-page-center/dispatch-page-center.component';
-import { FlexTopCenterBottomComponent } from './components/layout/flex-tcp-module/flex-top-center-bottom/flex-top-center-bottom.component';
+import { FlexTopCenterBottomComponent } from './components/layout/flex-tcb-module/flex-top-center-bottom/flex-top-center-bottom.component';
 import { FlexLeftCenterRightComponent } from './components/layout/flex-lcr-module/flex-left-center-right/flex-left-center-right.component';
 import { TopCenterBottomPageComponent } from './docs/components/layout/top-center-bottom-page/top-center-bottom-page.component';
 import { EcpTemplateComponent } from './components/ecp-template/ecp-template.component';
-import { FlexTopComponent } from './components/layout/flex-tcp-module/flex-top/flex-top.component';
-import { FlexBottomComponent } from './components/layout/flex-tcp-module/flex-bottom/flex-bottom.component';
-import { FlexBodyComponent } from './components/layout/flex-tcp-module/flex-body/flex-body.component';
+import { FlexTopComponent } from './components/layout/flex-tcb-module/flex-top/flex-top.component';
+import { FlexBottomComponent } from './components/layout/flex-tcb-module/flex-bottom/flex-bottom.component';
+import { FlexBodyComponent } from './components/layout/flex-tcb-module/flex-body/flex-body.component';
 import { FlexLeftComponent } from './components/layout/flex-lcr-module/flex-left/flex-left.component';
 import { FlexRightComponent } from './components/layout/flex-lcr-module/flex-right/flex-right.component';
 import { ConsolePageComponent } from './demo/console-page/console-page.component';

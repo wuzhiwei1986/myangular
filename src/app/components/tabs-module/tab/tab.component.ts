@@ -8,7 +8,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 export class TabComponent implements OnInit {
   @Input() title: string;
 
-  @Output() protected title: EventEmitter<string> = new EventEmitter();
+
 
   constructor() {
   }

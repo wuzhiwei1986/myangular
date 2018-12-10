@@ -13,7 +13,7 @@ import { OpenDetailsInfoComponent } from './components/open-details-info/open-de
 import { OpenDetailsInfo2Component } from './components/open-details-info2/open-details-info2.component';
 import { EcpOpenTagsComponent } from './components/ecp-tags-model/ecp-open-tags/ecp-open-tags.component';
 /*布局*/
-import { FlexTopCenterBottomComponent } from './components/layout/flex-tcp-module/flex-top-center-bottom/flex-top-center-bottom.component';
+import { FlexTopCenterBottomComponent } from './components/layout/flex-tcb-module/flex-top-center-bottom/flex-top-center-bottom.component';
 import { FlexLeftCenterRightComponent } from './components/layout/flex-lcr-module/flex-left-center-right/flex-left-center-right.component';
 
 /*数据展示*/

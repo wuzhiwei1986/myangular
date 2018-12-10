@@ -1,3 +1,6 @@
+/*
+   布局'ecp-flex-tcb' v1.0
+*/
 /* flexbox */
 .dispatch-right-content-module { height: 100%; display: flex; flex-direction: column; border: #DADADA 1px solid; }
 /*top*/
