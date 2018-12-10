@@ -45,6 +45,10 @@ import { EcpTabsetComponent } from './ecp-tegs-test/ecp-tabset/ecp-tabset.compon
 import { TopCenterBottomPageComponent } from './docs/components/layout/top-center-bottom-page/top-center-bottom-page.component';
 import { LeftCenterRightPageComponent } from './docs/components/layout/left-center-right-page/left-center-right-page.component';
 import { TabsPageComponent } from './docs/components/tabs-page/tabs-page.component';
+import { HttpPageComponent } from './docs/components/http-page/http-page.component';
+
+
+
 const routes: Routes = [
   {path: 'breadCrumb', component: BreadCrumbComponent},
   {path: 'stepsInfo', component: StepsInfoComponent},
@@ -80,6 +84,7 @@ const routes: Routes = [
   {path: 'dispatchPage', component: DispatchPageComponent},
   {path: 'consolePage', component: ConsolePageComponent},
   {path: 'tabsPage', component: TabsPageComponent},
+  {path: 'httpPage', component: HttpPageComponent},
   /*布局*/
   {path: 'flexTopCenterBottom', component: TopCenterBottomPageComponent},
   {path: 'flexleftCenterRight', component: LeftCenterRightPageComponent},

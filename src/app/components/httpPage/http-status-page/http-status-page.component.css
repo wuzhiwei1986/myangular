@@ -1,0 +1,13 @@
+.http-page {
+  display: block;
+  margin: 10% auto 0 auto;
+  width: 252px;
+  height: 92px;
+}
+
+.http400 {
+  background: url("../../../../assets/base/404.png") no-repeat;
+}
+.http510 {
+  background: url("../../../../assets/base/510.png") no-repeat;
+}

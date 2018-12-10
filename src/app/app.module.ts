@@ -81,6 +81,8 @@ import { TabsComponent } from './components/tabs-module/tabs/tabs.component';
 import { TabsPageComponent } from './docs/components/tabs-page/tabs-page.component';
 import { TabComponent } from './components/tabs-module/tab/tab.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { HttpPageComponent } from './docs/components/http-page/http-page.component';
+import { HttpStatusPageComponent } from './components/httpPage/http-status-page/http-status-page.component';
 
 
 
@@ -152,6 +154,8 @@ registerLocaleData(zh);
     TabsPageComponent,
     TabComponent,
     HomePageComponent,
+    HttpPageComponent,
+    HttpStatusPageComponent,
 
   ],
   imports: [

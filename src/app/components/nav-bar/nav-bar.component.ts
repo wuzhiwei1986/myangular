@@ -163,7 +163,7 @@ export class NavBarComponent implements OnInit {
         },
         {
           'name': '404/500页面',
-          'uri': 'errorPage',
+          'uri': 'httpPage',
           'iconuri': '',
           'child': null
         }
