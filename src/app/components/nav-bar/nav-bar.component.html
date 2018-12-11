@@ -7,7 +7,7 @@
         <div class="menu-title" [ngClass]="{'select':i==selectId,'hover':i==hoverId}"
              (click)="hoverMenu(i);selectedApp(menu.uri)" (mouseover)="selectMenu(i)"
              (mouseout)="cleanSel()">
-          <i class="{{menu.iconuri}}"></i>{{menu.name}}
+          <i class="icon dongxiniotwater {{menu.iconuri}}"></i>{{menu.name}}
           <i class="right" [ngClass]="{'icon-fold':hoverId==i,'icon-unfold':hoverId!=i||hoverId==null}"
              *ngIf="menu.child!=''"></i>
         </div>

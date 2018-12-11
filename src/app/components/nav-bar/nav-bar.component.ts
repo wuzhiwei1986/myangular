@@ -33,7 +33,7 @@ export class NavBarComponent implements OnInit {
     {
       'name': '基本组件',
       'uri': '',
-      'iconuri': 'icon-area',
+      'iconuri': 'pipe_map',
       'child': [
         {
           'name': '左边导航',

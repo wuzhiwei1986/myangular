@@ -1,4 +1,4 @@
-@import "../../../assets/font-icon/style.css";
+@import "../../../assets/font-icon/iconfont.css";
 /*左边菜单样式*/
 .main-menu:hover{ width: 220px; overflow: hidden; opacity: 1; }
 .main-menu.hover{ width: 220px; overflow: hidden; opacity: 1; }

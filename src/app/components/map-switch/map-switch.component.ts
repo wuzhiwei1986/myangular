@@ -8,8 +8,8 @@ import {Component, Input, OnInit} from '@angular/core';
 export class MapSwitchComponent implements OnInit {
 
   @Input() customPosition:object;
-  @Input() switchArray:Array;
-  selectId = 0;//当前选中的选项
+  @Input() switchArray:Array<any>;
+  selectId = 0;//当前选中的选项.
 /*
   switchArray = [{
     "name": "操作",
@@ -28,7 +28,7 @@ export class MapSwitchComponent implements OnInit {
 
   select(i) {
     this.selectId = i;
-    console.log("当前选中" + i + "#######" + this.switchArray[i].name)
+    //console.log("当前选中" + i + "#######" + this.switchArray[i].name);
   }
 
   constructor() {
