@@ -13,9 +13,9 @@
 
 /*警告标题栏*/
 .alarm-content .top-title { background: url("../../../../assets/base/alarm-top-bg.png") center 0 no-repeat; height: 62px; line-height: 50px; padding: 12px 0 0 0; text-align: left; font-size: 18px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(25,25,25,1); overflow: hidden; }
-.alarm-content .top-title .content { background: url("../../../../assets/base/alarm-mid-bg.png") center 0 repeat-y; width:100%; margin: 0 auto; padding: 0 14px; }
+.alarm-content .top-title .content { background:url("../../../../assets/base/alarm-mid-bg.png") center 0 repeat-y; width:100%; margin: 0 auto; padding: 0 14px; }
 .alarm-content .top-title .content .right-link { float: right; font-size: 14px; font-weight: 400; color: #191919; }
-.alarm-content .top-title .content .right-link a { color: #191919; }/**/
+.alarm-content .top-title .content .right-link a { color: #191919; }
 
 /*表格样式*/
 .alarm-list {background: url("../../../../assets/base/alarm-mid-bg.png") center 0 repeat-y; padding:0 4px 0 4px;  }

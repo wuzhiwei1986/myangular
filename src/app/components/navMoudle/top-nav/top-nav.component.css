@@ -1,5 +1,5 @@
 /*
-   顶部导航'ecp-top-nav' v1.0
+   顶部导航'ecp-top-nav' v1.1
 */
 .top-header {
   background: #303844;
@@ -12,7 +12,7 @@
   right: 0;
 }
 
-.top-header .logo {
+:host >>> .top-header .logo {
   height: 32px;
   margin-left: 23px;
   margin-top: 8px;
@@ -24,12 +24,12 @@
   cursor: pointer;
 }
 
-.top-header .logo img {
+:host >>> .top-header .logo img {
   vertical-align: top;
   height: 32px;
 }
 
-.top-header .name {
+:host >>> .top-header .name {
   display: inline-block;
   float: left;
   color: #ffffff;
@@ -37,6 +37,6 @@
   margin-top: 5px;
   cursor: pointer;
 }
-.logout{
+:host >>> .logout{
   background: url("../../../../assets/logout.png") no-repeat; width: 18px; height: 20px; text-indent: -999999px; display: inline-block; margin-top: 16px; margin-right: 30px; float: right!important;
 }

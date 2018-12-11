@@ -20,15 +20,19 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 })
 export class AlarmComponent implements OnInit {
   isShow: boolean = false;
-  @Input() alarmList: Array<string>;//传入列表
-  @Input() alarmTitle: string;//传入标题
-  @Output() disposed = new EventEmitter<string>();//回传ID
-  @Output() viewAll = new EventEmitter();//点击‘查看全部’回传
+  // 传入列表
+  @Input() alarmList: Array<string> = [];
+  // 传入标题
+  @Input() alarmTitle: string;
+  // 回传ID
+  @Output() disposed = new EventEmitter<string>();
+  // 点击‘查看全部’回传
+  @Output() viewAll = new EventEmitter();
 
 
   dispose(id) {
     this.disposed.emit(id);
-    //alert(id);
+    // alert(id);
   }
 
   viewMore() {
@@ -95,6 +99,7 @@ export class AlarmComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('alarmList', this.alarmList);
   }
 
 }

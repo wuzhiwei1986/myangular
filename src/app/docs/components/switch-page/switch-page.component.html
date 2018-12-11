@@ -4,7 +4,22 @@
 <div class="page-body">
   <h2 class="demo-title">演示</h2>
   <div class="demo-body" style="position:relative; height: 400px;">
-   <ecp-switch></ecp-switch>
+    <ecp-switch [switchArray]="switchArray1"
+                [customPosition]="{'left':'30px','top':'20px','z-index':'1000'}"></ecp-switch>
+    <ecp-switch [switchArray]="switchArray2"
+                [customPosition]="{'left':'30px','top':'90px','z-index':'1000'}"></ecp-switch>
+    <ecp-component-recommend>
+      <h3>说明</h3>
+      <div>
+        可以根据传入的JSON配置标签数量、标签图标、组件位置<br/>
+        组件使用position定位
+      </div>
+      <h3>参数</h3>
+      <div>
+        [switchArray]<br/>
+        [customPosition]
+      </div>
+    </ecp-component-recommend>
   </div>
 
   <h2 class="demo-title">API</h2>

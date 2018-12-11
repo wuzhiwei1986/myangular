@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'ecp-user-info',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-info.component.css']
 })
 export class UserInfoComponent implements OnInit {
+  @Input() userHader: string = 'assets/base/user_default.png';
+  @Input() userName = 'username';
 
-  userName="李厉害";
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -11,17 +11,25 @@
       <h3>说明</h3>
       <div>随便自定义内容，自定义内容样式要写在父组件，<br/>
         参数定义顶部topHeight和底部bottomHeight的高度，<br/>
-        ecp-flex-body会自动适应，超出高度会出现滚动条</div>
+        ecp-flex-body会自动适应，超出高度会出现滚动条
+      </div>
+      <h3>参数</h3>
+      <div>
+        [topHeight]<br/>
+        [bottomHeight]
+      </div>
     </ecp-component-recommend>
     <div style="width: 500px; height: 600px">
       <ecp-flex-tcb [topHeight]="60" [bottomHeight]="60">
         <ecp-flex-top>
-          <div class="module-title">标题<a class="close"><i class="icon-close"></i> </a></div>
+          <div class="module-title">自由配置 ecp-flex-top<a class="close"><i class="icon-close"></i> </a></div>
         </ecp-flex-top>
         <ecp-flex-body>
-          <div>随便自定义内容，自定义内容样式要写在父组件，<br/>
-          参数定义顶部topHeight和底部bottomHeight的高度，<br/>ecp-flex-body会自动适应，超出高度会出现滚动条</div>
-          <div style="height: 1500px;background:darkseagreen"></div>
+          <div style="background: tan;padding: 20px;">自由配置 ecp-flex-body<br/>
+            随便自定义内容，自定义内容样式要写在父组件，<br/>
+            参数定义顶部topHeight和底部bottomHeight的高度，<br/>ecp-flex-body会自动适应，超出高度会出现滚动条
+          </div>
+          <div style="height: 1500px;background:darkseagreen;padding: 10px;"></div>
         </ecp-flex-body>
         <ecp-flex-bottom>
           <div class="module-footer">
@@ -39,7 +47,9 @@
           <div class="module-title">标题<a class="close"><i class="icon-close"></i> </a></div>
         </ecp-flex-top>
         <ecp-flex-body>
-          <div style="background: #1e5bd6">不传参数，ecp-flex-top和ecp-flex-bottom都不会显示，ecp-flex-body自动适应</div>
+          <div style="background: darkseagreen;padding: 20px;">
+            不传参数，ecp-flex-top和ecp-flex-bottom都不会显示，ecp-flex-body自动适应
+          </div>
         </ecp-flex-body>
         <ecp-flex-bottom>
           <div class="module-footer">

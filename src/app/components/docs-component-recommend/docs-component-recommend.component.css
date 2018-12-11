@@ -1,0 +1,7 @@
+:host >>> h3{
+  margin-top: 30px;
+}
+:host >>> h3:first-child{
+  margin-top: 0;
+}
+

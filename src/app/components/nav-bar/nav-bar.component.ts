@@ -36,6 +36,18 @@ export class NavBarComponent implements OnInit {
       'iconuri': 'icon-area',
       'child': [
         {
+          'name': '左边导航',
+          'uri': 'navBarPage',
+          'iconuri': '',
+          'child': null
+        },
+        {
+          'name': '顶部导航',
+          'uri': 'topNavPage',
+          'iconuri': '',
+          'child': null
+        },
+        {
           'name': '开关切换',
           'uri': 'switchPage',
           'iconuri': '',
@@ -50,18 +62,6 @@ export class NavBarComponent implements OnInit {
         {
           'name': '步骤条',
           'uri': 'stepsInfo',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '左边导航',
-          'uri': 'navBarPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '顶部导航',
-          'uri': 'topNavPage',
           'iconuri': '',
           'child': null
         },

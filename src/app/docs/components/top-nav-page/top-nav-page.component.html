@@ -1,12 +1,70 @@
 <div class="page-title">
   <h1>顶部导航 ecp-top-nav</h1>
-  <!--<h3>工具条介绍</h3>--></div>
+  <h3>
+    父组件：ecp-top-nav<Br>
+    子组件：ecp-user-info、ecp-drop-down-menu、ecp-alarm
+  </h3></div>
 <div class="page-body">
-  <h2 class="demo-title">演示</h2>
-  <div class="demo-body" style="position:relative; height: 400px;">
-    <ecp-top-nav></ecp-top-nav>
+  <h2 class="demo-title">父组件演示</h2>
+  <div class="demo-body" style="position:relative; height: 200px;">
+    <ecp-top-nav>
+      <span class="logo"><img src="assets/base/logo.png"/><!--<img src="assets/base/kbl-logo.png"/>--></span>
+      <span class="name">前端框架</span>
+      <a href="javascript:void(0);" class="logout">退出</a>
+      <ecp-user-info [userName]="'李厉害'"></ecp-user-info>
+      <ecp-drop-down-menu [menusList]="demoPageMenusList" (navUrl)="test($event)"></ecp-drop-down-menu>
+      <ecp-alarm [alarmTitle]="'警报'" [alarmList]="demoPageAlarmList" (disposed)="disposedId($event)"
+                 (viewAll)="test('点击*查看全部*调用')"></ecp-alarm>
+    </ecp-top-nav>
   </div>
+  <h2 class="demo-title">子组件演示</h2>
+  <div class="demo-body" style="position:relative; height: 200px;">
+    <div style="width: 200px; height: 180px; background: #181b1f;">
+      <ecp-user-info [userName]="'演示用户'"></ecp-user-info>
+    </div>
+    <ecp-component-recommend>
+      <h3>说明</h3>
+      <div>
+        自由配置用户头像，用户名
+      </div>
+      <h3>参数</h3>
+      <div>
+        [userName]<br/>
+        [userHader]
+      </div>
+    </ecp-component-recommend>
+  </div>
+  <div class="demo-body" style="position:relative;  height: 200px;">
+    <div style="width: 200px; height: 180px;background: #181b1f;">
+      <ecp-drop-down-menu></ecp-drop-down-menu>
+    </div>
+    <ecp-component-recommend>
+      <h3>说明</h3>
+      <div>
 
+      </div>
+      <h3>参数</h3>
+      <div>
+        [menusList]<br/>
+      </div>
+    </ecp-component-recommend>
+  </div>
+  <div class="demo-body" style="position:relative; height: 450px;">
+    <div style="width: 470px; height: 400px; background: #181b1f;">
+      <ecp-alarm [alarmList]="demoPageAlarmList" [alarmTitle]="'自定义标题'"></ecp-alarm>
+    </div>
+    <ecp-component-recommend>
+      <h3>说明</h3>
+      <div>
+
+      </div>
+      <h3>参数</h3>
+      <div>
+        [alarmTitle]<br/>
+        [alarmList]
+      </div>
+    </ecp-component-recommend>
+  </div>
   <h2 class="demo-title">API</h2>
   <div class="demo-body">
     <table class="ecp-table">

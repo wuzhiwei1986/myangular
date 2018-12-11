@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'ecp-switch',
@@ -7,7 +7,10 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MapSwitchComponent implements OnInit {
 
+  @Input() customPosition:object;
+  @Input() switchArray:Array;
   selectId = 0;//当前选中的选项
+/*
   switchArray = [{
     "name": "操作",
     "icon": "icon-operation"
@@ -21,6 +24,7 @@ export class MapSwitchComponent implements OnInit {
     "name": "展示三",
     "icon": "icon-demonstration"
   }];
+*/
 
   select(i) {
     this.selectId = i;
