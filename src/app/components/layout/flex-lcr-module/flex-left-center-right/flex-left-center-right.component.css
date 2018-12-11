@@ -1,25 +1,25 @@
 /*
-   布局'ecp-flex-lcr' v1.0
+   布局'ecp-flex-lcr' v1.1
 */
-#content {
+.flex-lcb {
   display: flex;
   width: 100%;
   height: 100%;
 }
 
-#left {
+.flex-left {
   /*width: 200px;*/
   flex: 0 0 200px;
   height: 100%;
   background: darkseagreen;
 }
 
-#middle {
+.flex-body {
   flex: 1;
   background-color: #cccccc;
 }
 
-#right {
+.flex-right {
   /*width: 200px;*/
   flex: 0 0 200px;
   height: 100%;

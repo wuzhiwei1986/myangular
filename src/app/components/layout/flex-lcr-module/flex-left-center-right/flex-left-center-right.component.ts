@@ -6,8 +6,9 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./flex-left-center-right.component.css']
 })
 export class FlexLeftCenterRightComponent implements OnInit {
-  @Input() leftWidth;
-  @Input() rightWidth;
+  @Input() leftWidth: number = 0;
+  @Input() rightWidth: number = 0;
+
 
   constructor() {
   }

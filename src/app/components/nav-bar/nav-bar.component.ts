@@ -21,6 +21,7 @@ import {Router} from '@angular/router';
 })
 export class NavBarComponent implements OnInit {
   @Input() customScaling: boolean;// 自定义伸缩,true 可以缩放，false 禁止缩放
+  @Input() customStyle:object={}
   //customScaling:boolean=true;
   menuStatus: string = 'off';
   hoverId: number = 0; // 当前已选中
@@ -33,7 +34,7 @@ export class NavBarComponent implements OnInit {
     {
       'name': '基本组件',
       'uri': '',
-      'iconuri': 'pipe_map',
+      'iconuri': 'pipe_area',
       'child': [
         {
           'name': '左边导航',
@@ -116,7 +117,7 @@ export class NavBarComponent implements OnInit {
     {
       'name': '数据展示',
       'uri': '',
-      'iconuri': 'icon-area',
+      'iconuri': 'pipe_area',
       'child': [
         {
           'name': '登录界面',
@@ -205,7 +206,7 @@ export class NavBarComponent implements OnInit {
     {
       'name': '布局展示',
       'uri': '',
-      'iconuri': 'icon-area',
+      'iconuri': 'pipe_area',
       'child': [
         {
           'name': '上中下',
@@ -224,7 +225,7 @@ export class NavBarComponent implements OnInit {
     {
       'name': '关于',
       'uri': 'about',
-      'iconuri': 'icon-area',
+      'iconuri': 'pipe_report',
       'child': []
     }
   ];

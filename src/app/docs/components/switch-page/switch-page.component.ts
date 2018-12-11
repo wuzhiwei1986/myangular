@@ -9,24 +9,24 @@ export class SwitchPageComponent implements OnInit {
 
   switchArray1 = [{
     "name": "操作",
-    "icon": "icon-operation"
+    "icon": "general_editor-pattern"
   }, {
     "name": "展示",
-    "icon": "icon-demonstration"
+    "icon": "general_display-pattern"
   }, {
     "name": "展示二",
-    "icon": "icon-demonstration"
+    "icon": "general_editor-pattern"
   }, {
     "name": "展示三",
-    "icon": "icon-demonstration"
+    "icon": "general_display-pattern"
   }];
 
   switchArray2 = [{
     "name": "操作",
-    "icon": "icon-operation"
+    "icon": "general_editor-pattern"
   }, {
     "name": "展示",
-    "icon": "icon-demonstration"
+    "icon": "general_display-pattern"
   }];
 
   constructor() { }
