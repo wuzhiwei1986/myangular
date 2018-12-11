@@ -8,7 +8,9 @@ import {Component, Input, OnInit} from '@angular/core';
 export class FlexTopCenterBottomComponent implements OnInit {
   @Input() topHeight: number = 0;
   @Input() bottomHeight: number = 0;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
