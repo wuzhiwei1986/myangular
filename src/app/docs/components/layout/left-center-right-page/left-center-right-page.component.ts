@@ -9,10 +9,6 @@ export class LeftCenterRightPageComponent implements OnInit {
   customLeftWidth:number=200;
   customRightWidth:number=200;
 
-  test(txt) {
-    console.log(txt);
-  }
-
   //顶部菜单数据
   alarmList = [
     {
@@ -105,6 +101,12 @@ export class LeftCenterRightPageComponent implements OnInit {
     'child': null,
     'introduction': '主要功能包括短信模板管理，报表模板管理，系统信息配置等'
   }];
+  test(info){
+    alert(info);
+  }
+  disposedId(info){
+    alert(info);
+  }
 
 
   constructor() { }

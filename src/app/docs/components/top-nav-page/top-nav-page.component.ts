@@ -97,6 +97,13 @@ export class TopNavPageComponent implements OnInit {
     }
   ];
 
+  test(info){
+    alert(info);
+  }
+  disposedId(info){
+    alert(info);
+  }
+
   constructor() {
   }
 
