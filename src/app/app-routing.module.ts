@@ -50,6 +50,7 @@ import { HttpPageComponent } from './docs/components/http-page/http-page.compone
 
 
 const routes: Routes = [
+  {path: '', component: TopNavPageComponent},
   {path: 'breadCrumb', component: BreadCrumbComponent},
   {path: 'stepsInfo', component: StepsInfoComponent},
   {path: 'navBar', component: NavBarComponent},
