@@ -6,9 +6,32 @@
     组件基于现代浏览器开发，兼容IE11以上浏览器<br/>
     所有组件均以"ecp-"开头</h3></div>
 <div class="page-body">
-  <h2 class="demo-title">演示</h2>
-  <div class="demo-body" style="position:relative; height: 400px;">
-
+  <h2 class="demo-title">目录说明</h2>
+  <div class="demo-body" style="background: #f7f7f7">
+<pre class="hljs language-null"><code>
+├── src
+│&nbsp;&nbsp; ├── app
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── core                                # 核心模块
+│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; ├── i18n
+│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; ├── net
+│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └── default.interceptor.ts      # 默认HTTP拦截器
+│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; ├── services
+│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └── startup.service.ts          # 初始化项目配置
+│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └── core.module.ts                  # 核心模块文件
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── layout                              # 通用布局
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── routes
+│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; ├── **                              # 业务目录
+│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; ├── routes.module.ts                # 业务路由模块
+│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └── routes-routing.module.ts        # 业务路由注册口
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── shared                              # 共享模块
+│&nbsp;&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └── shared.module.ts                # 共享模块文件
+│&nbsp;&nbsp; │&nbsp;&nbsp; ├── app.component.ts                    # 根组件
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── app.module.ts                       # 根模块
+│&nbsp;&nbsp; │&nbsp;&nbsp; └── delon.module.ts                     # @delon模块导入
+│&nbsp;&nbsp; ├── assets                                  # 本地静态资源
+│&nbsp;&nbsp; ├── environments                            # 环境变量配置
+│&nbsp;&nbsp; ├── styles                                  # 样式目录
+└── └── style.less                              # 样式引导入口</code></pre>
   </div>
 
   <h2 class="demo-title">API</h2>
