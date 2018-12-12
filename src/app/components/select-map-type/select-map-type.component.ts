@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {animate, style, transition, trigger} from '@angular/animations';
 
 @Component({
@@ -19,7 +19,7 @@ import {animate, style, transition, trigger} from '@angular/animations';
   ]
 })
 export class SelectMapTypeComponent implements OnInit {
-
+  @Input() customPosition:object;
   isShow = false;
   showList = null;
 

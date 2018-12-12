@@ -1,3 +1,27 @@
-<p>
-  home-page works!
-</p>
+<div class="home-content">
+
+  <div class="sys-index">
+    <!--右边菜单-->
+
+    <div class="menu-div">
+      <div class="menu">
+        <a *ngFor="let menu of menus;let i=index" href="javascript:void(0);" [ngClass]="{'select':selItem == i}"
+           (click)="forword(menu.menuid,menu.uri)" (mouseover)="onItemClick(i); clrTimer(timer);" (mouseout)="setTimer()"
+           id="{{menu.iconuri}}">
+          <div class="name">{{menu.name}}</div>
+          <div class="href">点击进入</div>
+        </a>
+      </div>
+    </div>
+    <!--左边图片-->
+    <div class="content">
+      <div *ngFor="let menu of menus;let i=index" class="con" [style.display]="selItem==i?'block':'none'">
+        <div class="title"><h2>{{menu.name}}</h2><h4>
+          {{menu.introduction}}</h4></div>
+        <div class="{{menu.iconuri}} pic pic-animation"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

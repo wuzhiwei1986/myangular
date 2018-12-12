@@ -3,7 +3,7 @@
 */
 
 /*系统切换菜单*/
-.change-sys{  margin-right: 15px; height: 32px;
+.change-sys{ z-index: 1000; margin-right: 15px; height: 32px;
   line-height: 32px;
   display: block;
   float: right;

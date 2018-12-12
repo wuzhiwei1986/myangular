@@ -1,6 +1,6 @@
 <span class="alarm" (mouseover)="isShow=true" (mouseleave)="isShow=false"> <span
   class="alarm-num"><span>{{alarmList.length}}</span></span> <span class="txt">警报</span> <span class="icon"><i
-  class="icon-alarm2"></i></span>
+  class="icon dongxiniotwater general_alarm"></i></span>
 <div class="alarm-content" [@displayState]="isShow == true? 'block' : 'none'">
   <div class="top-title">
     <div class="content"> <span>{{alarmTitle}}</span>

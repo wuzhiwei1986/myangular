@@ -1,3 +1,4 @@
+
 import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
@@ -14,5 +15,4 @@ export class FlexTopCenterBottomComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

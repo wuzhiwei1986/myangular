@@ -7,7 +7,7 @@
         flex-wrap:warp;
         justify-content: space-between;height: 100%; ">
     <div style="width:calc(30% - 10px); height: 100%;  overflow-y: auto ">
-      <ecp-flex-tcb>
+      <ecp-flex-tcb [topHeight]="60" [bottomHeight]="60">
         <ecp-flex-top>
           <div class="module-title">工单<a class="close"><i class="icon-edit"></i>修改</a></div>
         </ecp-flex-top>
@@ -189,7 +189,7 @@
 
     </div>
     <div style="width:calc(45% - 10px);">
-      <ecp-flex-tcb>
+      <ecp-flex-tcb [topHeight]="60" [bottomHeight]="60">
         <ecp-flex-top>
           <div class="module-title">工单详情</div>
         </ecp-flex-top>

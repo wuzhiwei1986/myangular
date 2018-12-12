@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-dispatch-page',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DispatchPageComponent implements OnInit {
 
-  constructor() { }
+  public test(str) {
+    console.log(str);
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

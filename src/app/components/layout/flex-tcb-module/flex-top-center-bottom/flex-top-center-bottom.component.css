@@ -1,9 +1,13 @@
+/*
+   布局'ecp-flex-tcb' v1.1
+*/
+
 /* flexbox */
 .flex-tcb { height: 100%; display: flex; flex-direction: column; /*border: #DADADA 1px solid;*/ }
 /*top*/
 :host >>> .flex-tcb .flex-top { flex-grow: 0; flex-shrink: 0;  width: 100%;}
 /*center*/
-.flex-tcb .flex-body{ overflow-y: auto; flex-grow: 1; }
+.flex-tcb .flex-body{ overflow-y: auto; flex-grow: 1; height: inherit; }
 /*bottom*/
 :host >>> .flex-tcb .flex-footer { flex-grow: 0; flex-shrink: 0; width: 100%;}
 
@@ -13,5 +17,3 @@
   background: #e5e5e5;
 }
 :host >>> .dispatch-right-content-module .module-body { background: #f2f2f2;}*/
-
-

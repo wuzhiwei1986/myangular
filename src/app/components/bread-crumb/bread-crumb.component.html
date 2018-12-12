@@ -1,16 +1,7 @@
 <!--自定义面包屑-->
 <div class="custom-breadcrumb">
-  <!--
-  <span class="breadcrumb-item">
-    <span>工单管理</span>
-    <span>维修工单</span>
-    <span>添加维修工单</span>
-  </span>
-  <nav class="right-link"><a (click)="goList()">返回工单列表</a></nav>
-  -->
   <span class="breadcrumb-item">
       <ng-content></ng-content>
   </span>
-
   <ng-content select=".right-link"></ng-content>
 </div>

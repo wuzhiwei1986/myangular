@@ -1,9 +1,7 @@
 /*弹出层*********************************************/
 #map-popup {
   position: absolute;
-  top: 30px;
-  left: 30px;
-  bottom: 40px;
+
   width: 340px;
   background: #FFFFFF;
   z-index: 1000;

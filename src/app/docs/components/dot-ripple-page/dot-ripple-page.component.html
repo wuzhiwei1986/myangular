@@ -12,7 +12,19 @@
     Y:<input [(ngModel)]="inputY">
     <ecp-ripple [customColor]="'red'" [customX]="'200px'" [customY]="'100px'"></ecp-ripple>
     <ecp-ripple [customColor]="color" [customX]="inputX" [customY]="inputY"></ecp-ripple>
-
+    <ecp-component-recommend>
+      <h3>说明</h3>
+      <div>
+        自由配置颜色，位置<br/>
+        组件使用position定位
+      </div>
+      <h3>参数</h3>
+      <div>
+        [customColor]<br/>
+        [customX]<br/>
+        [customY]<br/>
+      </div>
+    </ecp-component-recommend>
   </div>
   <h2 class="demo-title">演示 地图弹层 ecp-map-dot-popup</h2>
   <div class="demo-body" style="position:relative; height: 300px;">
@@ -29,6 +41,18 @@
     </ecp-map-dot-popup>
     <br/><br/><br/><br/><br/><br/><br/>
     地图坐标弹出标签
+    <ecp-component-recommend>
+      <h3>说明</h3>
+      <div>
+        自由配置关闭按钮，位置<br/>
+        组件使用position定位
+      </div>
+      <h3>参数</h3>
+      <div>
+        [isCloseBtn]<br/>
+        [customPosition]<br/>
+      </div>
+    </ecp-component-recommend>
   </div>
   <h2 class="demo-title">演示 地图图例 ecp-map-legend</h2>
   <div class="demo-body" style="position:relative;height: 200px; background: #6E6E6E">
@@ -36,13 +60,24 @@
     <br/><br/><br/><br/><br/><br/><br/>
     地图图例
   </div>
-  <h2 class="demo-title">演示 地图图例 ecp-select-map-type</h2>
-  <div class="demo-body" style="position:relative;height: 300px; ">
-    <ecp-select-map-type>
+  <h2 class="demo-title">演示 切换图层 ecp-select-map-type</h2>
+  <div class="demo-body" style="position:relative;height: 300px;  background: #6E6E6E">
+    <ecp-select-map-type [customPosition]="{'top': '50px', 'left': '60px'}">
       <li>百度地图</li>
       <li>高德地图</li>
       <li>谷歌地图</li>
     </ecp-select-map-type>
+    <ecp-component-recommend>
+      <h3>说明</h3>
+      <div>
+        自由配置关闭位置<br/>
+        组件使用position定位
+      </div>
+      <h3>参数</h3>
+      <div>
+        [customPosition]<br/>
+      </div>
+    </ecp-component-recommend>
   </div>
   <h2 class="demo-title">API</h2>
   <div class="demo-body">

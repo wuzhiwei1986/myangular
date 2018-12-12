@@ -95,11 +95,10 @@ body{ }
 
 /*top-header end*/
 
-
 /* 首页样式 ************************************************************/
 .home-content{position: fixed; top: 50px; bottom: 0px; left: 0px; right: 0px; min-height:700px; min-width: 1120px;background:url("../../../assets/index/hone-bg.png") center top no-repeat;/* overflow-y: auto; overflow-x: hidden;*/ }
 .sys-index{width: 1120px;margin: 0 auto;}
-.sys-index .menu-div{width:300px; float: right; margin-top: 30px;display:flex; align-items:center; min-height: 856px;background:url("../../../assets/index/menu/menu-right-bg.png") right top repeat-y;}
+.sys-index .menu-div{width:300px; float: right; margin-top: 30px;display:flex; align-items:center; min-height: 600px;background:url("../../../assets/index/menu/menu-right-bg.png") right top repeat-y;}
 .sys-index .content{width:810px; float: left; }
 .sys-index .menu{width: 260px;}
 .sys-index .menu a{ display: block; margin: 0 auto;margin-bottom: 9px;width: 260px; height: 100px;color: #94a8ea;}
@@ -109,41 +108,47 @@ body{ }
 .sys-index .menu a#menu-2{background:url("../../../assets/index/menu/menu_2.png") center center no-repeat; background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
 .sys-index .menu a#menu-3{background:url("../../../assets/index/menu/menu_3.png") center center no-repeat;  background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
 .sys-index .menu a#menu-4{background:url("../../../assets/index/menu/menu_4.png") center center no-repeat; background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
-.sys-index .menu a#menu-5{background:url("../../../assets/index/menu/menu_4.png") center center no-repeat; background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
-.sys-index .menu a#menu-6{background:url("../../../assets/index/menu/menu_4.png") center center no-repeat; background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
+.sys-index .menu a#menu-5{background:url("../../../assets/index/menu/menu_5.png") center center no-repeat; background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
+.sys-index .menu a#menu-6{background:url("../../../assets/index/menu/menu_6.png") center center no-repeat; background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
+.sys-index .menu a#menu-7{background:url("../../../assets/index/menu/menu_7.png") center center no-repeat; background-size: 250px 102px;padding-left: 30px;padding-top: 36px;}
 .sys-index .menu a#menu-1 .name,
 .sys-index .menu a#menu-2 .name,
 .sys-index .menu a#menu-3 .name,
 .sys-index .menu a#menu-4 .name,
 .sys-index .menu a#menu-5 .name,
-.sys-index .menu a#menu-6 .name{  font-size: 20px; font-weight: bold;  }
+.sys-index .menu a#menu-6 .name,
+.sys-index .menu a#menu-7 .name{  font-size: 20px; font-weight: bold;  }
 .sys-index .menu a#menu-1 .href,
 .sys-index .menu a#menu-2 .href,
 .sys-index .menu a#menu-3 .href,
 .sys-index .menu a#menu-4 .href,
 .sys-index .menu a#menu-5 .href,
-.sys-index .menu a#menu-6 .href{ display: none; }
+.sys-index .menu a#menu-6 .href,
+.sys-index .menu a#menu-7 .href{ display: none; }
 
 /* 菜单选中 ************************************************************/
 .sys-index .menu a#menu-1:hover,.sys-index .menu a#menu-1.select{background:url("../../../assets/index/menu/menu_1_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px; color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
 .sys-index .menu a#menu-2:hover,.sys-index .menu a#menu-2.select{background:url("../../../assets/index/menu/menu_2_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
 .sys-index .menu a#menu-3:hover,.sys-index .menu a#menu-3.select{background:url("../../../assets/index/menu/menu_3_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
 .sys-index .menu a#menu-4:hover,.sys-index .menu a#menu-4.select{background:url("../../../assets/index/menu/menu_4_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
-.sys-index .menu a#menu-5:hover,.sys-index .menu a#menu-5.select{background:url("../../../assets/index/menu/menu_4_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
-.sys-index .menu a#menu-6:hover,.sys-index .menu a#menu-6.select{background:url("../../../assets/index/menu/menu_4_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
+.sys-index .menu a#menu-5:hover,.sys-index .menu a#menu-5.select{background:url("../../../assets/index/menu/menu_5_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
+.sys-index .menu a#menu-6:hover,.sys-index .menu a#menu-6.select{background:url("../../../assets/index/menu/menu_6_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
+.sys-index .menu a#menu-7:hover,.sys-index .menu a#menu-7.select{background:url("../../../assets/index/menu/menu_7_h.png") center center no-repeat;background-size: 260px 100px;padding-top: 20px;color: #ffffff;-moz-box-shadow:0px 0px 6px #003399; -webkit-box-shadow:0px 0px 6px #003399; box-shadow:0px 0px 6px #003399;}
 .sys-index .menu a#menu-1:hover .name,.sys-index .menu a#menu-1.select .name,
 .sys-index .menu a#menu-2:hover .name,.sys-index .menu a#menu-2.select .name,
 .sys-index .menu a#menu-3:hover .name,.sys-index .menu a#menu-3.select .name,
 .sys-index .menu a#menu-4:hover .name,.sys-index .menu a#menu-4.select .name,
 .sys-index .menu a#menu-5:hover .name,.sys-index .menu a#menu-5.select .name,
-.sys-index .menu a#menu-6:hover .name,.sys-index .menu a#menu-6.select .name{ font-size: 24px; font-weight: bold;  -webkit-animation:fadeInLeft .6s .0s ease both;
-  -moz-animation:fadeInLeft .6s .0s ease both;  }
+.sys-index .menu a#menu-6:hover .name,.sys-index .menu a#menu-6.select .name,
+.sys-index .menu a#menu-7:hover .name,.sys-index .menu a#menu-7.select .name{ font-size: 24px; font-weight: bold;  -webkit-animation:fadeInLeft .6s .0s ease both;
+  -moz-animation:fadeInLeft .6s .0s ease both;   }
 .sys-index .menu a#menu-1:hover .href,.sys-index .menu a#menu-1.select .href,
 .sys-index .menu a#menu-2:hover .href,.sys-index .menu a#menu-2.select .href,
 .sys-index .menu a#menu-3:hover .href,.sys-index .menu a#menu-3.select .href,
 .sys-index .menu a#menu-4:hover .href,.sys-index .menu a#menu-4.select .href,
 .sys-index .menu a#menu-5:hover .href,.sys-index .menu a#menu-5.select .href,
-.sys-index .menu a#menu-6:hover .href,.sys-index .menu a#menu-6.select .href{ display: block; margin-top: 4px; font-size: 18px; font-weight: normal; -webkit-animation:fadeInLeft .6s .2s ease both;
+.sys-index .menu a#menu-6:hover .href,.sys-index .menu a#menu-6.select .href,
+.sys-index .menu a#menu-7:hover .href,.sys-index .menu a#menu-7.select .href{ display: block; margin-top: 4px; font-size: 18px; font-weight: normal; -webkit-animation:fadeInLeft .6s .2s ease both;
   -moz-animation:fadeInLeft .6s .2s ease both; }
 
 /* 左边图片内容 ************************************************************/
@@ -156,9 +161,9 @@ body{ }
 .sys-index .content .menu-2{ background:url("../../../assets/index/pic/menu-2.png") left bottom no-repeat; height: 640px; width: 709px;}
 .sys-index .content .menu-3{ background:url("../../../assets/index/pic/menu-3.png") left bottom no-repeat; height: 640px; width: 709px;}
 .sys-index .content .menu-4{ background:url("../../../assets/index/pic/menu-4.png") left bottom no-repeat; height:  640px; width:709px;}
-.sys-index .content .menu-5{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 640px; width: 709px;}
-.sys-index .content .menu-6{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 640px; width: 709px;}
-.sys-index .content .menu-7{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 592px; width: 721px;}
+.sys-index .content .menu-5{ background:url("../../../assets/index/pic/menu-5.png") left bottom no-repeat; height: 640px; width: 709px;}
+.sys-index .content .menu-6{ background:url("../../../assets/index/pic/menu-6.png") left bottom no-repeat; height: 640px; width: 709px;}
+.sys-index .content .menu-7{ background:url("../../../assets/index/pic/menu-7.png") left bottom no-repeat; height: 592px; width: 721px;}
 .sys-index .content .menu-8{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 592px; width: 721px;}
 .sys-index .content .menu-9{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 592px; width: 721px;}
 .sys-index .content .menu-10{ background:url("../../../assets/index/pic/default.png") left bottom no-repeat; height: 592px; width: 721px;}

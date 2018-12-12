@@ -3,10 +3,10 @@
 */
 
 /*选择地图*/
-.select-map { position: absolute; bottom: 172px; right: 30px; width: 232px; height: 32px; }
+.select-map { position: absolute;  width: 232px; height: 32px; }
 .select-map .content { position: relative; }
 
-.select-map span.icon { position: absolute; right: 0; top: 0; width: 32px; height: 32px; background: rgba(0, 0, 0, 1); opacity: 0.4; text-align: center; padding-top: 7px; border-radius: 4px; cursor: pointer; }
+.select-map span.icon { position: absolute; right: 0; top: 0; width: 32px; height: 32px; background: rgba(0, 0, 0, 1); opacity: 0.4; text-align: center; padding-top:4px; border-radius: 4px; cursor: pointer; }
 .select-map span.icon:hover, .select-map span.icon.hover { background: rgba(0,0,0,1); opacity: 0.6; }
 .select-map span.icon i { width: 18px; height: 18px; font-size: 18px; color: #FFFFFF; }
 

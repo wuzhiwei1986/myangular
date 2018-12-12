@@ -1,7 +1,7 @@
-<div class="select-map">
+<div class="select-map" [ngStyle]="customPosition">
   <div class="content">
     <span class="icon" (mouseover)="isShow=true" (mouseleave)="mouseOut()" [ngClass]="{'hover':isShow}"><i
-      class="icon-select-map"></i></span>
+      class="icon dongxiniotwater general_select-map"></i></span>
     <ul class="list" *ngIf="isShow" (mouseover)="cleanTime()" (mouseleave)="isShow=false"
         [@openClose]="isOpen ? 'open' : 'closed'">
       <!--

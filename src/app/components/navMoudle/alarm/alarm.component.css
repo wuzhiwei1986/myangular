@@ -4,7 +4,7 @@
 
 /*警告弹窗*/
 .alarm { position: relative; display: inline-block; float: right; font-family: MicrosoftYaHei; height: 50px; width: 90px; line-height: 50px; text-align: right; padding-left: 15px; padding-right: 32px; background: url("../../../../assets/change-sys/alarm-r-bg.png") right center no-repeat; }
-.alarm .icon { position: absolute; right: 73px; top: 1px; cursor: pointer; }
+.alarm .icon { position: absolute; right: 35px; top: 0px; cursor: pointer;  }
 .alarm .icon i { font-size: 18px; color: #ffffff !important; }
 .alarm .alarm-num { position: absolute; right: 60px; top: 3px; z-index: 10; border-radius: 10px; height: 20px; line-height: 20px;min-width: 20px; display: inline-block; background: rgba(232, 30, 30, 1);   }
 .alarm .alarm-num span { display: block; color: #FFFFFF; height: 20px;  text-align: center; font-size: 12px; padding: 0 5px;  }

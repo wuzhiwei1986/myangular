@@ -1,10 +1,13 @@
+/*
+   左边导航 'ecp-nav-bar' v1.0
+*/
 @import "../../../assets/font-icon/iconfont.css";
 /*左边菜单样式*/
 .main-menu:hover{ width: 220px; overflow: hidden; opacity: 1; }
 .main-menu.hover{ width: 220px; overflow: hidden; opacity: 1; }
 .main-menu.on{ width: 220px; overflow: hidden; opacity: 1; }
 .main-menu.off{ width: 60px; overflow: hidden; opacity: 1; }
-.main-menu { background: #22272e; color: #ffffff; position: absolute; top: 50px; bottom: 0;  left: 0; width: 60px; overflow: hidden; -webkit-transition: width .2s linear; transition: width .2s linear; -webkit-transform: translateZ(0) scale(1, 1); /*box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07); */opacity: 1; z-index: 1000; }
+.main-menu { background: #22272e; color: #ffffff; position: absolute; top: 0px; bottom: 0;  left: 0; width: 60px; overflow: hidden; -webkit-transition: width .2s linear; transition: width .2s linear; -webkit-transform: translateZ(0) scale(1, 1); /*box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07); */opacity: 1; z-index: 1000; }
 .main-menu>ul { margin: 0px 0; }
 .main-menu li { position: relative; display: block; width: 220px; }
 
@@ -17,7 +20,7 @@ nav ul, nav li { outline: 0; margin: 0; padding: 0; }
 .main-menu .menu-body li{ width: 220px; min-height: 42px; line-height: 42px; clear: both; text-align: center}
 .main-menu .menu-body li.hover{  }
 .main-menu .menu-body li .menu-title{ height:42px; line-height: 42px; text-align: left;font-weight: bold;cursor: pointer; color: #999999; font-weight: bold; }
-.main-menu .menu-body li .menu-title i{width: 60px; float: left; text-align: center; margin-right: 0px; font-size: 18px; margin-top: 12px; font-weight: normal;}
+.main-menu .menu-body li .menu-title i{width: 60px; float: left; text-align: center; margin-right: 0px; font-size: 18px; font-weight: normal;}
 .main-menu .menu-body li .menu-title i.right{ margin-top: 16px; width: 13px; height: 13px; float: right; margin-right: 15px; font-size: 12px;font-weight: normal; }
 .main-menu .menu-body li .menu-title i.on{ margin-top: 16px; width: 13px; height: 13px; float: right; margin-right: 15px; font-size: 12px;font-weight: normal;/* background: url("../../../assets/jiantou.png") center center no-repeat;*/
 }
