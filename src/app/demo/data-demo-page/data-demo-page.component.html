@@ -1,0 +1,91 @@
+<ecp-bread-crumb>
+  <span>表格样式</span>
+</ecp-bread-crumb>
+<ecp-seach-module>
+
+  <form nz-form>
+    <div nz-row nzType="flex" class="seach-form">
+      <div nz-col nzXs="24"  nzMd="12" nzLg="6" >
+        <div class="item">
+          <div class="title">传感器编号</div>
+          <div class="content"><input nz-input type="text"  name="sensorCode1"></div>
+        </div>
+      </div>
+      <div nz-col nzXs="24"  nzMd="12" nzLg="6" >
+        <div class="item">
+          <div class="title">传感器类型</div>
+          <div class="content"><input nz-input type="text"  name="sensorCode2"></div>
+        </div>
+      </div>
+      <div nz-col nzXs="24"  nzMd="12" nzLg="6" >
+        <div class="item">
+          <div class="title">开始时间</div>
+          <div class="content"><input nz-input type="text"  name="sensorCode3"></div>
+        </div>
+      </div>
+      <div nz-col nzXs="24"  nzMd="12" nzLg="6" >
+        <div class="item">
+          <div class="title">结束时间</div>
+          <div class="content"><input nz-input type="text"  name="sensorCode4"></div>
+        </div>
+      </div>
+      <div nz-col nzXs="24"  nzMd="12" nzLg="6" >
+        <div class="item">
+          <div class="title"></div>
+          <div class="content">
+            <button nz-button  style="margin-right: 8px;">重置</button>
+            <button nz-button [nzType]="'primary'" style="margin-right: 8px;">查询</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</ecp-seach-module>
+<ecp-data-table>
+  <div class="list-top-btn">
+    <button nz-button [nzType]="'primary'"><span>发起工单调度</span></button>
+  </div>
+  <div class="list-table">
+    <nz-table #basicTable [nzData]="mockData2.list" [nzSize]="'middle'">
+      <thead>
+      <tr>
+        <th width="80">业务系统</th>
+        <th>工单类型</th>
+        <th>工单号</th>
+        <th>标题</th>
+        <th>所属区域</th>
+        <th>申请人</th>
+        <th>申请时间</th>
+        <th>处理人/团队</th>
+        <th>处理时间</th>
+        <th>处理状态</th>
+        <th>处理结果</th>
+        <th>流程状态</th>
+        <th>操作</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let data of mockData2.list">
+        <td>{{data.sysname}}</td>
+        <td>{{data.ordertype}}</td>
+        <td>{{data.ordernum}}</td>
+        <td>{{data.longtitle}}</td>
+        <td>{{data.area}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.time}}</td>
+        <td>{{data.name2}}</td>
+        <td>{{data.time}}</td>
+        <td>{{data.state}}</td>
+        <td>{{data.result}}</td>
+        <td>{{data.state2}}</td>
+        <td width="160"><a>查看</a>
+          <nz-divider nzType="vertical"></nz-divider>
+          <a>打印</a>
+          <nz-divider nzType="vertical"></nz-divider>
+          <a>更多</a></td>
+      </tr>
+      </tbody>
+    </nz-table>
+  </div>
+</ecp-data-table>

@@ -29,6 +29,7 @@ import { BreadCrumbPageComponent } from './docs/components/bread-crumb-page/brea
 import { PageDemo2Component } from './demo/page-demo2/page-demo2.component';
 import { DispatchPageComponent } from './demo/dispatch/dispatch-page/dispatch-page.component';
 import { ConsolePageComponent } from './demo/console-page/console-page.component';
+import { DataDemoPageComponent } from './demo/data-demo-page/data-demo-page.component';
 
 /*动画*/
 import { RippleComponent } from './animation/ripple/ripple.component';
@@ -65,6 +66,7 @@ const routes: Routes = [
   {path: 'detailsStyle1', component: DetailsStyle1Component},
   {path: 'pageDemo', component: PageDemoComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'dataDemoPage', component: DataDemoPageComponent},
 
   /**/
   {path: 'toolBarPage', component: ToolBarPageComponent},

@@ -144,6 +144,12 @@ export class NavBarComponent implements OnInit {
           'child': null
         },
         {
+          'name': '表格展示1',
+          'uri': 'dataDemoPage',
+          'iconuri': '',
+          'child': null
+        },
+        {
           'name': '表格展示',
           'uri': 'tablePage',
           'iconuri': '',

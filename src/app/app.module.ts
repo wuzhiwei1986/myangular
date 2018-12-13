@@ -83,6 +83,8 @@ import { TabComponent } from './components/tabs-module/tab/tab.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { HttpPageComponent } from './docs/components/http-page/http-page.component';
 import { HttpStatusPageComponent } from './components/httpPage/http-status-page/http-status-page.component';
+import { ListComponent } from './components/dataTable-module/list/list.component';
+import { DataDemoPageComponent } from './demo/data-demo-page/data-demo-page.component';
 
 
 
@@ -156,6 +158,9 @@ registerLocaleData(zh);
     HomePageComponent,
     HttpPageComponent,
     HttpStatusPageComponent,
+    ListComponent,
+    DataDemoPageComponent,
+
 
   ],
   imports: [
