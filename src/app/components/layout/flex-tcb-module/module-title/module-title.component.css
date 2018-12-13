@@ -1,0 +1,3 @@
+.module-title { position: relative; height: 60px; line-height: 60px; font-size: 18px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(25, 25, 25, 1); border: #DADADA 1px solid;  padding-left: 20px; }
+:host >>> .module-title .close { position: absolute; right: 20px; }
+:host >>> .module-title .close i { font-size: 14px; color: #6E6E6E; }

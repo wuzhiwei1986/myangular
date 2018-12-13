@@ -1,7 +1,7 @@
 <!--正式的-->
-<div class="main-body">
+<!--<div class="main-body">
   <ecp-top-nav>
-    <span class="logo"><img src="assets/base/logo.png"/><!--<img src="assets/base/kbl-logo.png"/>--></span>
+    <span class="logo"><img src="assets/base/logo.png"/>&lt;!&ndash;<img src="assets/base/kbl-logo.png"/>&ndash;&gt;</span>
     <span class="name">前端框架</span>
     <a href="javascript:void(0);" class="logout">退出</a>
     <ecp-user-info [userName]="'管理员'"></ecp-user-info>
@@ -14,7 +14,26 @@
   <div class="main-right-content">
     <router-outlet></router-outlet>
   </div>
-</div>
-
+</div>-->
+<ecp-flex-tcb [topHeight]="50">
+  <ecp-flex-top>
+    <ecp-top-nav>
+      <span class="logo"><img src="assets/base/logo.png"/></span>
+      <span class="name">前端框架</span>
+      <a href="javascript:void(0);" class="logout">退出</a>
+      <ecp-user-info [userName]="'管理员'"></ecp-user-info>
+      <ecp-drop-down-menu [menusList]="menusList" (navUrl)="test($event)"></ecp-drop-down-menu>
+      <ecp-alarm [alarmTitle]="'警报'" [alarmList]="alarmList" (disposed)="disposedId($event)"
+                 (viewAll)="test('点击*查看全部*调用')">
+      </ecp-alarm>
+    </ecp-top-nav>
+  </ecp-flex-top>
+  <ecp-flex-body>
+    <ecp-flex-lcr [leftWidth]="60">
+      <ecp-flex-left><ecp-nav-bar [customScaling]="true" [customStyle]="{'z-index':'100000','left':'0px','top':'50px','bottom':'0px'}" ></ecp-nav-bar></ecp-flex-left>
+      <ecp-flex-body><router-outlet></router-outlet></ecp-flex-body>
+    </ecp-flex-lcr>
+  </ecp-flex-body>
+</ecp-flex-tcb>
 
 

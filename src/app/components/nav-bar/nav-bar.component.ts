@@ -49,6 +49,12 @@ export class NavBarComponent implements OnInit {
           'child': null
         },
         {
+          'name': '页面左边导航',
+          'uri': 'pageLeftNavPage',
+          'iconuri': '',
+          'child': null
+        },
+        {
           'name': '开关切换',
           'uri': 'switchPage',
           'iconuri': '',
@@ -134,6 +140,12 @@ export class NavBarComponent implements OnInit {
         {
           'name': '页面演示1',
           'uri': 'pageDemo',
+          'iconuri': '',
+          'child': null
+        },
+        {
+          'name': '页面演示3',
+          'uri': 'pageDemo3',
           'iconuri': '',
           'child': null
         },

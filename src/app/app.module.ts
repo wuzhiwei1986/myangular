@@ -19,11 +19,15 @@ import { MapSwitchComponent } from './components/map-switch/map-switch.component
 import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 import { ToolBar2Component } from './components/tool-bar2/tool-bar2.component';
 import { ToolBar3Component } from './components/tool-bar3/tool-bar3.component';
+import { PageLeftNavComponent } from './components/page-left-nav/page-left-nav.component';
+
 /*数据展示*/
 import { DetailsStyle1Component } from './demo/details-style1/details-style1.component';
 import { SeachModuleComponent } from './components/seach-module/seach-module.component';
 
 import { PageDemoComponent } from './demo/page-demo/page-demo.component';
+import { PageDemo3Component } from './demo/page-demo3/page-demo3.component';
+
 import { OpenDetailsInfoComponent } from './components/open-details-info/open-details-info.component';
 import { AlarmComponent } from './components/navMoudle/alarm/alarm.component';
 import { DropDownMenuComponent } from './components/navMoudle/drop-down-menu/drop-down-menu.component';
@@ -43,6 +47,8 @@ import { TopNavPageComponent } from './docs/components/top-nav-page/top-nav-page
 import { TestTableComponent } from './test-table/test-table.component';
 import { IconPageComponent } from './docs/components/icon-page/icon-page.component';
 import { TablePageComponent } from './docs/components/table-page/table-page.component';
+import { PageLeftNavPageComponent } from './docs/components/page-left-nav-page/page-left-nav-page.component';
+
 /*登录*/
 import { EcpLoginformComponent } from './components/ecp-login-moudle/ecp-loginform/ecp-loginform.component';
 import { EcpLoginPageComponent } from './components/ecp-login-moudle/ecp-login-page/ecp-login-page.component';
@@ -85,6 +91,8 @@ import { HttpPageComponent } from './docs/components/http-page/http-page.compone
 import { HttpStatusPageComponent } from './components/httpPage/http-status-page/http-status-page.component';
 import { ListComponent } from './components/dataTable-module/list/list.component';
 import { DataDemoPageComponent } from './demo/data-demo-page/data-demo-page.component';
+import { ModuleTitleComponent } from './components/layout/flex-tcb-module/module-title/module-title.component';
+import { ModuleBottomComponent } from './components/layout/flex-tcb-module/module-bottom/module-bottom.component';
 
 
 
@@ -160,6 +168,11 @@ registerLocaleData(zh);
     HttpStatusPageComponent,
     ListComponent,
     DataDemoPageComponent,
+    ModuleTitleComponent,
+    ModuleBottomComponent,
+    PageLeftNavComponent,
+    PageLeftNavPageComponent,
+    PageDemo3Component,
 
 
   ],

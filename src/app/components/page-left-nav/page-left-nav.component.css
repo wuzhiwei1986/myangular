@@ -1,0 +1,26 @@
+.nav {
+  width: 200px;
+}
+
+:host >>> .nav .title {
+
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+}
+
+:host >>> .nav .content {
+}
+
+:host >>> .nav .content a {
+  display: block;
+  width: 100%;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  text-align: left;
+}
+:host >>> .nav .content a:hover {
+  background: red;
+}

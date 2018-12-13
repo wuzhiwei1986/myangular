@@ -13,8 +13,6 @@ import { OpenDetailsInfoComponent } from './components/open-details-info/open-de
 import { OpenDetailsInfo2Component } from './components/open-details-info2/open-details-info2.component';
 import { EcpOpenTagsComponent } from './components/ecp-tags-model/ecp-open-tags/ecp-open-tags.component';
 /*布局*/
-import { FlexTopCenterBottomComponent } from './components/layout/flex-tcb-module/flex-top-center-bottom/flex-top-center-bottom.component';
-import { FlexLeftCenterRightComponent } from './components/layout/flex-lcr-module/flex-left-center-right/flex-left-center-right.component';
 
 /*数据展示*/
 import { DetailsStyle1Component } from './demo/details-style1/details-style1.component';
@@ -30,7 +28,7 @@ import { PageDemo2Component } from './demo/page-demo2/page-demo2.component';
 import { DispatchPageComponent } from './demo/dispatch/dispatch-page/dispatch-page.component';
 import { ConsolePageComponent } from './demo/console-page/console-page.component';
 import { DataDemoPageComponent } from './demo/data-demo-page/data-demo-page.component';
-
+import { PageDemo3Component } from './demo/page-demo3/page-demo3.component';
 /*动画*/
 import { RippleComponent } from './animation/ripple/ripple.component';
 /**/
@@ -47,6 +45,7 @@ import { TopCenterBottomPageComponent } from './docs/components/layout/top-cente
 import { LeftCenterRightPageComponent } from './docs/components/layout/left-center-right-page/left-center-right-page.component';
 import { TabsPageComponent } from './docs/components/tabs-page/tabs-page.component';
 import { HttpPageComponent } from './docs/components/http-page/http-page.component';
+import { PageLeftNavPageComponent } from './docs/components/page-left-nav-page/page-left-nav-page.component';
 
 
 
@@ -65,6 +64,7 @@ const routes: Routes = [
   /*页面*/
   {path: 'detailsStyle1', component: DetailsStyle1Component},
   {path: 'pageDemo', component: PageDemoComponent},
+  {path: 'pageDemo3', component: PageDemo3Component},
   {path: 'about', component: AboutComponent},
   {path: 'dataDemoPage', component: DataDemoPageComponent},
 
@@ -88,6 +88,7 @@ const routes: Routes = [
   {path: 'consolePage', component: ConsolePageComponent},
   {path: 'tabsPage', component: TabsPageComponent},
   {path: 'httpPage', component: HttpPageComponent},
+  {path: 'pageLeftNavPage', component: PageLeftNavPageComponent},
   /*布局*/
   {path: 'flexTopCenterBottom', component: TopCenterBottomPageComponent},
   {path: 'flexleftCenterRight', component: LeftCenterRightPageComponent},
