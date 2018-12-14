@@ -24,8 +24,6 @@
   float: left;
 }
 
-
-
 :host >>>.ant-btn-primary {
   color: #fff;
   background-color: #1E5BD6;

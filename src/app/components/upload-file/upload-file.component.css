@@ -1,0 +1,10 @@
+.upload-form{ width: 700px; margin: 10px auto;}
+.upload-form .error-info{ clear: both; display: block; color: #999999; text-align: left; line-height: 24px; }
+.upload-form .tips-info{
+  clear: both;
+  border-top: #DADADA 1px solid;
+  padding-top: 10px;
+  text-align: left;
+  color: #6E6E6E;
+  line-height: 30px;
+}

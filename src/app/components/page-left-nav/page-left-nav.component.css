@@ -1,12 +1,18 @@
 .nav {
+  color: #191919;
+  border-right: #DADADA 1px solid;
+  height: 100%;
   width: 200px;
+  background: #FFFFFF;
 }
 
 :host >>> .nav .title {
-
-  height: 60px;
-  line-height: 60px;
-  padding: 0 10px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 20px;
+  border-bottom: #DADADA 1px solid;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 :host >>> .nav .content {
@@ -16,11 +22,17 @@
   display: block;
   width: 100%;
   float: left;
-  height: 60px;
-  line-height: 60px;
-  padding: 0 10px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 20px;
   text-align: left;
+  color: #191919;
+  font-size: 14px;
+  font-weight: 400;
 }
+
+:host >>> .nav .content a:hover,
 :host >>> .nav .content a:hover {
-  background: red;
+  background: #D2DDF2;
+  color: #1E5BD6;
 }

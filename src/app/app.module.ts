@@ -93,6 +93,7 @@ import { ListComponent } from './components/dataTable-module/list/list.component
 import { DataDemoPageComponent } from './demo/data-demo-page/data-demo-page.component';
 import { ModuleTitleComponent } from './components/layout/flex-tcb-module/module-title/module-title.component';
 import { ModuleBottomComponent } from './components/layout/flex-tcb-module/module-bottom/module-bottom.component';
+import { UploadFileComponent } from './components/upload-file/upload-file.component';
 
 
 
@@ -173,6 +174,7 @@ registerLocaleData(zh);
     PageLeftNavComponent,
     PageLeftNavPageComponent,
     PageDemo3Component,
+    UploadFileComponent,
 
 
   ],

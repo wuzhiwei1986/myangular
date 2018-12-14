@@ -1,5 +1,5 @@
 /*
-   布局'ecp-flex-lcr' v1.1
+   布局'ecp-flex-lcr' v1.2
 */
 .flex-lcb {
   display: flex;
@@ -10,16 +10,18 @@
 .flex-left {
   flex: 0 0 200px;
   height: 100%;
-  background: darkseagreen;
+  background: #FFFFFF;
 }
 
 .flex-body {
   flex: 1;
+  overflow: auto;
+  background: #FFFFFF;
 }
 
 .flex-right {
   flex: 0 0 200px;
   height: 100%;
-  background: darkseagreen;
+  background: #FFFFFF;
 }
 

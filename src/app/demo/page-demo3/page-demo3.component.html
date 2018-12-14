@@ -6,16 +6,54 @@
     </ecp-bread-crumb>
   </ecp-flex-top>
   <ecp-flex-body>
-    <ecp-flex-lcr [leftWidth]="200">
+    <ecp-flex-lcr [leftWidth]="220" [leftBg]="'#FAFAFA'">
       <ecp-flex-left>
-        <ecp-page-left-nav>
+        <ecp-page-left-nav [title]="'标题内容'">
           <a>测试一</a><a>测试一</a><a>测试一</a><a>测试一</a><a>测试一</a>
         </ecp-page-left-nav>
       </ecp-flex-left>
       <ecp-flex-body>
-        <div style="background: #1E5BD6; height: inherit; overflow-y: scroll;">
-          右边是内容
-          <div style="background: #4ebcf5;height: 9000px;"></div>
+        <div style="height:auto; border-left: #DADADA 1px solid;">
+          <ecp-data-table>
+            <div class="list-top-btn align-left" style="height: 50px; line-height:50px; padding: 10px 30px 10px 20px;">
+              水司：
+              <nz-select style="width: 240px; margin-right: 10px;" nzAllowClear nzPlaceHolder="请选择">
+                <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+              </nz-select>
+              <button nz-button [nzType]="'primary'"><span>新增字典</span></button>
+            </div>
+            <div class="list-top-btn align-right" style="height: 50px; line-height:50px;  padding: 10px 30px 10px 20px;">
+              <button nz-button [nzType]="'primary'"><span>查询</span></button>
+            </div>
+            <div class="list-table" style=" padding: 10px 30px 10px 20px;">
+              <nz-table #basicTable [nzData]="mockData2.list" [nzSize]="'middle'">
+                <thead>
+                <tr>
+                  <th width="14.25%">水司名称</th>
+                  <th width="14.25%">产品名称</th>
+                  <th width="14.25%">产品类别</th>
+                  <th width="14.25%">产品类型</th>
+                  <th width="14.25%">口径</th>
+                  <th width="14.25%">材质</th>
+                  <th style="text-align: right">小计</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let data of mockData2.list">
+                  <td>{{data.sysname}}</td>
+                  <td>{{data.ordertype}}</td>
+                  <td>{{data.ordernum}}</td>
+                  <td>{{data.longtitle}}</td>
+                  <td>{{data.number}}</td>
+                  <td>{{data.name}}</td>
+                  <td style="text-align: right">{{data.number}}</td>
+                </tr>
+                </tbody>
+              </nz-table>
+            </div>
+          </ecp-data-table>
         </div>
       </ecp-flex-body>
     </ecp-flex-lcr>

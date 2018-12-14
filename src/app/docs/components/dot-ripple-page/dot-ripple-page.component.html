@@ -3,11 +3,29 @@
   <!--<h3>工具条介绍</h3>--></div>
 <div class="page-body">
   <h2 class="demo-title">演示 坐标闪动 ecp-ripple</h2>
+  <div class="demo-body" style="position:relative; height: 600px;">
+     <ecp-upload-file></ecp-upload-file>
+    <ecp-component-recommend>
+      <h3>说明</h3>
+      <div>
+        自由配置颜色，位置<br/>
+        组件使用position定位
+      </div>
+      <h3>参数</h3>
+      <div>
+        [customColor]<br/>
+        [customX]<br/>
+        [customY]<br/>
+      </div>
+    </ecp-component-recommend>
+  </div>
+  <h2 class="demo-title">演示 坐标闪动 ecp-ripple</h2>
   <div class="demo-body" style="position:relative; height: 400px;">
-    颜色:<select [(ngModel)]="color">
-    <option value="green" selected>绿</option>
-    <option value="red">红</option>
-  </select>
+    颜色:
+    <select [(ngModel)]="color">
+      <option value="green" selected>绿</option>
+      <option value="red">红</option>
+    </select>
     X:<input [(ngModel)]="inputX">
     Y:<input [(ngModel)]="inputY">
     <ecp-ripple [customColor]="'red'" [customX]="'200px'" [customY]="'100px'"></ecp-ripple>

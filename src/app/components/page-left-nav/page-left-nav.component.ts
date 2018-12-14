@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'ecp-page-left-nav',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-left-nav.component.css']
 })
 export class PageLeftNavComponent implements OnInit {
-
+  @Input() title: string = '自义标题';
   constructor() { }
 
   ngOnInit() {

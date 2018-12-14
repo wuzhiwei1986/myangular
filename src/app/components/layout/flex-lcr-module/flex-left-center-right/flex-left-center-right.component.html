@@ -1,11 +1,11 @@
 <div class="flex-lcb">
-  <div class="flex-left" *ngIf="leftWidth>0" [ngStyle]="{'flex':'0 0 '+leftWidth+'px'}">
+  <div class="flex-left" *ngIf="leftWidth>0" [ngStyle]="{'flex':'0 0 '+leftWidth+'px','background':leftBg}">
     <ng-content select="ecp-flex-left"></ng-content>
   </div>
-  <div class="flex-body">
+  <div class="flex-body" [ngStyle]="{'background':bodyBg}">
     <ng-content select="ecp-flex-body"></ng-content>
   </div>
-  <div class="flex-right" *ngIf="rightWidth>0" [ngStyle]="{'flex':'0 0 '+rightWidth+'px'}">
+  <div class="flex-right" *ngIf="rightWidth>0" [ngStyle]="{'flex':'0 0 '+rightWidth+'px','background':rightBg}">
     <ng-content select="ecp-flex-right"></ng-content>
   </div>
 </div>

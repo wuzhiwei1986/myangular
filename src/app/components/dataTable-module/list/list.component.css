@@ -1,7 +1,12 @@
-.list-div{ margin: 10px 30px;}
-:host >>>.list-div .list-top-btn{ margin-bottom: 10px; text-align: right;}
-:host >>>.list-div .list-table{ }
-
+/*
+   表格'ecp-data-table' v1.0
+*/
+.list-div{}
+:host >>>.list-div .list-top-btn{   }
+:host >>>.list-div .list-table{  }
+:host >>>.list-div .default-margin{margin: 10px 30px 0px 30px; }
+:host >>>.align-left{text-align: left;}
+:host >>>.align-right{text-align: right;}
 /* 重置nz-table表格列表样式 */
 :host ::ng-deep .ant-table-body{border-collapse: collapse;}
 :host ::ng-deep .ant-table-body a{ color: #1E5BD6;}
