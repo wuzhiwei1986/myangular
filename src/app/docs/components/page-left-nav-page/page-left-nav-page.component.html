@@ -7,13 +7,23 @@
 <div class="page-body">
   <h2 class="demo-title">演示</h2>
   <div class="demo-body" style="position:relative; height: 600px;">
-    <ecp-page-left-nav>
+    <ecp-page-left-nav [title]="'自定义标题'">
       <a>连接一</a>
       <a>连接一</a>
       <a>连接一</a>
       <a>连接一</a>
       <a>连接一</a>
     </ecp-page-left-nav>
+    <ecp-component-recommend>
+      <h3>说明</h3>
+      <div>
+        自由配置用户头像，用户名
+      </div>
+      <h3>参数</h3>
+      <div>
+        [title]<br/>
+      </div>
+    </ecp-component-recommend>
   </div>
   <h2 class="demo-title">API</h2>
   <div class="demo-body">

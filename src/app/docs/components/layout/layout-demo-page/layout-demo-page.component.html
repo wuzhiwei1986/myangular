@@ -1,49 +1,18 @@
 <div class="page-title">
-  <h1>左中右布局 ecp-flex-lcr</h1>
-  <h3>可以自定义top,body,bottom<br>
-    layout/flex-lcr-module 模块文件
+  <h1>通用布局演示</h1>
+  <h3>结合组件 flex-lcr-module,flex-tcb-module 组合不同结构的页面
   </h3></div>
 <div class="page-body">
-  <h2 class="demo-title">演示</h2>
-  <div class="demo-body" style="height: 1000px;">
-    <div style="width: 800px; height: 800px">
-      <ecp-flex-lcr [leftWidth]="customLeftWidth" [rightWidth]="customRightWidth" [leftBg]="'red'" [bodyBg]="'blue'" [rightBg]="'#cccccc'">
-        <ecp-flex-left>
-          left
-        </ecp-flex-left>
-        <ecp-flex-body>
-          可以自由配置两边宽度<br/>
-          左边宽<input [(ngModel)]="customLeftWidth"><br/>
-          右边宽<input [(ngModel)]="customRightWidth">
-        </ecp-flex-body>
-        <ecp-flex-right>
-          right
-        </ecp-flex-right>
-      </ecp-flex-lcr>
-    </div>
+  <h2 class="demo-title">水平垂直居中演示</h2>
+  <div class="demo-body" style="height: 500px;">
+    <ecp-layout-vertical-center [customStyle]="{'width':'600px','height':'300px','background':'#cccccc'}">
+      这里放置自定义内容，水平垂直居中
+    </ecp-layout-vertical-center>
   </div>
   <h2 class="demo-title">组合演示</h2>
   <div class="demo-body" style="height: 1000px;">
     <div style="width: 800px; height: 800px">
-      <ecp-flex-lcr [leftWidth]="100" [rightWidth]="200" [leftBg]="'red'" [bodyBg]="'blue'" [rightBg]="'#cccccc'">
-        <ecp-flex-left>
-          left
-        </ecp-flex-left>
-        <ecp-flex-body>
-          <ecp-flex-tcb [topHeight]="60" [bottomHeight]="60">
-            <ecp-flex-top>
-              <div style="background: red">111</div>
-            </ecp-flex-top>
-            <ecp-flex-body>body</ecp-flex-body>
-            <ecp-flex-bottom>
-              <div style="background: #3C63DF">111</div>
-            </ecp-flex-bottom>
-          </ecp-flex-tcb>
-        </ecp-flex-body>
-        <ecp-flex-right>
-          right
-        </ecp-flex-right>
-      </ecp-flex-lcr>
+
     </div>
   </div>
   <h2 class="demo-title">组合演示2</h2>

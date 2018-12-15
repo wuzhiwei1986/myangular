@@ -7,9 +7,11 @@
         flex-wrap:warp;
         justify-content: space-between;height: 100%; ">
     <div style="width:calc(30% - 10px); height: 100%;  overflow-y: auto ">
-      <ecp-flex-tcb [topHeight]="60" [bottomHeight]="60">
+      <ecp-flex-tcb [topHeight]="60" [bottomHeight]="61">
         <ecp-flex-top>
-          <div class="module-title">工单<a class="close"><i class="icon-edit"></i>修改</a></div>
+          <ecp-module-title>
+            <div class="module-title">工单<a class="close"><i class="icon-edit"></i>修改</a></div>
+          </ecp-module-title>
         </ecp-flex-top>
         <ecp-flex-body>
           <div id="left">
@@ -184,14 +186,21 @@
             </div>
           </div>
         </ecp-flex-body>
-        <ecp-flex-bottom></ecp-flex-bottom>
+        <ecp-flex-bottom>
+          <ecp-module-bottom>
+            <button nz-button nzType="default" (click)="reset()">重置</button>
+            <button nz-button nzType="primary" (click)="search()">筛查</button>
+          </ecp-module-bottom>
+        </ecp-flex-bottom>
       </ecp-flex-tcb>
 
     </div>
     <div style="width:calc(45% - 10px);">
       <ecp-flex-tcb [topHeight]="60" [bottomHeight]="60">
         <ecp-flex-top>
-          <div class="module-title">工单详情</div>
+          <ecp-module-title>
+            <div class="module-title">工单详情<a class="close"><i class="icon-edit"></i>修改</a></div>
+          </ecp-module-title>
         </ecp-flex-top>
         <ecp-flex-body>
           <div id="mid">
@@ -354,6 +363,12 @@
             </div>
           </div>
         </ecp-flex-body>
+        <ecp-flex-bottom>
+          <ecp-module-bottom>
+            <button nz-button nzType="default" (click)="reset()">重置</button>
+            <button nz-button nzType="primary" (click)="search()">筛查</button>
+          </ecp-module-bottom>
+        </ecp-flex-bottom>
       </ecp-flex-tcb>
 
     </div>

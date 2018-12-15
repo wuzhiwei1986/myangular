@@ -1,28 +1,4 @@
 
-/*搜索框*/
-.seach-form {
-  background: #ffffff;
-  padding: 16px 0px 10px 0px;
-  border-bottom: #d4d4d4 1px solid;
-}
-.seach-form .item {
-  min-height: 32px;
-  padding: 0 3%;
-  margin-bottom: 10px;
-}
-.seach-form .item > .title {
-  width: 45%;
-  padding: 0 10px;
-  text-align: right;
-  float: left;
-  padding-top: 5px;
-}
-.seach-form .item > .content {
-  width: 55%;
-  text-align: left;
-  float: left;
-}
-
 
 
 /*****************************************/

@@ -48,6 +48,8 @@ import { TestTableComponent } from './test-table/test-table.component';
 import { IconPageComponent } from './docs/components/icon-page/icon-page.component';
 import { TablePageComponent } from './docs/components/table-page/table-page.component';
 import { PageLeftNavPageComponent } from './docs/components/page-left-nav-page/page-left-nav-page.component';
+import { SeachModulePageComponent } from './docs/components/seach-module-page/seach-module-page.component';
+import { PopupSidebarPageComponent } from './docs/components/popup-sidebar-page/popup-sidebar-page.component';
 
 /*登录*/
 import { EcpLoginformComponent } from './components/ecp-login-moudle/ecp-loginform/ecp-loginform.component';
@@ -94,6 +96,9 @@ import { DataDemoPageComponent } from './demo/data-demo-page/data-demo-page.comp
 import { ModuleTitleComponent } from './components/layout/flex-tcb-module/module-title/module-title.component';
 import { ModuleBottomComponent } from './components/layout/flex-tcb-module/module-bottom/module-bottom.component';
 import { UploadFileComponent } from './components/upload-file/upload-file.component';
+import { LayoutDemoPageComponent } from './docs/components/layout/layout-demo-page/layout-demo-page.component';
+import { LayoutVerticalCenterComponent } from './components/layout/layout-vertical-center/layout-vertical-center.component';
+import { SidebarTipInfoComponent } from './components/popup-sidebar-module/sidebar-tip-info/sidebar-tip-info.component';
 
 
 
@@ -175,6 +180,11 @@ registerLocaleData(zh);
     PageLeftNavPageComponent,
     PageDemo3Component,
     UploadFileComponent,
+    LayoutDemoPageComponent,
+    LayoutVerticalCenterComponent,
+    SeachModulePageComponent,
+    PopupSidebarPageComponent,
+    SidebarTipInfoComponent,
 
 
   ],

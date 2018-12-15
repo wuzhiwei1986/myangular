@@ -46,6 +46,9 @@ import { LeftCenterRightPageComponent } from './docs/components/layout/left-cent
 import { TabsPageComponent } from './docs/components/tabs-page/tabs-page.component';
 import { HttpPageComponent } from './docs/components/http-page/http-page.component';
 import { PageLeftNavPageComponent } from './docs/components/page-left-nav-page/page-left-nav-page.component';
+import { LayoutDemoPageComponent } from './docs/components/layout/layout-demo-page/layout-demo-page.component';
+import { SeachModulePageComponent } from './docs/components/seach-module-page/seach-module-page.component';
+import { PopupSidebarPageComponent } from './docs/components/popup-sidebar-page/popup-sidebar-page.component';
 
 
 
@@ -58,7 +61,7 @@ const routes: Routes = [
   {path: 'mapSwitch', component: MapSwitchComponent},
 //  {path: 'toolBar', component: ToolBarComponent},
 //  {path: 'toolBar2', component: ToolBar2Component},
-  {path: 'seachModule', component: SeachModuleComponent},
+  {path: 'seachModulePage', component: SeachModulePageComponent},
   {path: 'openDetailsInfo', component: OpenDetailsInfoComponent},
   {path: 'openDetailsInfo2', component: OpenDetailsInfo2Component},
   /*页面*/
@@ -69,6 +72,7 @@ const routes: Routes = [
   {path: 'dataDemoPage', component: DataDemoPageComponent},
 
   /**/
+  {path: 'seachModulePage', component: SeachModulePageComponent},
   {path: 'toolBarPage', component: ToolBarPageComponent},
   {path: 'switchPage', component: SwitchPageComponent},
   {path: 'dotRipplePage', component: DotRipplePageComponent},
@@ -89,7 +93,9 @@ const routes: Routes = [
   {path: 'tabsPage', component: TabsPageComponent},
   {path: 'httpPage', component: HttpPageComponent},
   {path: 'pageLeftNavPage', component: PageLeftNavPageComponent},
+  {path: 'popupSidebarPage', component: PopupSidebarPageComponent},
   /*布局*/
+  {path: 'layoutDemoPage', component: LayoutDemoPageComponent},
   {path: 'flexTopCenterBottom', component: TopCenterBottomPageComponent},
   {path: 'flexleftCenterRight', component: LeftCenterRightPageComponent},
 /*动画*/

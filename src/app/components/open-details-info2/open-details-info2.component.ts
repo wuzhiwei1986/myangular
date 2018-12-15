@@ -21,7 +21,7 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 export class OpenDetailsInfo2Component implements OnInit {
   @Input() customStyle:object={}
   validateForm: FormGroup;
-  isOpen = false;
+  isOpen = true;
   constructor(private fb: FormBuilder) {
   }
 

@@ -7,55 +7,57 @@
       <a><i class="icon-generate-bills"></i>生成帐单</a></nav>
   </ecp-bread-crumb>
 
-  <form nz-form>
-    <div nz-row nzType="flex" class="seach-form">
-      <div nz-col nzXs="24" nzMd="12" nzLg="6">
-        <div class="item">
-          <div class="title">抄表截止日期：</div>
-          <div class="content"><input nz-input type="text" name="sensorCode1"></div>
+  <ecp-seach-module>
+    <form nz-form>
+      <div nz-row nzType="flex" class="seach-form">
+        <div nz-col nzXs="24" nzMd="12" nzLg="6">
+          <div class="item">
+            <div class="title">抄表截止日期：</div>
+            <div class="content"><input nz-input type="text" name="sensorCode1"></div>
+          </div>
         </div>
-      </div>
-      <div nz-col nzXs="24" nzMd="12" nzLg="6">
-        <div class="item">
-          <div class="title">账单月份：</div>
-          <div class="content"><input nz-input type="text" name="sensorCode2"></div>
+        <div nz-col nzXs="24" nzMd="12" nzLg="6">
+          <div class="item">
+            <div class="title">账单月份：</div>
+            <div class="content"><input nz-input type="text" name="sensorCode2"></div>
+          </div>
         </div>
-      </div>
-      <div nz-col nzXs="24" nzMd="12" nzLg="6">
-        <div class="item">
-          <div class="title">抄表时间间隔：</div>
-          <div class="content"><input nz-input type="text" name="sensorCode3"></div>
+        <div nz-col nzXs="24" nzMd="12" nzLg="6">
+          <div class="item">
+            <div class="title">抄表时间间隔：</div>
+            <div class="content"><input nz-input type="text" name="sensorCode3"></div>
+          </div>
         </div>
-      </div>
-      <div nz-col nzXs="24" nzMd="12" nzLg="6">
-        <div class="item">
-          <div class="title">账单状态</div>
-          <div class="content"><input nz-input type="text" name="sensorCode4"></div>
+        <div nz-col nzXs="24" nzMd="12" nzLg="6">
+          <div class="item">
+            <div class="title">账单状态</div>
+            <div class="content"><input nz-input type="text" name="sensorCode4"></div>
+          </div>
         </div>
-      </div>
-      <div nz-col nzXs="24" nzMd="12" nzLg="6">
-        <div class="item">
-          <div class="title">生成方式：</div>
-          <div class="content"><input nz-input type="text" name="sensorCode4"></div>
+        <div nz-col nzXs="24" nzMd="12" nzLg="6">
+          <div class="item">
+            <div class="title">生成方式：</div>
+            <div class="content"><input nz-input type="text" name="sensorCode4"></div>
+          </div>
         </div>
-      </div>
-      <div nz-col nzXs="24" nzMd="12" nzLg="6">
-        <div class="item">
-          <div class="title">业主编号：</div>
-          <div class="content"><input nz-input type="text" name="sensorCode4"></div>
+        <div nz-col nzXs="24" nzMd="12" nzLg="6">
+          <div class="item">
+            <div class="title">业主编号：</div>
+            <div class="content"><input nz-input type="text" name="sensorCode4"></div>
+          </div>
         </div>
-      </div>
-      <div nz-col nzXs="24" nzMd="12" nzLg="6">
-        <div class="item">
-          <div class="title"></div>
-          <div class="content">
-            <button nz-button style="margin-right: 8px;">重置</button>
-            <button nz-button [nzType]="'primary'" style="margin-right: 8px;">查询</button>
+        <div nz-col nzXs="24" nzMd="12" nzLg="6">
+          <div class="item">
+            <div class="title"></div>
+            <div class="content">
+              <button nz-button style="margin-right: 8px;">重置</button>
+              <button nz-button [nzType]="'primary'" style="margin-right: 8px;">查询</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </ecp-seach-module>
 
   <div class="ecp-page-body-moudle no-border">
     <nz-table #basicTable [nzData]="dataSet" [nzSize]="'middle'">

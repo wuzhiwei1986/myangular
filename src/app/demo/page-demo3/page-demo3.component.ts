@@ -20,7 +20,7 @@ export class PageDemo3Component implements OnInit {
       'state|1': ['已完成', '处理中'],
       'result|1': ['正常', '异常'],
       'state2|1': ['处理中', '已申请'],
-      'number|1-100': 100，
+      'number|1-100': 100,
     }]
   });
   constructor() { }

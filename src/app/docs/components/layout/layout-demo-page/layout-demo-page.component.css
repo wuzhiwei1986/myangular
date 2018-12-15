@@ -1,0 +1,15 @@
+#container {
+  position: relative;
+  height: 500px;
+  width: 400px;
+  background: red;
+  display: block;
+
+}
+
+#center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

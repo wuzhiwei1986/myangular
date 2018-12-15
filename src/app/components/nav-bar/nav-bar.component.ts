@@ -81,7 +81,7 @@ export class NavBarComponent implements OnInit {
         ,
         {
           'name': '搜索模块',
-          'uri': 'seachModule',
+          'uri': 'seachModulePage',
           'iconuri': '',
           'child': null
         }
@@ -106,6 +106,12 @@ export class NavBarComponent implements OnInit {
           'child': null
         },
         {
+          'name': '侧边栏弹出',
+          'uri': 'popupSidebarPage',
+          'iconuri': '',
+          'child': null
+        },
+        {
           'name': '标签页',
           'uri': 'tabsPage',
           'iconuri': '',
@@ -118,6 +124,31 @@ export class NavBarComponent implements OnInit {
           'child': null
         }
 
+      ]
+    },
+    {
+      'name': '布局组件',
+      'uri': '',
+      'iconuri': 'pipe_area',
+      'child': [
+        {
+          'name': '布局演示',
+          'uri': 'layoutDemoPage',
+          'iconuri': '',
+          'child': null
+        },
+        {
+          'name': '上中下',
+          'uri': 'flexTopCenterBottom',
+          'iconuri': '',
+          'child': null
+        },
+        {
+          'name': '左中右',
+          'uri': 'flexleftCenterRight',
+          'iconuri': '',
+          'child': null
+        }
       ]
     },
     {
@@ -216,25 +247,6 @@ export class NavBarComponent implements OnInit {
         {
           'name': '控制台主页',
           'uri': 'consolePage',
-          'iconuri': '',
-          'child': null
-        }
-      ]
-    },
-    {
-      'name': '布局展示',
-      'uri': '',
-      'iconuri': 'pipe_area',
-      'child': [
-        {
-          'name': '上中下',
-          'uri': 'flexTopCenterBottom',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '左中右',
-          'uri': 'flexleftCenterRight',
           'iconuri': '',
           'child': null
         }
