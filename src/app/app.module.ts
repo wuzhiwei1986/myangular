@@ -99,6 +99,7 @@ import { UploadFileComponent } from './components/upload-file/upload-file.compon
 import { LayoutDemoPageComponent } from './docs/components/layout/layout-demo-page/layout-demo-page.component';
 import { LayoutVerticalCenterComponent } from './components/layout/layout-vertical-center/layout-vertical-center.component';
 import { SidebarTipInfoComponent } from './components/popup-sidebar-module/sidebar-tip-info/sidebar-tip-info.component';
+import { SidebarBtnLinkComponent } from './components/popup-sidebar-module/sidebar-btn-link/sidebar-btn-link.component';
 
 
 
@@ -185,6 +186,7 @@ registerLocaleData(zh);
     SeachModulePageComponent,
     PopupSidebarPageComponent,
     SidebarTipInfoComponent,
+    SidebarBtnLinkComponent,
 
 
   ],

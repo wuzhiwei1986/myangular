@@ -1,2 +1,2 @@
-:host >>> .module-footer { background: #ffffff;  width: 100%;  line-height: 60px; border-top: #DADADA 1px solid; text-align: right; padding: 0 20px; }
+:host >>> .module-footer { background: #ffffff;  width: 100%;  line-height: 60px; border-top: #DADADA 1px solid; text-align: right;  }
 :host >>> .module-footer > button { margin-right: 10px; }

@@ -4,7 +4,25 @@
 <div class="page-body">
   <h2 class="demo-title">父演示</h2>
   <div class="demo-body" style="position:relative; height: 900px;">
+    <div style="width: 320px;">
+      <ecp-flex-tcb [topHeight]="60" [bottomHeight]="60">
+        <ecp-flex-top>
+          <ecp-module-title>
+            筛查<a class="close"><i class="icon-close" (click)="close()"></i></a>
+          </ecp-module-title>
+        </ecp-flex-top>
+        <ecp-flex-body>111</ecp-flex-body>
+        <ecp-flex-bottom>
+          <ecp-module-bottom>
+            <div class="module-footer">
+              <button nz-button nzType="default" (click)="reset()">重置</button>
+              <button nz-button nzType="primary" (click)="search()">筛查</button>
+            </div>
+          </ecp-module-bottom>
+        </ecp-flex-bottom>
+      </ecp-flex-tcb>
 
+    </div>
     <ecp-component-recommend>
       <h3>说明</h3>
       <div>
@@ -18,8 +36,14 @@
     </ecp-component-recommend>
   </div>
   <h2 class="demo-title">子组件演示</h2>
-  <div class="demo-body" style="position:relative; height: 900px;">
-
+  <div class="demo-body" style="position:relative; height: 300px;">
+    <ecp-sidebar-tip-info>
+      <div class="info-img"><img src="../../../../assets/map/custom-area-tips.png"></div>
+      <div class="info-txt">所选区域没有任何元素信息<br/>请重新选择区域</div>
+      <div class="tag-link-module">
+        <a class="hover">重新选择</a>
+      </div>
+    </ecp-sidebar-tip-info>
     <ecp-component-recommend>
       <h3>说明</h3>
       <div>
@@ -33,7 +57,13 @@
     </ecp-component-recommend>
   </div>
   <h2 class="demo-title">子组件演示</h2>
-  <div class="demo-body" style="position:relative; height: 900px;">
+  <div class="demo-body" style="position:relative; height: 300px;">
+    <div style="width: 320px;">
+      <ecp-sidebar-btn-link>
+        <a class="hover">分析管道</a>
+        <a>清除选择</a>
+      </ecp-sidebar-btn-link>
+    </div>
 
     <ecp-component-recommend>
       <h3>说明</h3>

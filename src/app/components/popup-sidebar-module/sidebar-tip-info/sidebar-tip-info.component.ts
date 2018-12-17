@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-sidebar-tip-info',
+  selector: 'ecp-sidebar-tip-info',
   templateUrl: './sidebar-tip-info.component.html',
   styleUrls: ['./sidebar-tip-info.component.css']
 })

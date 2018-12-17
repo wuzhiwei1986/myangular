@@ -1,0 +1,5 @@
+/*btn 链接模块*/
+.btn-link-module { margin: 10px 20px; clear: both; text-align: right; }
+:host >>> .btn-link-module a {   background: #DADADA; color: #ffffff; display: inline-block; border: 1px solid #DADADA; border-radius: 4px; min-width: 80px; margin-right: 10px; margin-bottom: 10px; height: 32px; line-height: 32px; text-align: center; }
+:host >>> .btn-link-module a:hover ,
+:host >>> .btn-link-module a.hover { background: rgba(30,91,214,1); color: #ffffff;  }

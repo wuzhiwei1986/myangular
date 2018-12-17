@@ -51,10 +51,4 @@
 /*表单文本框错误状态*/
 .seach-moudle-div .seach-body .error-status { border-radius: 5px; border: #f5222d 1px solid !important; box-shadow: 0 0 0 2px #fdd3d5; }
 .seach-moudle-div .seach-body .error-status:focus { border: #447ee3 1px solid !important; }
-/*底部按钮*/
-.side-details .module-footer { background: #ffffff; position: absolute; bottom: 0; right: 0; width: 100%; height: 60px; line-height: 60px; border-top: #DADADA 1px solid; text-align: right; padding: 0 20px; }
-.side-details .module-footer > button { margin-right: 10px; }
-.empty-data-img { width: 260px; margin: 100px auto; text-align: center; }
-.empty-data-img .info-img { text-align: center; margin-bottom: 10px; }
-.empty-data-img .info-txt { text-align: center; margin-bottom: 25px; }
-.empty-data-img .fun-btn { text-align: center; }
+
