@@ -1,0 +1,18 @@
+/*详情模块*/
+.collapse-list {  }
+.collapse-list .module-title { position: relative; height: 60px; line-height: 60px; font-size: 18px; font-family: MicrosoftYaHei-Bold; font-weight: bold; color: rgba(25, 25, 25, 1); border-bottom: #DADADA 1px solid; padding-left: 20px; }
+.collapse-list .module-title .close { position: absolute; right: 20px; }
+.collapse-list .module-title .close i { font-size: 14px; color: #6E6E6E; }
+.collapse-list .module-item .module-sub-title { position: relative; height: 42px; line-height: 42px; font-size: 14px; font-family: MicrosoftYaHei-Bold; font-weight: bold; padding-left: 30px; border-bottom: #DADADA 1px solid; }
+.collapse-list .module-item .module-sub-title i.left-pic { position: absolute; top: 13px; left: 20px; width: 6px; height: 16px; background: rgba(30, 91, 214, 1); }
+.collapse-list .module-item .module-sub-title i.right-pic { position: absolute; top: 20px; right: 23px; width: 14px; height: 8px; background: url("../../../../assets/map/unfold-icon.png") no-repeat; }
+.collapse-list .module-item .unfold i.right-pic { background: url("../../../../assets/map/unfold-icon.png") no-repeat; }
+.collapse-list .module-item .shrink i.right-pic { background: url("../../../../assets/map/shrink-icon.png") no-repeat; }
+.collapse-list .module-item .module-item-content { background: #ffffff; }
+.collapse-list .module-item .none { display: none}
+.collapse-list .module-item .block { display: none}
+/*表格样式2*/
+.collapse-list .collapse-list-table-style2 { color: #191919; width: 100%; }
+.collapse-list .collapse-list-table-style2 th, .collapse-list .collapse-list-table-style2 td { height: 42px; line-height: 42px; padding: 0 20px; }
+.collapse-list .collapse-list-table-style2 th { background: #F0F0F0; }
+.collapse-list .collapse-list-table-style2 tr:hover td { background: #D2DDF2; }

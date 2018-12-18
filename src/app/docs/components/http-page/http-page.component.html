@@ -1,19 +1,22 @@
 <div class="page-title">
-  <h1>错误页 400/500 ecp-http-status-page</h1>
-  <h3>接收参数，显示不同的页面
+  <h1>http状态返回页 400/500 ecp-http-status-page</h1>
+  <h3>接收参数，显示不同的页面,<br/>
+    结合 ecp-layout-vertical-center 组件达到在页面重直居中的目的
   </h3></div>
 <div class="page-body">
   <h2 class="demo-title">演示</h2>
   <div class="demo-body" style="height: 500px;">
-    <div style="width: 90%; height: 800px">
-      <ecp-http-status-page [code]="400"></ecp-http-status-page>
-
+    <div style="width: 90%; height: 400px;">
+     <ecp-layout-vertical-center [customStyle]="{'height':'100%','background':'#f2f2f2'}">
+       <ecp-http-status-page [code]="400"></ecp-http-status-page>
+     </ecp-layout-vertical-center>
     </div>
   </div>
-  <div class="demo-body" style="   height:500px;">
-    <div style="width: 90%; height: 800px">
-      <ecp-http-status-page [code]="510"></ecp-http-status-page>
-
+  <div class="demo-body" style="height: 500px;">
+    <div style="width: 90%; height: 400px;">
+      <ecp-layout-vertical-center [customStyle]="{'height':'100%','background':'#f2f2f2'}">
+        <ecp-http-status-page [code]="510"></ecp-http-status-page>
+      </ecp-layout-vertical-center>
     </div>
   </div>
 

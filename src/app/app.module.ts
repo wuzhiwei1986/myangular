@@ -14,7 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
 import { StepsInfoComponent } from './components/steps-info/steps-info.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { TopNavComponent } from './components/navMoudle/top-nav/top-nav.component';
+import { TopNavComponent } from './components/nav-module/top-nav/top-nav.component';
 import { MapSwitchComponent } from './components/map-switch/map-switch.component';
 import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 import { ToolBar2Component } from './components/tool-bar2/tool-bar2.component';
@@ -29,9 +29,9 @@ import { PageDemoComponent } from './demo/page-demo/page-demo.component';
 import { PageDemo3Component } from './demo/page-demo3/page-demo3.component';
 
 import { OpenDetailsInfoComponent } from './components/open-details-info/open-details-info.component';
-import { AlarmComponent } from './components/navMoudle/alarm/alarm.component';
-import { DropDownMenuComponent } from './components/navMoudle/drop-down-menu/drop-down-menu.component';
-import { UserInfoComponent } from './components/navMoudle/user-info/user-info.component';
+import { AlarmComponent } from './components/nav-module/alarm/alarm.component';
+import { DropDownMenuComponent } from './components/nav-module/drop-down-menu/drop-down-menu.component';
+import { UserInfoComponent } from './components/nav-module/user-info/user-info.component';
 import { OpenDetailsInfo2Component } from './components/open-details-info2/open-details-info2.component';
 import { RippleComponent } from './animation/ripple/ripple.component';
 import { AboutComponent} from './docs/about/about.component';
@@ -100,6 +100,8 @@ import { LayoutDemoPageComponent } from './docs/components/layout/layout-demo-pa
 import { LayoutVerticalCenterComponent } from './components/layout/layout-vertical-center/layout-vertical-center.component';
 import { SidebarTipInfoComponent } from './components/popup-sidebar-module/sidebar-tip-info/sidebar-tip-info.component';
 import { SidebarBtnLinkComponent } from './components/popup-sidebar-module/sidebar-btn-link/sidebar-btn-link.component';
+import { CollapseListComponent } from './components/popup-sidebar-module/collapse-list/collapse-list.component';
+import { UserInfoListComponent } from './components/nav-module/user-info-list/user-info-list.component';
 
 
 
@@ -187,6 +189,8 @@ registerLocaleData(zh);
     PopupSidebarPageComponent,
     SidebarTipInfoComponent,
     SidebarBtnLinkComponent,
+    CollapseListComponent,
+    UserInfoListComponent,
 
 
   ],
