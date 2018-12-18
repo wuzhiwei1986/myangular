@@ -30,7 +30,7 @@
   </ecp-flex-top>
   <ecp-flex-body>
     <ecp-flex-lcr [leftWidth]="220">
-      <ecp-flex-left><ecp-nav-bar [customScaling]="false" [customStyle]="{'z-index':'100000','left':'0px','top':'50px','bottom':'0px'}" ></ecp-nav-bar></ecp-flex-left>
+      <ecp-flex-left><ecp-nav-bar [customScaling]="false" [customStyle]="{'z-index':'100000','left':'0px','top':'50px','bottom':'0px'}" [navJson]="leftNavList" (goTo)="indexNavGoto($event)" ></ecp-nav-bar></ecp-flex-left>
       <ecp-flex-body><router-outlet></router-outlet></ecp-flex-body>
     </ecp-flex-lcr>
   </ecp-flex-body>

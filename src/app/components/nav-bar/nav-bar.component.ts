@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {Router} from '@angular/router';
 
@@ -21,245 +21,249 @@ import {Router} from '@angular/router';
 })
 export class NavBarComponent implements OnInit {
   @Input() customScaling: boolean;// 自定义伸缩,true 可以缩放，false 禁止缩放
-  @Input() customStyle:object={}
-  //customScaling:boolean=true;
+  @Input() customStyle: object = {};
+  @Input() navJson: Array<any> = [];
+  @Output() goTo = new EventEmitter();
   menuStatus: string = 'off';
   hoverId: number = 0; // 当前已选中
   selectId: number = 0; // 当前鼠标选中
   thisMenuId: number = 0; // 当前选中子菜单
   hisHover: number = 0; // 历史选中菜单,收缩时记录，展开时使用
 
-  menus: Array<any> = [
 
-    {
-      'name': '基本组件',
-      'uri': '',
-      'iconuri': 'pipe_area',
-      'child': [
-        {
-          'name': '左边导航',
-          'uri': 'navBarPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '顶部导航',
-          'uri': 'topNavPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '页面左边导航',
-          'uri': 'pageLeftNavPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '开关切换',
-          'uri': 'switchPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '面包屑',
-          'uri': 'breadCrumbPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '步骤条',
-          'uri': 'stepsInfo',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '工具条',
-          'uri': 'toolBarPage',
-          'iconuri': '',
-          'child': null
-        }
-        ,
-        {
-          'name': '搜索模块',
-          'uri': 'seachModulePage',
-          'iconuri': '',
-          'child': null
-        }
-        ,
-        {
-          'name': '弹出详情',
-          'uri': 'openDetailsInfo',
-          'iconuri': '',
-          'child': null
-        }
-        ,
-        {
-          'name': '弹出详情2',
-          'uri': 'openDetailsInfo2',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '地图用组件',
-          'uri': 'dotRipplePage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '侧边栏弹出',
-          'uri': 'popupSidebarPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '标签页',
-          'uri': 'tabsPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '状态条',
-          'uri': 'statusBarPage',
-          'iconuri': '',
-          'child': null
-        }
+  /*
 
-      ]
-    },
-    {
-      'name': '布局组件',
-      'uri': '',
-      'iconuri': 'pipe_area',
-      'child': [
-        {
-          'name': '布局演示',
-          'uri': 'layoutDemoPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '上中下',
-          'uri': 'flexTopCenterBottom',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '左中右',
-          'uri': 'flexleftCenterRight',
-          'iconuri': '',
-          'child': null
-        }
-      ]
-    },
-    {
-      'name': '数据展示',
-      'uri': '',
-      'iconuri': 'pipe_area',
-      'child': [
-        {
-          'name': '登录界面',
-          'uri': 'loginPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '系统切换',
-          'uri': 'homePage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '页面演示1',
-          'uri': 'pageDemo',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '页面演示3',
-          'uri': 'pageDemo3',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '页面演示2',
-          'uri': 'detailsStyle1',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '表格展示1',
-          'uri': 'dataDemoPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '表格展示',
-          'uri': 'tablePage',
-          'iconuri': '',
-          'child': null
-        }
-        ,
-        {
-          'name': '图标演示',
-          'uri': 'iconPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '标签页（传递模板）',
-          'uri': 'ecpTabset',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '404/500页面',
-          'uri': 'httpPage',
-          'iconuri': '',
-          'child': null
-        }
-        ,
-        {
-          'name': '生成帐单',
-          'uri': 'generateBillPage',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '弹窗演示',
-          'uri': 'waterConsumptionAnalysisPopup',
-          'iconuri': '',
-          'child': null
-        }
-        ,
-        {
-          'name': '组件联动',
-          'uri': 'pageDemo2',
-          'iconuri': '',
-          'child': null
-        },
-        {
-          'name': '调度中心',
-          'uri': 'dispatchPage',
-          'iconuri': '',
-          'child': null
-        }
-        ,
-        {
-          'name': '控制台主页',
-          'uri': 'consolePage',
-          'iconuri': '',
-          'child': null
-        }
-      ]
-    },
-    {
-      'name': '关于',
-      'uri': 'about',
-      'iconuri': 'pipe_report',
-      'child': []
-    }
-  ];
+    menus: Array<any> = [
+      {
+        'name': '基本组件',
+        'uri': '',
+        'iconuri': 'pipe_area',
+        'child': [
+          {
+            'name': '左边导航',
+            'uri': 'navBarPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '顶部导航',
+            'uri': 'topNavPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '页面左边导航',
+            'uri': 'pageLeftNavPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '开关切换',
+            'uri': 'switchPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '面包屑',
+            'uri': 'breadCrumbPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '步骤条',
+            'uri': 'stepsInfo',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '工具条',
+            'uri': 'toolBarPage',
+            'iconuri': '',
+            'child': null
+          }
+          ,
+          {
+            'name': '搜索模块',
+            'uri': 'seachModulePage',
+            'iconuri': '',
+            'child': null
+          }
+          ,
+          {
+            'name': '弹出详情',
+            'uri': 'openDetailsInfo',
+            'iconuri': '',
+            'child': null
+          }
+          ,
+          {
+            'name': '弹出详情2',
+            'uri': 'openDetailsInfo2',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '地图用组件',
+            'uri': 'dotRipplePage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '侧边栏弹出',
+            'uri': 'popupSidebarPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '标签页',
+            'uri': 'tabsPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '状态条',
+            'uri': 'statusBarPage',
+            'iconuri': '',
+            'child': null
+          }
 
+        ]
+      },
+      {
+        'name': '布局组件',
+        'uri': '',
+        'iconuri': 'pipe_area',
+        'child': [
+          {
+            'name': '布局演示',
+            'uri': 'layoutDemoPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '上中下',
+            'uri': 'flexTopCenterBottom',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '左中右',
+            'uri': 'flexleftCenterRight',
+            'iconuri': '',
+            'child': null
+          }
+        ]
+      },
+      {
+        'name': '数据展示',
+        'uri': '',
+        'iconuri': 'pipe_area',
+        'child': [
+          {
+            'name': '登录界面',
+            'uri': 'loginPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '系统切换',
+            'uri': 'homePage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '页面演示1',
+            'uri': 'pageDemo',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '页面演示3',
+            'uri': 'pageDemo3',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '页面演示2',
+            'uri': 'detailsStyle1',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '表格展示1',
+            'uri': 'dataDemoPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '表格展示',
+            'uri': 'tablePage',
+            'iconuri': '',
+            'child': null
+          }
+          ,
+          {
+            'name': '图标演示',
+            'uri': 'iconPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '标签页（传递模板）',
+            'uri': 'ecpTabset',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '404/500页面',
+            'uri': 'httpPage',
+            'iconuri': '',
+            'child': null
+          }
+          ,
+          {
+            'name': '生成帐单',
+            'uri': 'generateBillPage',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '弹窗演示',
+            'uri': 'waterConsumptionAnalysisPopup',
+            'iconuri': '',
+            'child': null
+          }
+          ,
+          {
+            'name': '组件联动',
+            'uri': 'pageDemo2',
+            'iconuri': '',
+            'child': null
+          },
+          {
+            'name': '调度中心',
+            'uri': 'dispatchPage',
+            'iconuri': '',
+            'child': null
+          }
+          ,
+          {
+            'name': '控制台主页',
+            'uri': 'consolePage',
+            'iconuri': '',
+            'child': null
+          }
+        ]
+      },
+      {
+        'name': '关于',
+        'uri': 'about',
+        'iconuri': 'pipe_report',
+        'child': []
+      }
+    ];
+
+  */
 
   constructor(private router: Router) {
   }
@@ -320,14 +324,15 @@ export class NavBarComponent implements OnInit {
 
 
   selectedApp(uri, hoverId) {
-    const self = this;
-    if (hoverId == null || hoverId == '') {
-      self.thisMenuId = 0;
-    }
-    self.thisMenuId = hoverId;
-    console.log('click');
-    self.router.navigate([uri]);
-    return false;
+    this.goTo.emit({'uri': uri, 'hoverId': hoverId});
+    /* const self = this;
+     if (hoverId == null || hoverId == '') {
+       self.thisMenuId = 0;
+     }
+     self.thisMenuId = hoverId;
+     console.log('click');
+     self.router.navigate([uri]);
+     return false;*/
   }
 
 

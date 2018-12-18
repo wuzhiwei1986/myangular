@@ -2,7 +2,7 @@
   <!--左边图标-->
 
   <ul class="menu-body">
-    <ng-container *ngFor="let menu of menus;let i=index;">
+    <ng-container *ngFor="let menu of navJson;let i=index;">
       <li [ngClass]="{'select':i==selectId,'hover':i==hoverId}">
         <div class="menu-title" [ngClass]="{'select':i==selectId,'hover':i==hoverId}"
              (click)="hoverMenu(i);selectedApp(menu.uri)" (mouseover)="selectMenu(i)"
