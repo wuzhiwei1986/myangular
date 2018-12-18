@@ -12,15 +12,10 @@ export class AppComponent {
   constructor(private router: Router) {
   }
 
-  indexNavGoto(obj) {
-    console.log(obj);
+  indexNavGoto(uri) {
+    console.log(uri);
     const self = this;
-    if (obj.hoverId == null || obj.hoverId == '') {
-      //self.thisMenuId = 0;
-    }
-    // self.thisMenuId = obj.hoverId;
-    console.log('click');
-    self.router.navigate([obj.uri]);
+    self.router.navigate([uri]);
     return false;
   }
 

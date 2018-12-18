@@ -1,3 +1,6 @@
+/*
+   左边导航 'ecp-nav-bar' v1.2
+*/
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import {Router} from '@angular/router';
@@ -324,15 +327,15 @@ export class NavBarComponent implements OnInit {
 
 
   selectedApp(uri, hoverId) {
-    this.goTo.emit({'uri': uri, 'hoverId': hoverId});
-    /* const self = this;
-     if (hoverId == null || hoverId == '') {
-       self.thisMenuId = 0;
-     }
-     self.thisMenuId = hoverId;
-     console.log('click');
-     self.router.navigate([uri]);
-     return false;*/
+    const self = this;
+    this.goTo.emit(uri);
+    if (hoverId == null || hoverId == '') {
+      self.thisMenuId = 0;
+    }
+    self.thisMenuId = hoverId;
+    // console.log('click');
+    // self.router.navigate([uri]);
+    return false;
   }
 
 

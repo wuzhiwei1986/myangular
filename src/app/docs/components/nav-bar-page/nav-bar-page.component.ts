@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+
 @Component({
   selector: 'app-nav-bar-page',
   templateUrl: './nav-bar-page.component.html',
   styleUrls: ['./nav-bar-page.component.css']
 })
 export class NavBarPageComponent implements OnInit {
-  scaling=true;
+  scaling = true;
 
 
   leftNavList: Array<any> = [
@@ -239,18 +240,17 @@ export class NavBarPageComponent implements OnInit {
     }
   ];
 
-  navGoto(uri){
-  console.log(uri);
-    const self = this;
-/*    if (hoverId == null || hoverId == '') {
-      self.thisMenuId = 0;
-    }
-    self.thisMenuId = hoverId;*/
+  navGoto(uri) {
+
+    // const self = this;
+    console.log(uri);
     console.log('click');
-    self.router.navigate([uri]);
+    alert(uri);
+    // self.router.navigate([uri]);
     return false;
-}
-  constructor(private router: Router) {
+  }
+
+  constructor() {
   }
 
 
