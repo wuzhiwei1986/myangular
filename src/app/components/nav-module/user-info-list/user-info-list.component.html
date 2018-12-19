@@ -1,3 +1,10 @@
-<p>
-  user-info-list works!
-</p>
+<span class="user-info-list" style="float: right" (mouseleave)="changeOpen=false">
+  <div class="header" [ngClass]="{'bg':changeOpen}" (mouseover)="changeOpen=true">
+        <img src="{{userHader}}"/></div>
+        <ul style="display: none" [@displayState]="changeOpen == true? 'block' : 'none'">
+          <ng-content></ng-content>
+          <!--<li (click)="nav('姓名')">李先生</li>
+          <li (click)="nav('修改密码')">修改密码</li>
+          <li (click)="nav('退出')">退出</li>-->
+        </ul>
+</span>

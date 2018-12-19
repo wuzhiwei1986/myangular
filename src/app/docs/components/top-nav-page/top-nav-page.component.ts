@@ -104,6 +104,12 @@ export class TopNavPageComponent implements OnInit {
     alert(info);
   }
 
+  // 用户菜单事件测试
+  nav(msg){
+    console.log(msg);
+  }
+
+
   constructor() {
   }
 

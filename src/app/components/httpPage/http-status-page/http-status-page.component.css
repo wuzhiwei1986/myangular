@@ -1,13 +1,22 @@
-.http-page {
+:host >>> .http-page {
   display: block;
   margin: 0 auto;
+  min-width: 252px;
+}
+:host >>> .http-page .img {
   width: 252px;
   height: 92px;
+  display: block;
+  margin-bottom:50px;
 }
 
-.http400 {
+
+
+:host >>> .http400 {
   background: url("../../../../assets/base/404.png") no-repeat;
 }
-.http510 {
+:host >>> .http510 {
   background: url("../../../../assets/base/510.png") no-repeat;
 }
+:host >>> .http-page .info-txt { text-align: center; margin-bottom: 2px;font-size:16px; color: #6E6E6E; }
+:host >>> .http-page .tag-link-module { text-align: center; }

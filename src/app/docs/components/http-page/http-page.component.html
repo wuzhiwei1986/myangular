@@ -5,17 +5,27 @@
   </h3></div>
 <div class="page-body">
   <h2 class="demo-title">演示</h2>
-  <div class="demo-body" style="height: 500px;">
-    <div style="width: 90%; height: 400px;">
+  <div class="demo-body" style="height: 600px;">
+    <div style="width: 90%; height: 500px;">
      <ecp-layout-vertical-center [customStyle]="{'height':'100%','background':'#f2f2f2'}">
-       <ecp-http-status-page [code]="400"></ecp-http-status-page>
+       <ecp-http-status-page [code]="400">
+         <div class="info-txt">无法找到页面，请稍后再试！</div>
+         <div class="tag-link-module">
+           <a class="hover">返回首页</a>
+         </div>
+       </ecp-http-status-page>
      </ecp-layout-vertical-center>
     </div>
   </div>
-  <div class="demo-body" style="height: 500px;">
-    <div style="width: 90%; height: 400px;">
+  <div class="demo-body" style="height: 600px;">
+    <div style="width: 90%; height: 500px;">
       <ecp-layout-vertical-center [customStyle]="{'height':'100%','background':'#f2f2f2'}">
-        <ecp-http-status-page [code]="510"></ecp-http-status-page>
+        <ecp-http-status-page [code]="510">
+          <div class="info-txt">系统出现错误，请稍后再试！</div>
+          <div class="tag-link-module">
+            <a class="hover">返回首页</a>
+          </div>
+        </ecp-http-status-page>
       </ecp-layout-vertical-center>
     </div>
   </div>

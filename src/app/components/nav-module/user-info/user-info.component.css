@@ -1,23 +1,6 @@
 /*
    顶部导航-用户信息'ecp-user-info' v1.0
 */
-
-/*
-
-.top-header .user {
-  padding: 0px; margin-right:10px;float: right; margin-top: 7px; float: right!important;
-}
-.top-header .user .header {
-  width: 37px; height: 37px; display: inline-block; float: left;
-}
-.top-header .user .name {
-  padding: 0 8px; height: 37px; line-height: 37px; margin: 0px; vertical-align:middle;display: table-cell;float: left; font-size: 14px; font-weight: bold;
-}
-.top-header .logout{
-  background: url("../../../assets/logout.png") no-repeat; width: 18px; height: 20px; text-indent: -999999px; display: inline-block; margin-top: 16px; margin-right: 30px; float: right!important;
-}
-*/
-
 .user {
   padding: 0px; margin-right:10px;float: right; margin-top: 7px; float: right!important;  color: #FFFFFF
 }

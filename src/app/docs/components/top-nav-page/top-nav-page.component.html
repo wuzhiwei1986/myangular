@@ -17,9 +17,9 @@
                  (viewAll)="test('点击*查看全部*调用')"></ecp-alarm>
     </ecp-top-nav>
   </div>
-  <h2 class="demo-title">子组件演示</h2>
-  <div class="demo-body" style="position:relative; height: 200px;">
-    <div style="width: 200px; height: 180px; background: #181b1f;">
+  <h2 class="demo-title">子组件演示 ecp-user-info</h2>
+  <div class="demo-body" style="position:relative; height: 240px;">
+    <div style="width: 200px; height: 180px;  background: #303844;">
       <ecp-user-info [userName]="'演示用户'"></ecp-user-info>
     </div>
     <ecp-component-recommend>
@@ -34,8 +34,28 @@
       </div>
     </ecp-component-recommend>
   </div>
-  <div class="demo-body" style="position:relative;  height: 200px;">
-    <div style="width: 200px; height: 180px;background: #181b1f;">
+  <h2 class="demo-title">子组件演示 ecp-user-info-list</h2>
+  <div class="demo-body" style="position:relative; height: 240px;">
+    <div style="width: 200px; height: 220px; background: #303844;">
+      <ecp-user-info-list>
+        <li class="index" (click)="nav('姓名')">李先生</li>
+        <li class="index" (click)="nav('修改密码')">修改密码</li>
+        <li class="index" (click)="nav('退出')">退出</li>
+      </ecp-user-info-list>
+    </div>
+    <ecp-component-recommend>
+      <h3>说明</h3>
+      <div>
+
+      </div>
+      <h3>参数</h3>
+      <div>
+        [userHader]<br/>
+      </div>
+    </ecp-component-recommend>
+  </div>
+  <div class="demo-body" style="position:relative;  height: 240px;">
+    <div style="width: 200px; height: 180px;background: #303844;">
       <ecp-drop-down-menu></ecp-drop-down-menu>
     </div>
     <ecp-component-recommend>
@@ -50,7 +70,7 @@
     </ecp-component-recommend>
   </div>
   <div class="demo-body" style="position:relative; height: 450px;">
-    <div style="width: 470px; height: 400px; background: #181b1f;">
+    <div style="width: 460px; height: 400px;  background: #303844;">
       <ecp-alarm [alarmList]="demoPageAlarmList" [alarmTitle]="'自定义标题'"></ecp-alarm>
     </div>
     <ecp-component-recommend>
@@ -98,8 +118,6 @@
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
-
-
       </tbody>
     </table>
 
