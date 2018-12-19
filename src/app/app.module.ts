@@ -102,6 +102,7 @@ import { SidebarTipInfoComponent } from './components/popup-sidebar-module/sideb
 import { SidebarBtnLinkComponent } from './components/popup-sidebar-module/sidebar-btn-link/sidebar-btn-link.component';
 import { CollapseListComponent } from './components/popup-sidebar-module/collapse-list/collapse-list.component';
 import { UserInfoListComponent } from './components/nav-module/user-info-list/user-info-list.component';
+import { CopyrightComponent } from './components/copyright/copyright.component';
 
 
 
@@ -191,6 +192,7 @@ registerLocaleData(zh);
     SidebarBtnLinkComponent,
     CollapseListComponent,
     UserInfoListComponent,
+    CopyrightComponent,
 
 
   ],
