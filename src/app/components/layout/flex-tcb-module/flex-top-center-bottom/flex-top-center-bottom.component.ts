@@ -10,6 +10,10 @@ export class FlexTopCenterBottomComponent implements OnInit {
   @Input() topHeight: number = 0;
   @Input() bottomHeight: number = 0;
 
+  @Input() topBg: string = '#ffffff';
+  @Input() bottomBg: string = '#ffffff';
+  @Input() bodyBg: string = '#ffffff';
+
   constructor() {
   }
 

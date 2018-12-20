@@ -1,11 +1,11 @@
 <div class="flex-tcb">
-  <div class="flex-top" *ngIf="topHeight>0" [ngStyle]="{'height':topHeight+'px'}">
+  <div class="flex-top" *ngIf="topHeight>0" [ngStyle]="{'height':topHeight+'px','background':topBg}">
     <ng-content select="ecp-flex-top"></ng-content>
   </div>
-  <div class="flex-body">
+  <div class="flex-body"  [ngStyle]="{'background':bodyBg}">
     <ng-content select="ecp-flex-body"></ng-content>
   </div>
-  <div class="flex-footer" *ngIf="bottomHeight>0" [ngStyle]="{'height':bottomHeight+'px'}">
+  <div class="flex-footer" *ngIf="bottomHeight>0" [ngStyle]="{'height':bottomHeight+'px','background':bottomBg}">
     <ng-content select="ecp-flex-bottom"></ng-content>
   </div>
 </div>
