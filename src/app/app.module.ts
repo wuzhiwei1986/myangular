@@ -103,6 +103,7 @@ import { SidebarBtnLinkComponent } from './components/popup-sidebar-module/sideb
 import { CollapseListComponent } from './components/popup-sidebar-module/collapse-list/collapse-list.component';
 import { UserInfoListComponent } from './components/nav-module/user-info-list/user-info-list.component';
 import { CopyrightComponent } from './components/copyright/copyright.component';
+import { CardInfoComponent } from './components/card-info/card-info.component';
 
 
 
@@ -193,6 +194,8 @@ registerLocaleData(zh);
     CollapseListComponent,
     UserInfoListComponent,
     CopyrightComponent,
+    CardInfoComponent,
+
 
 
   ],

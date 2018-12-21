@@ -28,6 +28,10 @@ export class AppComponent {
     console.log(txt);
   }
 
+  nav(txt) {
+    console.log(txt);
+  }
+
   //顶部菜单数据
   alarmList = [
     {

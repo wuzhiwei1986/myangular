@@ -3,12 +3,12 @@
   <!--<h3>工具条介绍</h3>--></div>
 <div class="page-body">
   <h2 class="demo-title">侧边栏演示</h2>
-  <div class="demo-body" style="position:relative; height: 900px;">
+  <div class="demo-body" style="position:relative; height: 900px; background: #f2f2f2;">
     <div style="width: 360px;">
       <ecp-flex-tcb [topHeight]="60" [bottomHeight]="60">
         <ecp-flex-top>
           <ecp-module-title>
-            筛查<a class="close"><i class="icon-close" (click)="close()"></i></a>
+            筛查<a class="close"><i class="icon dongxiniotwater general_close"></i></a>
           </ecp-module-title>
         </ecp-flex-top>
         <ecp-flex-body>
@@ -28,8 +28,8 @@
         <ecp-flex-bottom>
           <ecp-module-bottom>
             <div class="module-footer">
-              <button nz-button nzType="default" (click)="reset()">重置</button>
-              <button nz-button nzType="primary" (click)="search()">筛查</button>
+              <button nz-button nzType="default">重置</button>
+              <button nz-button nzType="primary">筛查</button>
             </div>
           </ecp-module-bottom>
         </ecp-flex-bottom>

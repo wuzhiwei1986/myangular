@@ -4,11 +4,93 @@
   </span>
 </ecp-bread-crumb>
 
-<div>
-
+<div style="width: 500px; margin: 20px;">
+  <ecp-card-info>
+    <div class="module-item-title"><i class="left-pic"></i>产品规格</div>
+    <div class="module-item-content">
+      <div nz-row>
+        <div nz-col nzSpan="24" >
+          <div nz-row>
+            <div nz-col nzSpan="12">
+              <span>型号：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+            <div nz-col nzSpan="12">
+              <span>规格：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+          </div>
+        </div>
+        <div nz-col nzSpan="24" >
+          <div nz-row>
+            <div nz-col nzSpan="12">
+              <span>材质：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+            <div nz-col nzSpan="12">
+              <span>重量：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+          </div>
+        </div>
+        <div nz-col nzSpan="24">
+          <div nz-row>
+            <div nz-col nzSpan="12">
+              <span>单价：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+            <div nz-col nzSpan="12">
+              <span>单位：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><div class="module-item-title"><i class="left-pic"></i>产品规格</div>
+    <div class="module-item-content">
+      <div nz-row>
+        <div nz-col nzSpan="24" >
+          <div nz-row>
+            <div nz-col nzSpan="12">
+              <span>型号：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+            <div nz-col nzSpan="12">
+              <span>规格：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+          </div>
+        </div>
+        <div nz-col nzSpan="24" >
+          <div nz-row>
+            <div nz-col nzSpan="12">
+              <span>材质：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+            <div nz-col nzSpan="12">
+              <span>重量：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+          </div>
+        </div>
+        <div nz-col nzSpan="24">
+          <div nz-row>
+            <div nz-col nzSpan="12">
+              <span>单价：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+            <div nz-col nzSpan="12">
+              <span>单位：</span>
+              <span>AAAAAAAAAAAA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ecp-card-info>
 
 </div>
-<div style="overflow: scroll; height: 400px;"  #scrollDiv (scroll)="scrollToottom()">
+<div style="overflow: scroll; height: 400px;" #scrollDiv (scroll)="scrollToottom()">
   <div [ngStyle]="{'height':newDivHeight+'px'}" style=" background: #63a35c"></div>
 </div>
 <div *ngIf="isLoading">开始加载数据..</div>
