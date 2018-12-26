@@ -34,11 +34,12 @@ import { DropDownMenuComponent } from './components/nav-module/drop-down-menu/dr
 import { UserInfoComponent } from './components/nav-module/user-info/user-info.component';
 import { OpenDetailsInfo2Component } from './components/open-details-info2/open-details-info2.component';
 import { RippleComponent } from './animation/ripple/ripple.component';
-import { AboutComponent} from './docs/about/about.component';
+
 
 /*指令*/
 import { TestDirective } from './directive/test.directive';
 /*页面介绍*/
+import { AboutComponent} from './docs/about/about.component';
 import { ToolBarPageComponent } from './docs/components/tool-bar-page/tool-bar-page.component';
 import { SwitchPageComponent } from './docs/components/switch-page/switch-page.component';
 import { DotRipplePageComponent } from './docs/components/dot-ripple-page/dot-ripple-page.component';
@@ -50,6 +51,13 @@ import { TablePageComponent } from './docs/components/table-page/table-page.comp
 import { PageLeftNavPageComponent } from './docs/components/page-left-nav-page/page-left-nav-page.component';
 import { SeachModulePageComponent } from './docs/components/seach-module-page/seach-module-page.component';
 import { PopupSidebarPageComponent } from './docs/components/popup-sidebar-page/popup-sidebar-page.component';
+import { BreadCrumbPageComponent } from './docs/components/bread-crumb-page/bread-crumb-page.component';
+import { StatusBarPageComponent } from './docs/components/status-bar-page/status-bar-page.component';
+import { TopCenterBottomPageComponent } from './docs/components/layout/top-center-bottom-page/top-center-bottom-page.component';
+import { LeftCenterRightPageComponent } from './docs/components/layout/left-center-right-page/left-center-right-page.component';
+import { TabsPageComponent } from './docs/components/tabs-page/tabs-page.component';
+import { HttpPageComponent } from './docs/components/http-page/http-page.component';
+import { LayoutDemoPageComponent } from './docs/components/layout/layout-demo-page/layout-demo-page.component';
 
 /*登录*/
 import { EcpLoginformComponent } from './components/ecp-login-moudle/ecp-loginform/ecp-loginform.component';
@@ -62,9 +70,9 @@ import { EcpTabContentComponent } from './ecp-tegs-test/ecp-tab-content/ecp-tab-
 import { GenerateBillPageComponent } from './demo/generate-bill-page/generate-bill-page.component';
 import { MapDotPopupComponent } from './components/map-dot-popup/map-dot-popup.component';
 import { WaterConsumptionAnalysisPopupComponent } from './demo/water-consumption-analysis-popup/water-consumption-analysis-popup.component';
-import { BreadCrumbPageComponent } from './docs/components/bread-crumb-page/bread-crumb-page.component';
+
 import { StatusBarComponent } from './components/status-bar/status-bar.component';
-import { StatusBarPageComponent } from './docs/components/status-bar-page/status-bar-page.component';
+
 import { LegendComponent } from './components/legend/legend.component';
 import { PageDemo2Component } from './demo/page-demo2/page-demo2.component';
 import { DocsComponentRecommendComponent } from './components/docs-component-recommend/docs-component-recommend.component';
@@ -75,7 +83,7 @@ import { DispatchPageRightComponent } from './demo/dispatch/dispatch-page-right/
 import { DispatchPageCenterComponent } from './demo/dispatch/dispatch-page-center/dispatch-page-center.component';
 import { FlexTopCenterBottomComponent } from './components/layout/flex-tcb-module/flex-top-center-bottom/flex-top-center-bottom.component';
 import { FlexLeftCenterRightComponent } from './components/layout/flex-lcr-module/flex-left-center-right/flex-left-center-right.component';
-import { TopCenterBottomPageComponent } from './docs/components/layout/top-center-bottom-page/top-center-bottom-page.component';
+
 import { EcpTemplateComponent } from './components/ecp-template/ecp-template.component';
 import { FlexTopComponent } from './components/layout/flex-tcb-module/flex-top/flex-top.component';
 import { FlexBottomComponent } from './components/layout/flex-tcb-module/flex-bottom/flex-bottom.component';
@@ -84,19 +92,20 @@ import { FlexLeftComponent } from './components/layout/flex-lcr-module/flex-left
 import { FlexRightComponent } from './components/layout/flex-lcr-module/flex-right/flex-right.component';
 import { ConsolePageComponent } from './demo/console-page/console-page.component';
 import {CountUpModule} from 'countup.js-angular2';
-import { LeftCenterRightPageComponent } from './docs/components/layout/left-center-right-page/left-center-right-page.component';
+
 import { TabsComponent } from './components/tabs-module/tabs/tabs.component';
-import { TabsPageComponent } from './docs/components/tabs-page/tabs-page.component';
+
 import { TabComponent } from './components/tabs-module/tab/tab.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
-import { HttpPageComponent } from './docs/components/http-page/http-page.component';
+
 import { HttpStatusPageComponent } from './components/httpPage/http-status-page/http-status-page.component';
 import { ListComponent } from './components/dataTable-module/list/list.component';
 import { DataDemoPageComponent } from './demo/data-demo-page/data-demo-page.component';
 import { ModuleTitleComponent } from './components/layout/flex-tcb-module/module-title/module-title.component';
 import { ModuleBottomComponent } from './components/layout/flex-tcb-module/module-bottom/module-bottom.component';
 import { UploadFileComponent } from './components/upload-file/upload-file.component';
-import { LayoutDemoPageComponent } from './docs/components/layout/layout-demo-page/layout-demo-page.component';
+
+
 import { LayoutVerticalCenterComponent } from './components/layout/layout-vertical-center/layout-vertical-center.component';
 import { SidebarTipInfoComponent } from './components/popup-sidebar-module/sidebar-tip-info/sidebar-tip-info.component';
 import { SidebarBtnLinkComponent } from './components/popup-sidebar-module/sidebar-btn-link/sidebar-btn-link.component';
