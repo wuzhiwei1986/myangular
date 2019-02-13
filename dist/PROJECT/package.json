@@ -1,0 +1,19 @@
+{
+  "name": "ecp-ant-ui",
+  "version": "0.1.7",
+  "author": "wuzhiwei",
+  "peerDependencies": {},
+  "main": "bundles/ecp-ant-ui.umd.js",
+  "module": "fesm5/ecp-ant-ui.js",
+  "es2015": "fesm2015/ecp-ant-ui.js",
+  "esm5": "esm5/ecp-ant-ui.js",
+  "esm2015": "esm2015/ecp-ant-ui.js",
+  "fesm5": "fesm5/ecp-ant-ui.js",
+  "fesm2015": "fesm2015/ecp-ant-ui.js",
+  "typings": "ecp-ant-ui.d.ts",
+  "metadata": "ecp-ant-ui.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
